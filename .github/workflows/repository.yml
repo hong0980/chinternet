@@ -48,10 +48,10 @@ jobs:
           svn log $zx | awk '/lines$/{printf "%s-%s-%s\n" ,$1,$5,$6}' >xd
           op=$(sed -n '$=' xd); i=0
           for x in `cat xd`; do
-            i=$[i+1]; [[ -n $ND ]] && ([[ $ND -gt $op ]] && ND=$op) || ND=100
+            i=$[i+1]; [[ -n $ND ]] && xc=$ND || xc=100; [[ $xc -gt $op ]] && xc=$op
             svn export "-${x%%-*}" $zx immortalwrt/$x-rockchip 1>/dev/null 2>&1 && \
-            echo "${nn%-*}分支${zx##*/}总$op个，下载$ND个。第$i个$x完成"
-            [[ $i = $ND ]] && break
+            echo "${nn%-*}分支${zx##*/}总$op个，下载$xc个。第$i个$x完成"
+            [[ $i = $xc ]] && break
           done
           pushd immortalwrt && \
           tar -zcf ../output/immortalwrt-${zx##*/}-${nn##*-}.tar.gz * --remove-files && popd
@@ -99,10 +99,10 @@ jobs:
           svn log $zx | awk '/lines$/{printf "%s-%s-%s\n" ,$1,$5,$6}' >xd
           op=$(sed -n '$=' xd); i=0
           for x in `cat xd`; do
-            i=$[i+1]; [[ -n $ND ]] && ([[ $ND -gt $op ]] && ND=$op) || ND=100
+            i=$[i+1]; [[ -n $ND ]] && xc=$ND || xc=100; [[ $xc -gt $op ]] && xc=$op
             svn export "-${x%%-*}" $zx immortalwrt/$x-${zx##*/} 1>/dev/null 2>&1 && \
-            echo "$nn分支${zx##*/}总$op个，下载$ND个。第$i个$x完成"
-            [[ $i = $ND ]] && break
+            echo "$nn分支${zx##*/}总$op个，下载$xc个。第$i个$x完成"
+            [[ $i = $xc ]] && break
           done
           pushd immortalwrt && \
           tar -zcf ../output/immortalwrt-${zx##*/}-$nn.tar.gz * --remove-files && popd
@@ -143,10 +143,10 @@ jobs:
           svn log $zx | awk '/lines$/{printf "%s-%s-%s\n" ,$1,$5,$6}' >xd
           op=$(sed -n '$=' xd); i=0
           for x in `cat xd`; do
-            i=$[i+1]; [[ -n $ND ]] && ([[ $ND -gt $op ]] && ND=$op) || ND=100
+            i=$[i+1]; [[ -n $ND ]] && xc=$ND || xc=100; [[ $xc -gt $op ]] && xc=$op
             svn export "-${x%%-*}" $zx coolsnowwolf/$x-${zx##*/} 1>/dev/null 2>&1 && \
-            echo "${zx##*/}总$op个，下载$ND个。第$i个$x完成"
-            [[ $i = $ND ]] && break
+            echo "${zx##*/}总$op个，下载$xc个。第$i个$x完成"
+            [[ $i = $xc ]] && break
           done
           pushd coolsnowwolf && \
           tar -zcf ../output/coolsnowwolf-${zx##*/}.tar.gz * --remove-files && popd
