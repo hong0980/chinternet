@@ -1,0 +1,40 @@
+name: build
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+    inputs:
+      device:
+        description: 'select device to build'
+        default: 'r2s'
+        required: false
+
+jobs:
+  build:
+    name: Build and Deploy Webpages
+    runs-on: ubuntu-22.04
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: get deb packgage for test
+      id: feeds
+      run: |
+        sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+        git clone -q https://github.com/coolsnowwolf/lede openwrt
+        cd openwrt
+        sh -c "curl -sfL https://raw.githubusercontent.com/hong0980/diy/master/files/uboot-rockchip.patch | git apply --reject --ignore-whitespace"
+        git format-patch -n || true
+        git diff package/boot/uboot-rockchip/Makefile || true
+        git format-patch package/boot/uboot-rockchip/Makefile || true
+        git format-patch package/boot/uboot-rockchip/patches/303-rockchip-rk3328-Add-support-for-Orangepi-R1-Plus-LTS.patch || true
+        git format-patch -1
+
+    # - name: 上传到 Release
+    #   if: steps.feeds.conclusion == 'success' && !cancelled()
+    #   uses: softprops/action-gh-release@master
+    #   with:
+    #     name: Cache
+    #     token: ${{ secrets.GITHUB_TOKEN }}
+    #     files: output/coolsnowwolf.*gz
+    #     tag_name: coolsnowwolf-uboot-rockchip
+    #     body: "This is my release text"
