@@ -46,15 +46,15 @@ jobs:
             *18.06*) nn="openwrt-18.06-k5.4-5.4@5.10";;
           esac
           svn log $zx | awk '/lines$/{printf "%s-%s-%s\n" ,$1,$5,$6}' >xd
-          op=$(cat xd | wc -l); i=0
+          op=$(sed -n '$=' xd); i=0
           for x in `cat xd`; do
-            i=$[i+1]; [[ -n $ND ]] && xc=$ND || xc=100; [[ $xc -gt $op ]] && xc=$op
+            i=$[i+1]; [[ -n $ND ]] && ([[ $ND -gt $op ]] && ND=$op) || ND=100
             svn export "-${x%%-*}" $zx immortalwrt/$x-rockchip 1>/dev/null 2>&1 && \
-            echo "${nn%-*}分支${zx##*/}总$op个，下载$xc个。第$i个 $x 完成"
-            [[ $i = $xc ]] && break
+            echo "${nn%-*}分支${zx##*/}总$op个，下载$ND个。第$i个$x完成"
+            [[ $i = $ND ]] && break
           done
           pushd immortalwrt && \
-          tar -zcf ../output/immortalwrt-rockchip-${nn##*-}.tar.gz * --remove-files && popd
+          tar -zcf ../output/immortalwrt-${zx##*/}-${nn##*-}.tar.gz * --remove-files && popd
         done
 
     - name: 上传到 Release
@@ -97,12 +97,12 @@ jobs:
             *18.06*) nn="openwrt-18.06-k5.4";;
           esac
           svn log $zx | awk '/lines$/{printf "%s-%s-%s\n" ,$1,$5,$6}' >xd
-          op=$(cat xd | wc -l); i=0
+          op=$(sed -n '$=' xd); i=0
           for x in `cat xd`; do
-            i=$[i+1]; [[ -n $ND ]] && xc=$ND || xc=100; [[ $xc -gt $op ]] && xc=$op
+            i=$[i+1]; [[ -n $ND ]] && ([[ $ND -gt $op ]] && ND=$op) || ND=100
             svn export "-${x%%-*}" $zx immortalwrt/$x-${zx##*/} 1>/dev/null 2>&1 && \
-            echo "$nn分支${zx##*/}总$op个，下载$xc个。第$i个 $x 完成"
-            [[ $i = $xc ]] && break
+            echo "$nn分支${zx##*/}总$op个，下载$ND个。第$i个$x完成"
+            [[ $i = $ND ]] && break
           done
           pushd immortalwrt && \
           tar -zcf ../output/immortalwrt-${zx##*/}-$nn.tar.gz * --remove-files && popd
@@ -141,12 +141,12 @@ jobs:
         )
         for zx in ${url[@]}; do
           svn log $zx | awk '/lines$/{printf "%s-%s-%s\n" ,$1,$5,$6}' >xd
-          op=$(cat xd | wc -l); i=0
+          op=$(sed -n '$=' xd); i=0
           for x in `cat xd`; do
-            i=$[i+1]; [[ -n $ND ]] && xc=$ND || xc=100; [[ $xc -gt $op ]] && xc=$op
+            i=$[i+1]; [[ -n $ND ]] && ([[ $ND -gt $op ]] && ND=$op) || ND=100
             svn export "-${x%%-*}" $zx coolsnowwolf/$x-${zx##*/} 1>/dev/null 2>&1 && \
-            echo "${zx##*/}总$op个，下载$xc个。第$i个 $x 完成"
-            [[ $i = $xc ]] && break
+            echo "${zx##*/}总$op个，下载$ND个。第$i个$x完成"
+            [[ $i = $ND ]] && break
           done
           pushd coolsnowwolf && \
           tar -zcf ../output/coolsnowwolf-${zx##*/}.tar.gz * --remove-files && popd
