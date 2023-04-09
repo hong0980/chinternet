@@ -1,5 +1,5 @@
-msgid ""
-msgstr ""
+msgid "Current Version: %s"
+msgstr "当前的版本: %s"
 
 msgid "A BT/PT downloader base on Qt."
 msgstr "一个基于QT的BT/PT下载器。"
@@ -51,6 +51,12 @@ msgstr "用于放置下载文件的目录。例如：<code>/mnt/sda1</code>。"
 
 msgid "Locale Language"
 msgstr "WebUI语言"
+
+msgid "Simplified Chinese"
+msgstr "简体中文"
+
+msgid "English"
+msgstr "英文"
 
 msgid "The supported language codes can be used to customize the setting."
 msgstr "可以使用支持的语言代码来自定义设置。"
@@ -126,7 +132,7 @@ msgstr "日志保存时间"
 
 msgid ""
 "Give the "
-"time for keeping the old log, refer the setting \'Delete Old Backup\', eg. 1d"
+"time for keeping the old log, refer the setting \\'Delete Old Backup\\', eg. 1d"
 " for one day, 1m for one month and 1y for one year."
 msgstr ""
 "给出保存旧日志文件的时间, "
@@ -410,6 +416,9 @@ msgstr "下载速率阈值"
 msgid "Units: KiB/s"
 msgstr "单位：KiB/s"
 
+msgid "Units: s"
+msgstr "单位：秒"
+
 msgid "Upload rate threshold"
 msgstr "上传速率阈值"
 
@@ -565,10 +574,10 @@ msgid "Content of qBittorrent file: <code>%s</code>"
 msgstr "qBittorrent配置文件的内容：<code>%s</code>"
 
 msgid "Last 50 lines of log file:"
-msgstr "日志文件的最新 50 行："
+msgstr "日志文件最新的 50 行："
 
 msgid "Last 50 lines of syslog:"
-msgstr "系统日志的最新 50 行："
+msgstr "系统日志最新的 50 行："
 
 msgid "No log data."
 msgstr "无日志数据。"
