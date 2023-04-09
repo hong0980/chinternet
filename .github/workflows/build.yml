@@ -32,3 +32,5 @@ jobs:
         name: zh-cn-lmo
         token: ${{secrets.GITHUB_TOKEN}}
         files: /tmp/pp.zh-cn.lmo
+        body: lmo
+        tag_name: lmo
