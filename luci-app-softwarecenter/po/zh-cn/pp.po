@@ -115,8 +115,8 @@ msgstr "当前系统找不到你输入的 '%s' 命令！"
 msgid "Execution '%s %s' has no output!"
 msgstr "执行 '%s %s' 没有输出！"
 
-msgid "Failed to execute '%s %s'! Exit code: %d. \nError message: <div style='color: red;'>%s</div>"
-msgstr "无法执行 '%s %s'！退出代码：%d。 \n错误信息：<div style='color: red;'>%s</div>"
+msgid "Failed to execute '%s %s'! Exit code: %d. <br>Error message: <div style='color: red;'>%s</div>"
+msgstr "无法执行 '%s %s'！退出代码：%d。 <br>错误信息：<div style='color: red;'>%s</div>"
 
 msgid "Select request type"
 msgstr "选择请求类型"
