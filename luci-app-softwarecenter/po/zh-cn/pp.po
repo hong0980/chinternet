@@ -145,8 +145,8 @@ msgstr "服务不可用：服务器暂时无法处理请求。"
 msgid "An unexpected error occurred. Error code: %s"
 msgstr "发生意外错误。错误代码：%s"
 
-msgid "%s (size: %s) (Available: %s)"
-msgstr "%s（大小：%s）（可用：%s）"
+msgid "%s/download (size: %s) (Available: %s)"
+msgstr "%s/download (大小: %s) (可用: %s)"
 
 msgid ""
 msgstr ""
