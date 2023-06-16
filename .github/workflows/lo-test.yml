@@ -3,49 +3,26 @@ name: 下载 Cache
 on:
   schedule:
     - cron: 0 5 */10 * *
-  release:
-    types: [published]
   workflow_dispatch:
-
-permissions:
-  contents: read
-
 jobs:
   build:
     name: 下载 Cache
     runs-on: ubuntu-22.04
     permissions:
-      contents: write # for release creation
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
       - name: 下载 Cache
         continue-on-error: true
-        run: wget -qO- raw.githubusercontent.com/hong0980/diy/master/chinternet | bash
+        run: wget -qO- git.io/lean_openwrt | cache_Release=true bash
 
       - name: Cache 上传到 Release
+        if: env.UPLOAD_Release == 'true'
         uses: softprops/action-gh-release@master
         with:
           name: Cache
-          files: output1/*
+          files: output/*
           tag_name: Cache
           token: ${{secrets.GITHUB_TOKEN}}
-
-      - name: Cache 上传到 Release
-        uses: softprops/action-gh-release@master
-        with:
-          name: Cache
-          files: output2/*
-          tag_name: Cache
-          token: ${{secrets.GITHUB_TOKEN}}
-
-      # - name: Cache 上传到 Release
-      #   uses: svenstaro/upload-release-action@2.4.1
-      #   with:
-      #     file: output/*
-      #     tag: Cache
-      #     overwrite: true
-      #     asset_name: Cache
-      #     release_name: Cache
-      #     repo_token: ${{secrets.GITHUB_TOKEN}}
