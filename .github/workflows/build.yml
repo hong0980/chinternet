@@ -1,14 +1,7 @@
 name: ipk
 
 on:
-  repository_dispatch:
   workflow_dispatch:
-    inputs:
-      device:
-        description: 'select device to build'
-        default: 'r2s'
-        required: false
-
 jobs:
   build:
     name: Upload Release Asset
