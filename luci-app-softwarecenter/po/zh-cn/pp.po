@@ -187,89 +187,23 @@ msgstr "WebUI登录端口"
 msgid "Install"
 msgstr "安装"
 
-msgid "Restart aMule"
-msgstr "重启 aMule"
+msgid "Restart %s"
+msgstr "重启 %s"
 
-msgid "Stop aMule"
-msgstr "停止 aMule"
+msgid "Stop %s"
+msgstr "停止 %s"
 
-msgid "Run aMule"
-msgstr "运行 aMule"
+msgid "Run %s"
+msgstr "运行 %s"
 
-msgid "Delete aMule"
-msgstr "删除 aMule"
+msgid "Delete %s"
+msgstr "删除 %s"
 
-msgid "Restart Aria2"
-msgstr "重启 Aria2"
+msgid "Install %s"
+msgstr "安装 %s"
 
-msgid "Stop Aria2"
-msgstr "停止 Aria2"
-
-msgid "Run Aria2"
-msgstr "运行 Aria2"
-
-msgid "Delete Aria2"
-msgstr "删除 Aria2"
-
-msgid "Restart Deluge"
-msgstr "重启 Deluge"
-
-msgid "Stop Deluge"
-msgstr "停止 Deluge"
-
-msgid "Run Deluge"
-msgstr "运行 Deluge"
-
-msgid "Delete Deluge"
-msgstr "删除 Deluge"
-
-msgid "Restart qBittorrent"
-msgstr "重启 qBittorrent"
-
-msgid "Stop qBittorrent"
-msgstr "停止 qBittorrent"
-
-msgid "Run qBittorrent"
-msgstr "运行 qBittorrent"
-
-msgid "Delete qBittorrent"
-msgstr "删除 qBittorrent"
-
-msgid "Start on Boot"
-msgstr "开机自启动"
-
-msgid "Default Port: 1099"
-msgstr "默认端口：1099"
-
-msgid "Restart rTorrent"
-msgstr "重启 rTorrent"
-
-msgid "Stop rTorrent"
-msgstr "停止 rTorrent"
-
-msgid "Run rTorrent"
-msgstr "运行 rTorrent"
-
-msgid "Delete rTorrent"
-msgstr "删除 rTorrent"
-
-msgid "Start Installation"
-msgstr "开始安装"
-
-msgid "Restart Transmission"
-msgstr "重启 Transmission"
-
-msgid "Stop Transmission"
-msgstr "停止 Transmission"
-
-msgid "Run Transmission"
-msgstr "运行 Transmission"
-
-msgid "Delete Transmission"
-msgstr "删除 Transmission"
-
-msgid "Install 4.00"
-msgstr "安装 4.00"
+msgid "Install 4"
+msgstr "安装 4"
 
 msgid "Install 2.77plus"
 msgstr "安装 2.77plus"
