@@ -1,8 +1,25 @@
+msgid "Software Center"
+msgstr "软件中心"
+
+msgid "Running Status"
+msgstr "运行状态"
+
+msgid "Website List"
+msgstr "已部署的网站列表"
+
+msgid "Nginx Running Status"
+msgstr "Nginx服务器运行状态"
+
+msgid "MySQL Running Status"
+msgstr "MySQL数据库服务器运行状态"
+
+msgid "PHP8 Running Status"
+msgstr "PHP8解析器运行状态"
 
 msgid "Entware is a software package repository for embedded systems, providing over 2000 packages for various platforms.<br>It can automatically deploy Entware-opt/Nginx/MySQL/PHP (ONMP) and applications installation. Original project repository: <a href='https://github.com/jsp1256/openwrt-package' target='_blank'>Github</a>"
 msgstr "Entware是用于嵌入式系统的软件包仓库，为各种平台提供超过2000个软件包。<br>它可以自动部署Entware-opt/Nginx/MySQL/PHP (ONMP)以及应用程序的安装。原始项目仓库：<a href='https://github.com/jsp1256/openwrt-package' target='_blank'>Github</a>"
 
-msgid "Enable"
+msgid "Enabled"
 msgstr "启用"
 
 msgid "Disable"
@@ -61,9 +78,6 @@ msgstr "自动部署Nginx服务器和所需的PHP7运行环境<br><b style='colo
 
 msgid "Deploy MySQL database server (depends on Entware software repository)<br><b style='color:red'>Unchecking after installation will remove existing deployments</b>"
 msgstr "部署MySQL数据库服务器（依赖于Entware软件库）<br><b style='color:red'>安装后取消选择将删除现有的部署</b>"
-
-msgid "Enabled"
-msgstr "已启用"
 
 msgid "Leave empty to use default login user: root, password: 123456"
 msgstr "留空以使用默认登录用户：root，密码：123456"
@@ -150,19 +164,19 @@ msgid "WebUI Username"
 msgstr "WebUI用户名"
 
 msgid "Set the initial username for qBittorrent and Transmission"
-msgstr "为qBittorrent和Transmission设置初始用户名"
+msgstr "为 qBittorrent 和 Transmission 设置初始用户名"
 
 msgid "WebUI Password"
 msgstr "WebUI密码"
 
 msgid "Set the initial password for aMule, Aria2, Deluge, qBittorrent, and Transmission"
-msgstr "为aMule、Aria2、Deluge、qBittorrent和Transmission设置初始密码"
+msgstr "为aMule、Aria2、Deluge、qBittorrent 和 Transmission 设置初始密码"
 
 msgid "Delayed Startup"
 msgstr "延迟启动"
 
-msgid "Delay starting the following applications after boot, in seconds"
-msgstr "延迟在启动后开始以下应用程序，单位为秒"
+msgid "Delay in starting the above application in seconds"
+msgstr "延迟启动以上应用程序，单位为秒"
 
 msgid "Start on Boot"
 msgstr "开机启动"
@@ -170,62 +184,59 @@ msgstr "开机启动"
 msgid "WebUI Login Port"
 msgstr "WebUI登录端口"
 
-msgid "Restart aMule"
-msgstr "重启aMule"
-
-msgid "Stop aMule"
-msgstr "停止aMule"
-
-msgid "Run aMule"
-msgstr "运行aMule"
-
-msgid "Delete aMule"
-msgstr "删除aMule"
-
 msgid "Install"
 msgstr "安装"
 
+msgid "Restart aMule"
+msgstr "重启 aMule"
+
+msgid "Stop aMule"
+msgstr "停止 aMule"
+
+msgid "Run aMule"
+msgstr "运行 aMule"
+
+msgid "Delete aMule"
+msgstr "删除 aMule"
+
 msgid "Restart Aria2"
-msgstr "重启Aria2"
+msgstr "重启 Aria2"
 
 msgid "Stop Aria2"
-msgstr "停止Aria2"
+msgstr "停止 Aria2"
 
 msgid "Run Aria2"
-msgstr "运行Aria2"
+msgstr "运行 Aria2"
 
 msgid "Delete Aria2"
-msgstr "删除Aria2"
+msgstr "删除 Aria2"
 
 msgid "Restart Deluge"
-msgstr "重启Deluge"
+msgstr "重启 Deluge"
 
 msgid "Stop Deluge"
-msgstr "停止Deluge"
+msgstr "停止 Deluge"
 
 msgid "Run Deluge"
-msgstr "运行Deluge"
+msgstr "运行 Deluge"
 
 msgid "Delete Deluge"
-msgstr "删除Deluge"
+msgstr "删除 Deluge"
 
 msgid "Restart qBittorrent"
-msgstr "重启qBittorrent"
+msgstr "重启 qBittorrent"
 
 msgid "Stop qBittorrent"
-msgstr "停止qBittorrent"
+msgstr "停止 qBittorrent"
 
 msgid "Run qBittorrent"
-msgstr "运行qBittorrent"
+msgstr "运行 qBittorrent"
 
 msgid "Delete qBittorrent"
-msgstr "删除qBittorrent"
+msgstr "删除 qBittorrent"
 
 msgid "Start on Boot"
 msgstr "开机自启动"
-
-msgid "WebUI Login Port"
-msgstr "Web界面登录端口"
 
 msgid "Default Port: 1099"
 msgstr "默认端口：1099"
@@ -242,17 +253,8 @@ msgstr "运行 rTorrent"
 msgid "Delete rTorrent"
 msgstr "删除 rTorrent"
 
-msgid "Install"
-msgstr "安装"
-
 msgid "Start Installation"
 msgstr "开始安装"
-
-msgid "Start on Boot"
-msgstr "开机自启动"
-
-msgid "WebUI Login Port"
-msgstr "Web界面登录端口"
 
 msgid "Restart Transmission"
 msgstr "重启 Transmission"
@@ -281,17 +283,14 @@ msgstr "<br><br>运行状态：%s没有安装%s"
 msgid "<br><br>Running status: %s%s%s"
 msgstr "<br><br>运行状态：%s%s%s"
 
-msgid "Running"
-msgstr "运行中"
+msgid "&nbsp;&nbsp;&nbsp;%sOpen Web Interface%s%s')\"/>"
+msgstr "&nbsp;&nbsp;&nbsp;%s打开WebUI管理%s%s')\"/>"
 
-msgid "Not running"
-msgstr "没有运行"
+msgid "<b><font color='green'>Running"
+msgstr "<b><font color='green'>运行中"
 
-msgid "Running"
-msgstr "运行中"
-
-msgid "Running"
-msgstr "运行中"
+msgid "<b><font color='red'>NOT RUNNING"
+msgstr "<b><font color='red'>没有运行"
 
 msgid "Settings"
 msgstr "设置"
@@ -311,9 +310,6 @@ msgstr "Deluge 是一个免费好用的 BT 下载软件，使用 libtorrent 作�
 msgid "rTorrent is a console-based BT client for Linux. ruTorrent has been replaced with a stable plugin version by Novik."
 msgstr "rTorrent 是一个 Linux 下控制台的 BT 客户端。ruTorrent 替换为 Novik 的稳定插件版。"
 
-msgid "qBittorrent"
-msgstr "qBittorrent"
-
 msgid "qBittorrent is a cross-platform free BitTorrent client."
 msgstr "qBittorrent 是一个跨平台的自由 BitTorrent 客户端。"
 
@@ -325,9 +321,6 @@ msgstr "设置"
 
 msgid "All configuration files are symlinked in /opt/etc/config, making it easy to view and modify."
 msgstr "所有配置文件都通过符号链接放置在/opt/etc/config中，这样您可以轻松查看和修改。"
-
-msgid "aMule"
-msgstr "aMule"
 
 msgid "aMule is an open-source, free P2P file-sharing software similar to eMule. <br>Based on xMule and lMule. It can use the eDonkey network protocol and also supports the KAD network." 
 msgstr "aMule 是一个开源、免费的P2P文件共享软件，类似于eMule。<br>它基于xMule和lMule，可以使用eDonkey网络协议，并支持KAD网络。" 
