@@ -21,7 +21,7 @@ msgid "Delay on Boot"
 msgstr "延迟启动"
 
 msgid "In minutes"
-msgstr "分钟"
+msgstr "单位：分钟"
 
 msgid "%d minutes"
 msgstr "%d 分钟"
@@ -129,7 +129,7 @@ msgid "If the added disk is not partitioned, this tool can easily partition and 
 msgstr "如果添加的磁盘没有分区，这个工具可以轻松地对其进行分区并挂载。"
 
 msgid "Reload disks that have not been displayed after adding"
-msgstr "Reload disks that have not been displayed after adding"
+msgstr "添加后未显示的磁盘重新加载。"
 
 msgid "By default, only one partition is created and formatted with the EXT4 file system. If mounted, unmount it first.<br><b style=\"color:red\">Note: Before partitioning, make sure the selected disk does not contain important data, as the data cannot be recovered after partitioning!</b>"
 msgstr "默认情况下，只会创建一个分区并使用EXT4文件系统进行格式化。如果已经挂载，请先卸载它。<br><b style=\"color:red\">注意：在分区之前，请确保所选磁盘上不包含重要数据，因为在分区后无法恢复数据！</b>"
@@ -140,14 +140,209 @@ msgstr "%s（大小：%s）（已使用：%s/%s）"
 msgid "Login user for MySQL database server"
 msgstr "MySQL数据库服务器的登录用户。"
 
-msgid "Size"
-msgstr "大小"
+msgid "File Save Path"
+msgstr "文件保存路径"
 
-msgid "Size"
-msgstr "大小"
+msgid "Unified path for saving all downloaded files"
+msgstr "用于保存所有下载文件的统一路径"
 
-msgid "Size"
-msgstr "大小"
+msgid "WebUI Username"
+msgstr "WebUI用户名"
 
-msgid "Size"
-msgstr "大小"
+msgid "Set the initial username for qBittorrent and Transmission"
+msgstr "为qBittorrent和Transmission设置初始用户名"
+
+msgid "WebUI Password"
+msgstr "WebUI密码"
+
+msgid "Set the initial password for aMule, Aria2, Deluge, qBittorrent, and Transmission"
+msgstr "为aMule、Aria2、Deluge、qBittorrent和Transmission设置初始密码"
+
+msgid "Delayed Startup"
+msgstr "延迟启动"
+
+msgid "Delay starting the following applications after boot, in seconds"
+msgstr "延迟在启动后开始以下应用程序，单位为秒"
+
+msgid "Start on Boot"
+msgstr "开机启动"
+
+msgid "WebUI Login Port"
+msgstr "WebUI登录端口"
+
+msgid "Restart aMule"
+msgstr "重启aMule"
+
+msgid "Stop aMule"
+msgstr "停止aMule"
+
+msgid "Run aMule"
+msgstr "运行aMule"
+
+msgid "Delete aMule"
+msgstr "删除aMule"
+
+msgid "Install"
+msgstr "安装"
+
+msgid "Restart Aria2"
+msgstr "重启Aria2"
+
+msgid "Stop Aria2"
+msgstr "停止Aria2"
+
+msgid "Run Aria2"
+msgstr "运行Aria2"
+
+msgid "Delete Aria2"
+msgstr "删除Aria2"
+
+msgid "Restart Deluge"
+msgstr "重启Deluge"
+
+msgid "Stop Deluge"
+msgstr "停止Deluge"
+
+msgid "Run Deluge"
+msgstr "运行Deluge"
+
+msgid "Delete Deluge"
+msgstr "删除Deluge"
+
+msgid "Restart qBittorrent"
+msgstr "重启qBittorrent"
+
+msgid "Stop qBittorrent"
+msgstr "停止qBittorrent"
+
+msgid "Run qBittorrent"
+msgstr "运行qBittorrent"
+
+msgid "Delete qBittorrent"
+msgstr "删除qBittorrent"
+
+msgid "Start on Boot"
+msgstr "开机自启动"
+
+msgid "WebUI Login Port"
+msgstr "Web界面登录端口"
+
+msgid "Default Port: 1099"
+msgstr "默认端口：1099"
+
+msgid "Restart rTorrent"
+msgstr "重启 rTorrent"
+
+msgid "Stop rTorrent"
+msgstr "停止 rTorrent"
+
+msgid "Run rTorrent"
+msgstr "运行 rTorrent"
+
+msgid "Delete rTorrent"
+msgstr "删除 rTorrent"
+
+msgid "Install"
+msgstr "安装"
+
+msgid "Start Installation"
+msgstr "开始安装"
+
+msgid "Start on Boot"
+msgstr "开机自启动"
+
+msgid "WebUI Login Port"
+msgstr "Web界面登录端口"
+
+msgid "Restart Transmission"
+msgstr "重启 Transmission"
+
+msgid "Stop Transmission"
+msgstr "停止 Transmission"
+
+msgid "Run Transmission"
+msgstr "运行 Transmission"
+
+msgid "Delete Transmission"
+msgstr "删除 Transmission"
+
+msgid "Install 4.00"
+msgstr "安装 4.00"
+
+msgid "Install 2.77plus"
+msgstr "安装 2.77plus"
+
+msgid "Entware has not been deployed yet"
+msgstr "尚未部署 Entware"
+
+msgid "<br><br>Running status: %sis not installed%s"
+msgstr "<br><br>运行状态：%s没有安装%s"
+
+msgid "<br><br>Running status: %s%s%s"
+msgstr "<br><br>运行状态：%s%s%s"
+
+msgid "Running"
+msgstr "运行中"
+
+msgid "Not running"
+msgstr "没有运行"
+
+msgid "Running"
+msgstr "运行中"
+
+msgid "Running"
+msgstr "运行中"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "All configuration files are symlinked in /opt/etc/config, making it easy to view and modify."
+msgstr "所有配置文件都软链接在 /opt/etc/config 下，方便查看和修改"
+
+msgid "aMule is an open-source, free P2P file-sharing software similar to eMule. Based on xMule and lMule. It can use the eDonkey network protocol and also supports the KAD network."
+msgstr "aMule 是一个开源免费的 P2P 文件共享软件，类似于 eMule。基于 xMule 和 lMule。可应用 eDonkey 网络协议，也支持 KAD 网络。"
+
+msgid "Aria2 is an open-source, lightweight command-line download tool that supports multiple protocols like HTTP/HTTPS, FTP, SFTP, BitTorrent, and Metalink. It has been enhanced and extended by P3TERX."
+msgstr "Aria2 是一款开源、轻量级的多协议命令行下载工具。支持 HTTP/HTTPS、FTP、SFTP、BitTorrent 和 Metalink 协议。添加了 P3TERX 的增强和扩展功能。"
+
+msgid "Deluge is a free and easy-to-use BT download software that uses libtorrent as its backend. It has multiple user interfaces, low system resource usage, and a rich set of plugins for additional functionality."
+msgstr "Deluge 是一个免费好用的 BT 下载软件，使用 libtorrent 作为其后端。多种用户界面，占用系统资源少，有丰富的插件来实现核心以外的众多功能。"
+
+msgid "rTorrent is a console-based BT client for Linux. ruTorrent has been replaced with a stable plugin version by Novik."
+msgstr "rTorrent 是一个 Linux 下控制台的 BT 客户端。ruTorrent 替换为 Novik 的稳定插件版。"
+
+msgid "qBittorrent"
+msgstr "qBittorrent"
+
+msgid "qBittorrent is a cross-platform free BitTorrent client."
+msgstr "qBittorrent 是一个跨平台的自由 BitTorrent 客户端。"
+
+msgid "Transmission is a fast and lightweight BitTorrent client."
+msgstr "Transmission 是一个快速、精简的 BitTorrent 客户端。"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "All configuration files are symlinked in /opt/etc/config, making it easy to view and modify."
+msgstr "所有配置文件都通过符号链接放置在/opt/etc/config中，这样您可以轻松查看和修改。"
+
+msgid "aMule"
+msgstr "aMule"
+
+msgid "aMule is an open-source, free P2P file-sharing software similar to eMule. <br>Based on xMule and lMule. It can use the eDonkey network protocol and also supports the KAD network." 
+msgstr "aMule 是一个开源、免费的P2P文件共享软件，类似于eMule。<br>它基于xMule和lMule，可以使用eDonkey网络协议，并支持KAD网络。" 
+
+msgid "Aria2 is an open-source, lightweight command-line download tool that supports multiple protocols like HTTP/HTTPS, FTP, SFTP, BitTorrent, and Metalink. <br>It has been enhanced and extended by <a href='https://github.com/P3TERX/aria2.conf'target='_blank'>P3TERX</a>."
+msgstr "Aria2 是一个开源、轻量级的命令行下载工具，支持HTTP/HTTPS、FTP、SFTP、BitTorrent和Metalink等多种协议。<br>它由 <a href=\"https://github.com/P3TERX/aria2.conf\"target=\"_blank\">P3TERX</a> 进行了增强和扩展。"
+
+msgid "Deluge is a free and easy-to-use BT download software that uses libtorrent as its backend. <br>It has multiple user interfaces, low system resource usage, and a rich set of plugins for additional functionality."
+msgstr "Deluge 是一个免费且易于使用的BT下载软件，它使用libtorrent作为后端。<br>它具有多个用户界面、低系统资源使用率，并拥有丰富的插件集以提供额外功能。"
+
+msgid "rTorrent is a console-based BT client for Linux. <br>ruTorrent has been replaced with a stable plugin version by <a href='https://github.com/Novik/ruTorrent'target='_blank'>Novik</a>."
+msgstr "rTorrent 是一个基于命令行的Linux BT客户端。<br>ruTorrent 已由 <a href=\"https://github.com/Novik/ruTorrent\"target=\"_blank\">Novik</a> 替换为稳定的插件版本。"
+
+msgid "qBittorrent is a cross-platform free BitTorrent client."
+msgstr "qBittorrent 是一个跨平台的免费BitTorrent客户端。"
+
+msgid "Transmission is a fast and lightweight BitTorrent client."
+msgstr "Transmission 是一个快速且轻量级的BitTorrent客户端。"
