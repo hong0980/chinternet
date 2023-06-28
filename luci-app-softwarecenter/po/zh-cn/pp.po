@@ -67,8 +67,8 @@ msgstr "在运行日志中查看安装进度<br>如果只安装应用软件，�
 msgid "Deploy Nginx/PHP"
 msgstr "部署Nginx/PHP"
 
-msgid "Automatically deploy Nginx server and the required PHP7 runtime environment"
-msgstr "自动部署Nginx服务器和所需的PHP7运行环境"
+msgid "Automatically deploy Nginx server and the required PHP8 runtime environment"
+msgstr "自动部署Nginx服务器和所需的PHP8运行环境"
 
 msgid "Deploy MySQL"
 msgstr "部署MySQL"
@@ -76,8 +76,8 @@ msgstr "部署MySQL"
 msgid "Automatically deploy Nginx server and the required PHP7 runtime environment<br><b style='color:red'>Unchecking after installation will remove existing deployments</b>"
 msgstr "自动部署Nginx服务器和所需的PHP7运行环境<br><b style='color:red'>安装后取消选择将删除现有的部署</b>"
 
-msgid "Deploy MySQL database server (depends on Entware software repository)<br><b style='color:red'>Unchecking after installation will remove existing deployments</b>"
-msgstr "部署MySQL数据库服务器（依赖于Entware软件库）<br><b style='color:red'>安装后取消选择将删除现有的部署</b>"
+msgid "Deploy MySQL database server<br><b style='color:red'>Unchecking after installation will remove existing deployments</b>"
+msgstr "部署MySQL数据库服务器<br><b style='color:red'>安装后取消选择将删除现有的部署</b>"
 
 msgid "Leave empty to use default login user: root, password: 123456"
 msgstr "留空以使用默认登录用户：root，密码：123456"
@@ -136,8 +136,8 @@ msgstr "如果物理内存不足或者php-fpm和mysqld无法启动，可以启�
 msgid "Swap partition mount point. If not selected, it is installed on the same disk as opt.<br>Mounted list:</ol>"
 msgstr "交换分区的挂载点。如果未选择，则会安装在与opt相同的磁盘上。<br>已挂载的列表：</ol>"
 
-msgid "Start Nginx/PHP7 after deployment (depends on Entware software repository)"
-msgstr "在部署后启动Nginx/PHP7（依赖于Entware软件库）。"
+msgid "Start Nginx/PHP8 after deployment"
+msgstr "在部署后启动Nginx/PHP8。"
 
 msgid "If the added disk is not partitioned, this tool can easily partition and mount it"
 msgstr "如果添加的磁盘没有分区，这个工具可以轻松地对其进行分区并挂载。"
