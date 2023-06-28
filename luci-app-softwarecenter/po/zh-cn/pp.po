@@ -112,3 +112,42 @@ msgstr "大小"
 
 msgid "Swap space size (in MB), default is 512M"
 msgstr "交换空间大小（以MB为单位），默认为512M"
+
+msgid "Login password for MySQL database server"
+msgstr "MySQL数据库服务器的登录密码。"
+
+msgid "If there is insufficient physical memory or php-fpm and mysqld fail to start, enable swap<br>Idle data can be automatically moved to the swap area to increase available RAM"
+msgstr "如果物理内存不足或者php-fpm和mysqld无法启动，可以启用交换空间。<br>空闲数据可以自动移动到交换区域以增加可用的RAM。"
+
+msgid "Swap partition mount point. If not selected, it is installed on the same disk as opt.<br>Mounted list:</ol>"
+msgstr "交换分区的挂载点。如果未选择，则会安装在与opt相同的磁盘上。<br>已挂载的列表：</ol>"
+
+msgid "Start Nginx/PHP7 after deployment (depends on Entware software repository)"
+msgstr "在部署后启动Nginx/PHP7（依赖于Entware软件库）。"
+
+msgid "If the added disk is not partitioned, this tool can easily partition and mount it"
+msgstr "如果添加的磁盘没有分区，这个工具可以轻松地对其进行分区并挂载。"
+
+msgid "Reload disks that have not been displayed after adding"
+msgstr "Reload disks that have not been displayed after adding"
+
+msgid "By default, only one partition is created and formatted with the EXT4 file system. If mounted, unmount it first.<br><b style=\"color:red\">Note: Before partitioning, make sure the selected disk does not contain important data, as the data cannot be recovered after partitioning!</b>"
+msgstr "默认情况下，只会创建一个分区并使用EXT4文件系统进行格式化。如果已经挂载，请先卸载它。<br><b style=\"color:red\">注意：在分区之前，请确保所选磁盘上不包含重要数据，因为在分区后无法恢复数据！</b>"
+
+msgid "%s (Size: %s) (Used: %s/%s)"
+msgstr "%s（大小：%s）（已使用：%s/%s）"
+
+msgid "Login user for MySQL database server"
+msgstr "MySQL数据库服务器的登录用户。"
+
+msgid "Size"
+msgstr "大小"
+
+msgid "Size"
+msgstr "大小"
+
+msgid "Size"
+msgstr "大小"
+
+msgid "Size"
+msgstr "大小"
