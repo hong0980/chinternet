@@ -73,8 +73,8 @@ msgstr "自动部署Nginx服务器和所需的PHP8运行环境"
 msgid "Deploy MySQL"
 msgstr "部署MySQL"
 
-msgid "Automatically deploy Nginx server and the required PHP7 runtime environment<br><b style='color:red'>Unchecking after installation will remove existing deployments</b>"
-msgstr "自动部署Nginx服务器和所需的PHP7运行环境<br><b style='color:red'>安装后取消选择将删除现有的部署</b>"
+msgid "Automatically deploy Nginx server and the required PHP8 runtime environment<br><b style='color:red'>Unchecking after installation will remove existing deployments</b>"
+msgstr "自动部署Nginx服务器和所需的PHP8运行环境<br><b style='color:red'>安装后取消选择将删除现有的部署</b>"
 
 msgid "Deploy MySQL database server<br><b style='color:red'>Unchecking after installation will remove existing deployments</b>"
 msgstr "部署MySQL数据库服务器<br><b style='color:red'>安装后取消选择将删除现有的部署</b>"
@@ -220,14 +220,26 @@ msgstr "<br><br>运行状态：%s%s%s"
 msgid "&nbsp;&nbsp;&nbsp;%sOpen Web Interface%s%s')\"/>"
 msgstr "&nbsp;&nbsp;&nbsp;%s打开WebUI管理%s%s')\"/>"
 
-msgid "<b><font color='green'>Running"
-msgstr "<b><font color='green'>运行中"
+msgid "Running"
+msgstr "运行中"
 
-msgid "<b><font color='red'>NOT RUNNING"
-msgstr "<b><font color='red'>没有运行"
+msgid "Not Running"
+msgstr "没有运行"
 
 msgid "Settings"
 msgstr "设置"
+
+msgid "Open AriNG Remote WebUI"
+msgstr "打开AriNG远程WebUI"
+
+msgid "Open WebUI-Aria2 Remote WebUI"
+msgstr "打开WebUI-Aria2远程WebUI"
+
+msgid "Open AriNG Local WebUI"
+msgstr "打开AriNG本地WebUI"
+
+msgid "Open WebUI-Aria2 Local WebUI"
+msgstr "打开WebUI-Aria2本地WebUI"
 
 msgid "All configuration files are symlinked in /opt/etc/config, making it easy to view and modify."
 msgstr "所有配置文件都软链接在 /opt/etc/config 下，方便查看和修改"
