@@ -1,6 +1,9 @@
 msgid "Software Center"
 msgstr "软件中心"
 
+msgid "<font color='red' size='2'>Entware has not been deployed yet</font>"
+msgstr "<font color='red' size='2'>Entware尚未部署</font>"
+
 msgid "Running Status"
 msgstr "运行状态"
 
@@ -269,10 +272,10 @@ msgid "All configuration files are symlinked in /opt/etc/config, making it easy 
 msgstr "所有配置文件都通过符号链接放置在/opt/etc/config中，这样您可以轻松查看和修改。"
 
 msgid "aMule is an open-source, free P2P file-sharing software similar to eMule. <br>Based on xMule and lMule. It can use the eDonkey network protocol and also supports the KAD network." 
-msgstr "aMule 是一个开源、免费的P2P文件共享软件，类似于eMule。<br>它基于xMule和lMule，可以使用eDonkey网络协议，并支持KAD网络。" 
+msgstr "aMule 是一个开源、免费的P2P文件共享软件，类似于eMule。<br>它基于 xMule 和 lMule，可以使用 eDonkey 网络协议，并支持 KAD 网络。" 
 
 msgid "Aria2 is an open-source, lightweight command-line download tool that supports multiple protocols like HTTP/HTTPS, FTP, SFTP, BitTorrent, and Metalink. <br>It has been enhanced and extended by <a href='https://github.com/P3TERX/aria2.conf'target='_blank'>P3TERX</a>."
-msgstr "Aria2 是一个开源、轻量级的命令行下载工具，支持HTTP/HTTPS、FTP、SFTP、BitTorrent和Metalink等多种协议。<br>它由 <a href=\"https://github.com/P3TERX/aria2.conf\"target=\"_blank\">P3TERX</a> 进行了增强和扩展。"
+msgstr "Aria2 是一个开源、轻量级的命令行下载工具，支持HTTP/HTTPS、FTP、SFTP、BitTorrent 和 Metalink等多种协议。<br>它由 <a href=\"https://github.com/P3TERX/aria2.conf\"target=\"_blank\">P3TERX</a> 进行了增强和扩展。"
 
 msgid "Deluge is a free and easy-to-use BT download software that uses libtorrent as its backend. <br>It has multiple user interfaces, low system resource usage, and a rich set of plugins for additional functionality."
 msgstr "Deluge 是一个免费且易于使用的BT下载软件，它使用libtorrent作为后端。<br>它具有多个用户界面、低系统资源使用率，并拥有丰富的插件集以提供额外功能。"
@@ -285,3 +288,27 @@ msgstr "qBittorrent 是一个跨平台的免费BitTorrent客户端。"
 
 msgid "Transmission is a fast and lightweight BitTorrent client."
 msgstr "Transmission 是一个快速且轻量级的BitTorrent客户端。"
+
+msgid "Website Management"
+msgstr "网站管理"
+
+msgid "Automatically deploy PHP probe, phpMyAdmin, KodCloud, Typecho, and more."
+msgstr "可以自动部署PHP探针，phpMyAdmin，可道云，Typecho等。"
+
+msgid "Website Deployment"
+msgstr "网站部署"
+
+msgid "Automatically and quickly deploy websites. Automatically finds an available port above 2100, custom ports recommended between 1024 and 5000."
+msgstr "自动快速的部署网站。自动获取端口是在 2100 以上的空闲端口，自定义建议1024--5000之间。"
+
+msgid "Deploy / Remove"
+msgstr "部署 / 删除"
+
+msgid "Access Port, leave blank for automatic assignment."
+msgstr "访问端口,留空自动获取。"
+
+msgid "Remarks"
+msgstr "备注"
+
+msgid "<font color='red' size='2'>Please make sure Nginx/PHP/MySQL are running before deploying websites.</font>"
+msgstr "<font color='red' size='2'>在正常运行Nginx/PHP/MySQL后才能部署网站。</font>"
