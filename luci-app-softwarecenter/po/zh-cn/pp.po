@@ -1,314 +1,152 @@
-msgid "Software Center"
-msgstr "软件中心"
+msgid ""
+msgstr ""
 
-msgid "<font color='red' size='2'>Entware has not been deployed yet</font>"
-msgstr "<font color='red' size='2'>Entware尚未部署</font>"
+msgid "Note display"
+msgstr "Note 展示"
 
-msgid "Running Status"
-msgstr "运行状态"
+msgid "Note Settings"
+msgstr "Note 设置"
 
-msgid "Website List"
-msgstr "已部署的网站列表"
+msgid "CodeMirror Support"
+msgstr "CodeMirror 支持"
 
-msgid "Nginx Running Status"
-msgstr "Nginx服务器运行状态"
+msgid "CodeMirror supports syntax highlighting, line number display, automatic indentation, etc.<br><b>"
+msgstr "CodeMirror 支持语法高亮，行号显示，自动缩进等等<br><b>"
 
-msgid "MySQL Running Status"
-msgstr "MySQL数据库服务器运行状态"
+msgid "BootCDN Resources"
+msgstr "BootCDN 资源"
 
-msgid "PHP8 Running Status"
-msgstr "PHP8解析器运行状态"
+msgid "User manual in Chinese"
+msgstr "中文用户手册"
 
-msgid "Entware is a software package repository for embedded systems, providing over 2000 packages for various platforms.<br>It can automatically deploy Entware-opt/Nginx/MySQL/PHP (ONMP) and applications installation. Original project repository: <a href='https://github.com/jsp1256/openwrt-package' target='_blank'>Github</a>"
-msgstr "Entware是用于嵌入式系统的软件包仓库，为各种平台提供超过2000个软件包。<br>它可以自动部署Entware-opt/Nginx/MySQL/PHP (ONMP)以及应用程序的安装。原始项目仓库：<a href='https://github.com/jsp1256/openwrt-package' target='_blank'>Github</a>"
+msgid "Theme Demo"
+msgstr "主题预览"
 
-msgid "Enabled"
-msgstr "启用"
+msgid "Save Path"
+msgstr "保存路径"
 
-msgid "Disable"
-msgstr "禁用"
+msgid "Number of Texts"
+msgstr "文本数量"
 
-msgid "Settings"
-msgstr "设置"
+msgid "Please enter a number between 1 and 20."
+msgstr "请输入1到20之间的数字。"
 
-msgid "ONMP Deployment"
-msgstr "ONMP部署"
+msgid "Text Type"
+msgstr "文本类形"
 
-msgid "Deploy ONMP environment"
-msgstr "部署ONMP环境"
+msgid "Enable CodeMirror Support"
+msgstr "启用 CodeMirror 支持"
 
-msgid "Delay on Boot"
-msgstr "延迟启动"
+msgid "CodeMirror Support"
+msgstr "CodeMirror 支持"
 
-msgid "In minutes"
-msgstr "单位：分钟"
+msgid "Design"
+msgstr "主题"
 
-msgid "%d minutes"
-msgstr "%d 分钟"
+msgid "Font Size"
+msgstr "字体大小"
 
-msgid "CPU Architecture"
-msgstr "CPU架构"
+msgid "Line Spacing"
+msgstr "文本行距"
 
-msgid "Current Architecture: %s"
-msgstr "当前架构：%s"
+msgid "Display Height"
+msgstr "显示高度"
 
-msgid "Installation Path"
-msgstr "安装路径"
+msgid "Display Width"
+msgstr "显示宽度"
 
-msgid "%s/%s (Size: %s) (Used: %s/%s)"
-msgstr "%s/%s（大小：%s）（已使用：%s/%s）"
+msgid "Read-Only Mode"
+msgstr "只读模式"
 
-msgid "Deploy ONMP"
-msgstr "部署ONMP"
+msgid "Note %s"
+msgstr "笔记 %s"
 
-msgid "View installation progress in the run log"
-msgstr "在运行日志中查看安装进度"
+msgid "Note %s Settings"
+msgstr "笔记 %s 设置"
 
-msgid "View installation progress in the run log<br>If only installing application software, Nginx / MySQL deployment is not necessary."
-msgstr "在运行日志中查看安装进度<br>如果只安装应用软件，则不需要安装Nginx/MySQL部署。"
+msgid "Type"
+msgstr "类形"
 
-msgid "Deploy Nginx/PHP"
-msgstr "部署Nginx/PHP"
+msgid "Read-only"
+msgstr "只读"
 
-msgid "Automatically deploy Nginx server and the required PHP8 runtime environment"
-msgstr "自动部署Nginx服务器和所需的PHP8运行环境"
+msgid "Run Note %s"
+msgstr "运行笔记 %s"
 
-msgid "Deploy MySQL"
-msgstr "部署MySQL"
+msgid "Reset Notes %s"
+msgstr "重置笔记  %s"
 
-msgid "Automatically deploy Nginx server and the required PHP8 runtime environment<br><b style='color:red'>Unchecking after installation will remove existing deployments</b>"
-msgstr "自动部署Nginx服务器和所需的PHP8运行环境<br><b style='color:red'>安装后取消选择将删除现有的部署</b>"
+msgid "Execution of command '%s %s' failed!"
+msgstr "执行命令 '%s %s' 失败！"
 
-msgid "Deploy MySQL database server<br><b style='color:red'>Unchecking after installation will remove existing deployments</b>"
-msgstr "部署MySQL数据库服务器<br><b style='color:red'>安装后取消选择将删除现有的部署</b>"
+msgid "The current system cannot find the '%s' command you entered!"
+msgstr "当前系统找不到你输入的 '%s' 命令！"
 
-msgid "Leave empty to use default login user: root, password: 123456"
-msgstr "留空以使用默认登录用户：root，密码：123456"
+msgid "Enter command to run:"
+msgstr "输入运行命令："
 
-msgid "User"
-msgstr "用户"
+msgid "Enter or select the running command of the script on the current page, and leave blank to set the default command."
+msgstr "输入或选择当前页面脚本的运行命令，留空是设置的默认命令。"
 
-msgid "Password"
-msgstr "密码"
+msgid "Enter shell command:"
+msgstr "输入 shell 命令："
 
-msgid "Disk Partition"
-msgstr "磁盘分区"
+msgid "Enter a shell command that can be run"
+msgstr "输入可以运行的 shell 命令"
 
-msgid "Available Disks"
-msgstr "可用磁盘"
+msgid "Execute Command"
+msgstr "执行命令"
 
-msgid "Scan Disks"
-msgstr "扫描磁盘"
+msgid "The request processing failed with an error code:"
+msgstr "请求处理失败，错误码为："
 
-msgid "Start Scan"
-msgstr "开始扫描"
+msgid "Dismiss"
+msgstr "关闭"
 
-msgid "Disk Partition"
-msgstr "磁盘分区"
+msgid "Run Demo"
+msgstr "运行展示"
 
-msgid "By default, only one partition is created and formatted with the EXT4 file system. If mounted, unmount it first."
-msgstr "默认情况下，只创建一个分区并使用EXT4文件系统格式化。如果已挂载，请先卸载。"
+msgid "No input for the command line yet. Don't click 'Execute Command'!"
+msgstr "还没有命令行的输入不要点击 '执行命令' ！"
 
-msgid "Start Partition"
-msgstr "开始分区"
+msgid "The current system cannot find the command '%s' you entered!"
+msgstr "当前系统找不到你输入的 '%s' 命令！"
 
-msgid "Swap Partition Settings"
-msgstr "交换分区设置"
+msgid "Executing '%s %s' did not return data!"
+msgstr "执行 '%s %s' 没有返回数据！"
 
-msgid "If there is insufficient physical memory or php-fpm and mysqld fail to start, enable swap"
-msgstr "如果物理内存不足或php-fpm和mysqld无法启动，请启用交换分区"
+msgid "Failed to execute <div style='color: #f92672;'>%s %s</div><div style='text-align: left;'>Exit code: %d<br>Error message: <div style='color: #e6db74;'>%s</div>"
+msgstr "无法执行 <div style='color: #f92672;'>%s %s</div><div style='text-align: left;'>退出代码：%d<br>错误信息：<div style='color: #e6db74;'>%s</div>"
 
-msgid "Installation Path"
-msgstr "安装路径"
+msgid "Select request type"
+msgstr "选择请求类型"
 
-msgid "Swap partition mount point. If not selected, it is installed on the same disk as opt."
-msgstr "交换分区挂载点。如果未选择，则安装在与opt相同的磁盘上。"
+msgid "something went wrong"
+msgstr "出现错误了"
 
-msgid "Size"
-msgstr "大小"
+msgid "Bad Request: The request was invalid or cannot be served."
+msgstr "错误请求：请求无效或无法处理。"
 
-msgid "Swap space size (in MB), default is 512M"
-msgstr "交换空间大小（以MB为单位），默认为512M"
+msgid "Unauthorized: The request requires authentication."
+msgstr "未授权：请求需要身份验证。"
 
-msgid "Login password for MySQL database server"
-msgstr "MySQL数据库服务器的登录密码。"
+msgid "Forbidden: The server refuses to authorize the request."
+msgstr "禁止：服务器拒绝授权请求。"
 
-msgid "If there is insufficient physical memory or php-fpm and mysqld fail to start, enable swap<br>Idle data can be automatically moved to the swap area to increase available RAM"
-msgstr "如果物理内存不足或者php-fpm和mysqld无法启动，可以启用交换空间。<br>空闲数据可以自动移动到交换区域以增加可用的RAM。"
+msgid "Not Found: The requested resource could not be found."
+msgstr "未找到：找不到请求的资源。"
 
-msgid "Swap partition mount point. If not selected, it is installed on the same disk as opt.<br>Mounted list:</ol>"
-msgstr "交换分区的挂载点。如果未选择，则会安装在与opt相同的磁盘上。<br>已挂载的列表：</ol>"
+msgid "Internal Server Error: The server failed to fulfill the request."
+msgstr "内部服务器错误：服务器无法满足请求。"
 
-msgid "Start Nginx/PHP8 after deployment"
-msgstr "在部署后启动Nginx/PHP8。"
+msgid "Service Unavailable: The server is temporarily unable to handle the request."
+msgstr "服务不可用：服务器暂时无法处理请求。"
 
-msgid "If the added disk is not partitioned, this tool can easily partition and mount it"
-msgstr "如果添加的磁盘没有分区，这个工具可以轻松地对其进行分区并挂载。"
+msgid "An unexpected error occurred. Error code: %s"
+msgstr "发生意外错误。错误代码：%s"
 
-msgid "Reload disks that have not been displayed after adding"
-msgstr "添加后未显示的磁盘重新加载。"
+msgid "maximum authority"
+msgstr "权限最大"
 
-msgid "By default, only one partition is created and formatted with the EXT4 file system. If mounted, unmount it first.<br><b style=\"color:red\">Note: Before partitioning, make sure the selected disk does not contain important data, as the data cannot be recovered after partitioning!</b>"
-msgstr "默认情况下，只会创建一个分区并使用EXT4文件系统进行格式化。如果已经挂载，请先卸载它。<br><b style=\"color:red\">注意：在分区之前，请确保所选磁盘上不包含重要数据，因为在分区后无法恢复数据！</b>"
-
-msgid "%s (Size: %s) (Used: %s/%s)"
-msgstr "%s（大小：%s）（已使用：%s/%s）"
-
-msgid "Login user for MySQL database server"
-msgstr "MySQL数据库服务器的登录用户。"
-
-msgid "File Save Path"
-msgstr "文件保存路径"
-
-msgid "Unified path for saving all downloaded files"
-msgstr "用于保存所有下载文件的统一路径"
-
-msgid "WebUI Username"
-msgstr "WebUI用户名"
-
-msgid "Set the initial username for qBittorrent and Transmission"
-msgstr "为 qBittorrent 和 Transmission 设置初始用户名"
-
-msgid "WebUI Password"
-msgstr "WebUI密码"
-
-msgid "Set the initial password for aMule, Aria2, Deluge, qBittorrent, and Transmission"
-msgstr "为aMule、Aria2、Deluge、qBittorrent 和 Transmission 设置初始密码"
-
-msgid "Delayed Startup"
-msgstr "延迟启动"
-
-msgid "Delay in starting the above application in seconds"
-msgstr "延迟启动以上应用程序，单位为秒"
-
-msgid "Start on Boot"
-msgstr "开机启动"
-
-msgid "WebUI Login Port"
-msgstr "WebUI登录端口"
-
-msgid "Install"
-msgstr "安装"
-
-msgid "Restart %s"
-msgstr "重启 %s"
-
-msgid "Stop %s"
-msgstr "停止 %s"
-
-msgid "Run %s"
-msgstr "运行 %s"
-
-msgid "Delete %s"
-msgstr "删除 %s"
-
-msgid "Install %s"
-msgstr "安装 %s"
-
-msgid "Install 4"
-msgstr "安装 4"
-
-msgid "Install 2.77plus"
-msgstr "安装 2.77plus"
-
-msgid "Entware has not been deployed yet"
-msgstr "尚未部署 Entware"
-
-msgid "<br><br>Running status: %sis not installed%s"
-msgstr "<br><br>运行状态：%s没有安装%s"
-
-msgid "<br><br>Running status: %s%s%s"
-msgstr "<br><br>运行状态：%s%s%s"
-
-msgid "&nbsp;&nbsp;&nbsp;%sOpen Web Interface%s%s')\"/>"
-msgstr "&nbsp;&nbsp;&nbsp;%s打开WebUI管理%s%s')\"/>"
-
-msgid "Running"
-msgstr "运行中"
-
-msgid "Not Running"
-msgstr "没有运行"
-
-msgid "Settings"
-msgstr "设置"
-
-msgid "Open AriNG Remote WebUI"
-msgstr "打开AriNG远程WebUI"
-
-msgid "Open WebUI-Aria2 Remote WebUI"
-msgstr "打开WebUI-Aria2远程WebUI"
-
-msgid "Open AriNG Local WebUI"
-msgstr "打开AriNG本地WebUI"
-
-msgid "Open WebUI-Aria2 Local WebUI"
-msgstr "打开WebUI-Aria2本地WebUI"
-
-msgid "All configuration files are symlinked in /opt/etc/config, making it easy to view and modify."
-msgstr "所有配置文件都软链接在 /opt/etc/config 下，方便查看和修改"
-
-msgid "aMule is an open-source, free P2P file-sharing software similar to eMule. Based on xMule and lMule. It can use the eDonkey network protocol and also supports the KAD network."
-msgstr "aMule 是一个开源免费的 P2P 文件共享软件，类似于 eMule。基于 xMule 和 lMule。可应用 eDonkey 网络协议，也支持 KAD 网络。"
-
-msgid "Aria2 is an open-source, lightweight command-line download tool that supports multiple protocols like HTTP/HTTPS, FTP, SFTP, BitTorrent, and Metalink. It has been enhanced and extended by P3TERX."
-msgstr "Aria2 是一款开源、轻量级的多协议命令行下载工具。支持 HTTP/HTTPS、FTP、SFTP、BitTorrent 和 Metalink 协议。添加了 P3TERX 的增强和扩展功能。"
-
-msgid "Deluge is a free and easy-to-use BT download software that uses libtorrent as its backend. It has multiple user interfaces, low system resource usage, and a rich set of plugins for additional functionality."
-msgstr "Deluge 是一个免费好用的 BT 下载软件，使用 libtorrent 作为其后端。多种用户界面，占用系统资源少，有丰富的插件来实现核心以外的众多功能。"
-
-msgid "rTorrent is a console-based BT client for Linux. ruTorrent has been replaced with a stable plugin version by Novik."
-msgstr "rTorrent 是一个 Linux 下控制台的 BT 客户端。ruTorrent 替换为 Novik 的稳定插件版。"
-
-msgid "qBittorrent is a cross-platform free BitTorrent client."
-msgstr "qBittorrent 是一个跨平台的自由 BitTorrent 客户端。"
-
-msgid "Transmission is a fast and lightweight BitTorrent client."
-msgstr "Transmission 是一个快速、精简的 BitTorrent 客户端。"
-
-msgid "Settings"
-msgstr "设置"
-
-msgid "All configuration files are symlinked in /opt/etc/config, making it easy to view and modify."
-msgstr "所有配置文件都通过符号链接放置在/opt/etc/config中，这样您可以轻松查看和修改。"
-
-msgid "aMule is an open-source, free P2P file-sharing software similar to eMule. <br>Based on xMule and lMule. It can use the eDonkey network protocol and also supports the KAD network." 
-msgstr "aMule 是一个开源、免费的P2P文件共享软件，类似于eMule。<br>它基于 xMule 和 lMule，可以使用 eDonkey 网络协议，并支持 KAD 网络。" 
-
-msgid "Aria2 is an open-source, lightweight command-line download tool that supports multiple protocols like HTTP/HTTPS, FTP, SFTP, BitTorrent, and Metalink. <br>It has been enhanced and extended by <a href='https://github.com/P3TERX/aria2.conf'target='_blank'>P3TERX</a>."
-msgstr "Aria2 是一个开源、轻量级的命令行下载工具，支持HTTP/HTTPS、FTP、SFTP、BitTorrent 和 Metalink等多种协议。<br>它由 <a href=\"https://github.com/P3TERX/aria2.conf\"target=\"_blank\">P3TERX</a> 进行了增强和扩展。"
-
-msgid "Deluge is a free and easy-to-use BT download software that uses libtorrent as its backend. <br>It has multiple user interfaces, low system resource usage, and a rich set of plugins for additional functionality."
-msgstr "Deluge 是一个免费且易于使用的BT下载软件，它使用libtorrent作为后端。<br>它具有多个用户界面、低系统资源使用率，并拥有丰富的插件集以提供额外功能。"
-
-msgid "rTorrent is a console-based BT client for Linux. <br>ruTorrent has been replaced with a stable plugin version by <a href='https://github.com/Novik/ruTorrent'target='_blank'>Novik</a>."
-msgstr "rTorrent 是一个基于命令行的Linux BT客户端。<br>ruTorrent 已由 <a href=\"https://github.com/Novik/ruTorrent\"target=\"_blank\">Novik</a> 替换为稳定的插件版本。"
-
-msgid "qBittorrent is a cross-platform free BitTorrent client."
-msgstr "qBittorrent 是一个跨平台的免费BitTorrent客户端。"
-
-msgid "Transmission is a fast and lightweight BitTorrent client."
-msgstr "Transmission 是一个快速且轻量级的BitTorrent客户端。"
-
-msgid "Website Management"
-msgstr "网站管理"
-
-msgid "Automatically deploy PHP probe, phpMyAdmin, KodCloud, Typecho, and more."
-msgstr "可以自动部署PHP探针，phpMyAdmin，可道云，Typecho等。"
-
-msgid "Website Deployment"
-msgstr "网站部署"
-
-msgid "Automatically and quickly deploy websites. Automatically finds an available port above 2100, custom ports recommended between 1024 and 5000."
-msgstr "自动快速的部署网站。自动获取端口是在 2100 以上的空闲端口，自定义建议1024--5000之间。"
-
-msgid "Deploy / Remove"
-msgstr "部署 / 删除"
-
-msgid "Access Port, leave blank for automatic assignment."
-msgstr "访问端口,留空自动获取。"
-
-msgid "Remarks"
-msgstr "备注"
-
-msgid "<font color='red' size='2'>Please make sure Nginx/PHP/MySQL are running before deploying websites.</font>"
-msgstr "<font color='red' size='2'>在正常运行Nginx/PHP/MySQL后才能部署网站。</font>"
+msgid ""
+msgstr ""
