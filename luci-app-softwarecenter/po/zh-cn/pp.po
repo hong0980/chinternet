@@ -1,152 +1,83 @@
-msgid ""
-msgstr ""
+msgid "File management"
+msgstr "文件管理"
 
-msgid "Note display"
-msgstr "Note 展示"
+msgid "Current directory"
+msgstr "当前目录"
 
-msgid "Note Settings"
-msgstr "Note 设置"
+msgid "File List"
+msgstr "文件列表"
 
-msgid "CodeMirror Support"
-msgstr "CodeMirror 支持"
+msgid "start"
+msgstr "开始"
 
-msgid "CodeMirror supports syntax highlighting, line number display, automatic indentation, etc.<br><b>"
-msgstr "CodeMirror 支持语法高亮，行号显示，自动缩进等等<br><b>"
+msgid "Upload to current directory"
+msgstr "上传到当前目录"
 
-msgid "BootCDN Resources"
-msgstr "BootCDN 资源"
+msgid "confirm deletion"
+msgstr "确认删除"
 
-msgid "User manual in Chinese"
-msgstr "中文用户手册"
+msgid "Enter new name"
+msgstr "输入新的名称"
 
-msgid "Theme Demo"
-msgstr "主题预览"
+msgid "Back to previous"
+msgstr "返回上一级"
 
-msgid "Save Path"
-msgstr "保存路径"
+msgid "Rename"
+msgstr "重命名"
 
-msgid "Number of Texts"
-msgstr "文本数量"
+msgid "Delete"
+msgstr "删除"
 
-msgid "Please enter a number between 1 and 20."
-msgstr "请输入1到20之间的数字。"
+msgid "successfully deleted!"
+msgstr "删除成功！"
 
-msgid "Text Type"
-msgstr "文本类形"
+msgid "Renaming successful!"
+msgstr "重命名成功！"
 
-msgid "Enable CodeMirror Support"
-msgstr "启用 CodeMirror 支持"
+msgid "File has been uploaded to"
+msgstr "文件已上传到"
 
-msgid "CodeMirror Support"
-msgstr "CodeMirror 支持"
+msgid "upload failed"
+msgstr "上传失败"
 
-msgid "Design"
-msgstr "主题"
+msgid "name"
+msgstr "名称"
 
-msgid "Font Size"
-msgstr "字体大小"
+msgid "owner"
+msgstr "所有者"
 
-msgid "Line Spacing"
-msgstr "文本行距"
+msgid "size"
+msgstr "大小"
 
-msgid "Display Height"
-msgstr "显示高度"
+msgid "Change the time"
+msgstr "修改时间"
 
-msgid "Display Width"
-msgstr "显示宽度"
+msgid "pattern string"
+msgstr "模式字符串"
 
-msgid "Read-Only Mode"
-msgstr "只读模式"
+msgid "File operations"
+msgstr "文件操作"
 
-msgid "Note %s"
-msgstr "笔记 %s"
+msgid "Renaming failed"
+msgstr "重命名失败"
 
-msgid "Note %s Settings"
-msgstr "笔记 %s 设置"
+msgid "deleted failed"
+msgstr "删除失败"
 
-msgid "Type"
-msgstr "类形"
+msgid "Permissions modified successfully"
+msgstr "权限修改成功"
 
-msgid "Read-only"
-msgstr "只读"
+msgid "Permission modification failed"
+msgstr "权限修改失败"
 
-msgid "Run Note %s"
-msgstr "运行笔记 %s"
+msgid "Please enter new permissions for ${filename}"
+msgstr "请输入 ${filename} 新的权限"
 
-msgid "Reset Notes %s"
-msgstr "重置笔记  %s"
+msgid "Modify permissions"
+msgstr "修改权限"
 
-msgid "Execution of command '%s %s' failed!"
-msgstr "执行命令 '%s %s' 失败！"
+msgid "owner"
+msgstr "所有者"
 
-msgid "The current system cannot find the '%s' command you entered!"
-msgstr "当前系统找不到你输入的 '%s' 命令！"
-
-msgid "Enter command to run:"
-msgstr "输入运行命令："
-
-msgid "Enter or select the running command of the script on the current page, and leave blank to set the default command."
-msgstr "输入或选择当前页面脚本的运行命令，留空是设置的默认命令。"
-
-msgid "Enter shell command:"
-msgstr "输入 shell 命令："
-
-msgid "Enter a shell command that can be run"
-msgstr "输入可以运行的 shell 命令"
-
-msgid "Execute Command"
-msgstr "执行命令"
-
-msgid "The request processing failed with an error code:"
-msgstr "请求处理失败，错误码为："
-
-msgid "Dismiss"
-msgstr "关闭"
-
-msgid "Run Demo"
-msgstr "运行展示"
-
-msgid "No input for the command line yet. Don't click 'Execute Command'!"
-msgstr "还没有命令行的输入不要点击 '执行命令' ！"
-
-msgid "The current system cannot find the command '%s' you entered!"
-msgstr "当前系统找不到你输入的 '%s' 命令！"
-
-msgid "Executing '%s %s' did not return data!"
-msgstr "执行 '%s %s' 没有返回数据！"
-
-msgid "Failed to execute <div style='color: #f92672;'>%s %s</div><div style='text-align: left;'>Exit code: %d<br>Error message: <div style='color: #e6db74;'>%s</div>"
-msgstr "无法执行 <div style='color: #f92672;'>%s %s</div><div style='text-align: left;'>退出代码：%d<br>错误信息：<div style='color: #e6db74;'>%s</div>"
-
-msgid "Select request type"
-msgstr "选择请求类型"
-
-msgid "something went wrong"
-msgstr "出现错误了"
-
-msgid "Bad Request: The request was invalid or cannot be served."
-msgstr "错误请求：请求无效或无法处理。"
-
-msgid "Unauthorized: The request requires authentication."
-msgstr "未授权：请求需要身份验证。"
-
-msgid "Forbidden: The server refuses to authorize the request."
-msgstr "禁止：服务器拒绝授权请求。"
-
-msgid "Not Found: The requested resource could not be found."
-msgstr "未找到：找不到请求的资源。"
-
-msgid "Internal Server Error: The server failed to fulfill the request."
-msgstr "内部服务器错误：服务器无法满足请求。"
-
-msgid "Service Unavailable: The server is temporarily unable to handle the request."
-msgstr "服务不可用：服务器暂时无法处理请求。"
-
-msgid "An unexpected error occurred. Error code: %s"
-msgstr "发生意外错误。错误代码：%s"
-
-msgid "maximum authority"
-msgstr "权限最大"
-
-msgid ""
-msgstr ""
+msgid "size"
+msgstr "大小"

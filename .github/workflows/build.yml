@@ -2,6 +2,8 @@ name: ipk
 
 on:
   workflow_dispatch:
+  push:
+    paths: [ luci-app-softwarecenter/po/zh-cn/pp.po ]
 jobs:
   build:
     name: Upload Release Asset
