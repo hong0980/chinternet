@@ -70,8 +70,8 @@ msgstr "权限修改成功"
 msgid "Permission modification failed"
 msgstr "权限修改失败"
 
-msgid "Please enter new permissions for ${filename}"
-msgstr "请输入 ${filename} 新的权限"
+msgid "Please enter new permissions for ${filename}\n(You can enter octal numbers)"
+msgstr "请输入 ${filename} 新的权限\n（可以输入八进制的数字）"
 
 msgid "Modify permissions"
 msgstr "修改权限"
