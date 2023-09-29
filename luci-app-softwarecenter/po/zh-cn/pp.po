@@ -76,8 +76,8 @@ msgstr "请输入 ${filename} 新的权限"
 msgid "Modify permissions"
 msgstr "修改权限"
 
-msgid "There are currently ${filenames.length} files"
-msgstr "当前有 ${filenames.length} 个文件"
+msgid "There are currently ${regularFiles} files,"
+msgstr "当前有 ${regularFiles} 文件，"
 
 msgid "directory."
 msgstr "个目录。"
