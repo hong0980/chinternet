@@ -14,7 +14,7 @@ msgid "Upload to current directory"
 msgstr "上传到当前目录"
 
 msgid "confirm deletion"
-msgstr "确认删除"
+msgstr "确定删除"
 
 msgid "Enter new name"
 msgstr "输入新的名称"
@@ -52,8 +52,8 @@ msgstr "大小"
 msgid "Change the time"
 msgstr "修改时间"
 
-msgid "pattern string"
-msgstr "模式字符串"
+msgid "Rights"
+msgstr "权限"
 
 msgid "File operations"
 msgstr "文件操作"
@@ -84,6 +84,39 @@ msgstr "个目录。"
 
 msgid "total file size"
 msgstr "文件总大小"
+
+msgid "Go to root directory"
+msgstr "进入根目录"
+
+msgid "Successful installation"
+msgstr "安装成功"
+
+msgid "installation failed"
+msgstr "安装失败"
+
+msgid "Confirm installation"
+msgstr "确定安装"
+
+msgid "Enter file name"
+msgstr "输入文件名"
+
+msgid "For example: example.txt"
+msgstr "例如：example.txt"
+
+msgid "Enter file content"
+msgstr "输入文件内容"
+
+msgid "enter text here"
+msgstr "在这里输入文本"
+
+msgid "File created successfully!"
+msgstr "文件创建成功！"
+
+msgid "File creation failed!"
+msgstr "文件创建失败！"
+
+msgid "create a new file"
+msgstr "新建文件"
 
 msgid "owner"
 msgstr "所有者"
