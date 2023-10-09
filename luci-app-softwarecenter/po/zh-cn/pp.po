@@ -17,7 +17,7 @@ msgid "confirm deletion"
 msgstr "确定删除"
 
 msgid "Enter new name"
-msgstr "输入新的名称"
+msgstr "输入新的文件名"
 
 msgid "Back to previous"
 msgstr "返回上一级"
@@ -117,6 +117,15 @@ msgstr "文件创建失败！"
 
 msgid "create a new file"
 msgstr "新建文件"
+
+msgid "Current directory"
+msgstr "当前目录"
+
+msgid "upload file"
+msgstr "上传文件"
+
+msgid "Create as directory"
+msgstr "创建为目录"
 
 msgid "owner"
 msgstr "所有者"
