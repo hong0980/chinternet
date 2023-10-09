@@ -97,8 +97,8 @@ msgstr "安装失败"
 msgid "Confirm installation"
 msgstr "确定安装"
 
-msgid "Enter file name"
-msgstr "输入文件名"
+msgid "Enter name"
+msgstr "输入名称"
 
 msgid "For example: example.txt"
 msgstr "例如：example.txt"
@@ -106,7 +106,7 @@ msgstr "例如：example.txt"
 msgid "Enter file content"
 msgstr "输入文件内容"
 
-msgid "enter text here"
+msgid "Enter text here"
 msgstr "在这里输入文本"
 
 msgid "File created successfully!"
@@ -115,8 +115,8 @@ msgstr "文件创建成功！"
 msgid "File creation failed!"
 msgstr "文件创建失败！"
 
-msgid "create a new file"
-msgstr "新建文件"
+msgid "Create file (directory)"
+msgstr "创建文件（目录）"
 
 msgid "Current directory"
 msgstr "当前目录"
