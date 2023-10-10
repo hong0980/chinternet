@@ -127,6 +127,12 @@ msgstr "上传文件"
 msgid "Create as directory"
 msgstr "创建为目录"
 
+msgid "You can enter a file name or directory name"
+msgstr "可以输入文件名或者目录名"
+
+msgid "download file"
+msgstr "下载文件"
+
 msgid "owner"
 msgstr "所有者"
 
