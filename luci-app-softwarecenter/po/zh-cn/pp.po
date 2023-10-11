@@ -70,8 +70,8 @@ msgstr "权限修改成功"
 msgid "Permission modification failed"
 msgstr "权限修改失败"
 
-msgid "Please enter new permissions for ${filename}"
-msgstr "请输入 ${filename} 新的权限"
+msgid "Please enter new permissions for ${blueMessage(filename)}"
+msgstr "请输入 ${blueMessage(filename)} 新的权限"
 
 msgid "Modify permissions"
 msgstr "修改权限"
