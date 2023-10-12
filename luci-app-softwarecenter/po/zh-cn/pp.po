@@ -1,8 +1,8 @@
 msgid "File management"
 msgstr "文件管理"
 
-msgid "Go to current directory"
-msgstr "转到当前目录"
+msgid "Go to directory"
+msgstr "转到目录"
 
 msgid "Upload to current directory"
 msgstr "上传到当前目录"
