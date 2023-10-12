@@ -1,20 +1,17 @@
 msgid "File management"
 msgstr "文件管理"
 
-msgid "Current directory"
-msgstr "当前目录"
-
-msgid "File List"
-msgstr "文件列表"
-
-msgid "start"
-msgstr "开始"
+msgid "Go to current directory"
+msgstr "转到当前目录"
 
 msgid "Upload to current directory"
 msgstr "上传到当前目录"
 
 msgid "confirm deletion"
 msgstr "确定删除"
+
+msgid "create new file"
+msgstr "创建新文件"
 
 msgid "Enter new name"
 msgstr "输入新的文件名"
@@ -70,8 +67,8 @@ msgstr "权限修改成功"
 msgid "Permission modification failed"
 msgstr "权限修改失败"
 
-msgid "Please enter new permissions for ${blueMessage(filename)}"
-msgstr "请输入 ${blueMessage(filename)} 新的权限"
+msgid "Please enter new permissions for ${filename}"
+msgstr "请输入 ${filename} 新的权限"
 
 msgid "Modify permissions"
 msgstr "修改权限"
@@ -118,9 +115,6 @@ msgstr "文件创建失败！"
 msgid "Create file (directory)"
 msgstr "创建文件（目录）"
 
-msgid "Current directory"
-msgstr "当前目录"
-
 msgid "upload file"
 msgstr "上传文件"
 
@@ -132,6 +126,9 @@ msgstr "可以输入文件名或者目录名"
 
 msgid "download file"
 msgstr "下载文件"
+
+msgid "Confirm download"
+msgstr "确定下载"
 
 msgid "owner"
 msgstr "所有者"
