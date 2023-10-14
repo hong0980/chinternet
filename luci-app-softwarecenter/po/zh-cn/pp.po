@@ -130,6 +130,15 @@ msgstr "下载文件"
 msgid "Confirm download"
 msgstr "确定下载"
 
+msgid "Do you want to create this directory?"
+msgstr "是否要创建该目录？"
+
+msgid "The directory does not exist"
+msgstr "的目录不存在"
+
+msgid "If the first character of the path is '&', it is created with the root directory path!"
+msgstr "如路径首字符是'&'时就是以根目录路径创建！"
+
 msgid "owner"
 msgstr "所有者"
 
