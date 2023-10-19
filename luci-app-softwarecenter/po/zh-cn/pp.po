@@ -136,8 +136,14 @@ msgstr "是否要创建该目录？"
 msgid "The directory does not exist"
 msgstr "的目录不存在"
 
-msgid "If the first character of the path is '&', it is created with the root directory path!"
-msgstr "如路径首字符是'&'时就是以根目录路径创建！"
+msgid "If the path is the root directory, add '&' at the first character"
+msgstr "如路径是根目录在首字符添加'&'"
+
+msgid "open file"
+msgstr "打开文件"
+
+msgid "Confirm open"
+msgstr "确定打开"
 
 msgid "owner"
 msgstr "所有者"
