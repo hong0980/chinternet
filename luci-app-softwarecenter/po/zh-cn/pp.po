@@ -145,6 +145,12 @@ msgstr "打开文件"
 msgid "Confirm open"
 msgstr "确定打开"
 
+msgid "Download catalog"
+msgstr "下载目录"
+
+msgid "open Directory"
+msgstr "打开目录"
+
 msgid "owner"
 msgstr "所有者"
 
