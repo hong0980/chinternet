@@ -22,8 +22,11 @@ msgstr "返回上一级"
 msgid "Rename"
 msgstr "重命名"
 
-msgid "Delete"
-msgstr "删除"
+msgid "Delete file (directory)"
+msgstr "删除文件(目录)"
+
+msgid "Create file (directory)"
+msgstr "创建文件(目录)"
 
 msgid "successfully deleted!"
 msgstr "删除成功！"
@@ -112,9 +115,6 @@ msgstr "文件创建成功！"
 msgid "File creation failed!"
 msgstr "文件创建失败！"
 
-msgid "Create file (directory)"
-msgstr "创建文件（目录）"
-
 msgid "upload file"
 msgstr "上传文件"
 
@@ -150,6 +150,12 @@ msgstr "下载目录"
 
 msgid "open Directory"
 msgstr "打开目录"
+
+msgid "Refresh Page"
+msgstr "刷新页面"
+
+msgid "It’s the current directory"
+msgstr "就是当前目录的"
 
 msgid "owner"
 msgstr "所有者"
