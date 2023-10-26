@@ -76,6 +76,33 @@ msgstr "请输入 ${filename} 新的权限"
 msgid "Modify permissions"
 msgstr "修改权限"
 
+msgid "Select the required permissions"
+msgstr "选择需要的权限"
+
+msgid "777 - All users have read, write and execute permissions"
+msgstr "777 - 所有用户都具有读取、写入和执行权限"
+
+msgid "755 - All users have read and execute permissions, but only the file owner has write permissions"
+msgstr "755 - 所有用户都具有读取和执行权限，但只有文件所有者具有写入权限"
+
+msgid "700 - Only the file owner has read, write, and execute permissions"
+msgstr "700 - 只有文件所有者具有读取、写入和执行权限"
+
+msgid "666 - All users have read and write permissions but no execute permissions"
+msgstr "666 - 所有用户都具有读取和写入权限，但没有执行权限"
+
+msgid "644 - All users have read permissions, but only the file owner has write permissions"
+msgstr "644 - 所有用户都具有读取权限，但只有文件所有者具有写入权限"
+
+msgid "600 - Only the file owner has read and write permissions"
+msgstr "600 - 只有文件所有者具有读取和写入权限"
+
+msgid "555 - All users have execute permissions, but only the file owner has read and write permissions"
+msgstr "555 - 所有用户都具有执行权限，但只有文件所有者具有读取权限和写入权限"
+
+msgid "444 - All users have read permissions but no write and execute permissions"
+msgstr "444 - 所有用户都具有读取权限，但没有写入权限和执行权限"
+
 msgid "There are currently ${regularFiles} files,"
 msgstr "当前有 ${regularFiles} 文件，"
 
