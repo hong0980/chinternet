@@ -1,191 +1,169 @@
-msgid "File management"
-msgstr "文件管理"
 
-msgid "Go to directory"
-msgstr "转到目录"
+msgid "messages"
+msgstr "信息"
 
-msgid "Upload to current directory"
-msgstr "上传到当前目录"
+msgid "secure"
+msgstr "安全"
 
-msgid "confirm deletion"
-msgstr "确定删除"
+msgid "maillog"
+msgstr "邮件日志"
 
-msgid "create new file"
-msgstr "创建新文件"
+msgid "cron"
+msgstr "定时任务"
 
-msgid "Enter new name"
-msgstr "输入新的文件名"
+msgid "boot"
+msgstr "启动"
 
-msgid "Back to previous"
-msgstr "返回上一级"
+msgid "kernel"
+msgstr "内核"
 
-msgid "Rename"
-msgstr "重命名"
+msgid "back to the top"
+msgstr "回到顶部"
 
-msgid "Delete file (directory)"
-msgstr "删除文件(目录)"
+msgid "back to bottom"
+msgstr "回到底部"
 
-msgid "Create file (directory)"
-msgstr "创建文件(目录)"
+msgid ""
+msgstr ""
 
-msgid "successfully deleted!"
-msgstr "删除成功！"
+msgid ""
+msgstr ""
 
-msgid "Renaming successful!"
-msgstr "重命名成功！"
+msgid "Alert"
+msgstr "警告"
 
-msgid "File has been uploaded to"
-msgstr "文件已上传到"
+msgid "All"
+msgstr "所有"
 
-msgid "upload failed"
-msgstr "上传失败"
+msgid "Apply"
+msgstr "应用"
 
-msgid "name"
-msgstr "名称"
+msgid "Apply message filter as regular expression"
+msgstr "将信息过滤器应用为正则表达式"
 
-msgid "owner"
-msgstr "所有者"
+msgid "Apply timestamp filter as regular expression"
+msgstr "将时间过滤器应用为正则表达式"
 
-msgid "size"
-msgstr "大小"
+msgid "Auto refresh"
+msgstr "自动刷新"
 
-msgid "Change the time"
-msgstr "修改时间"
+msgid "Critical"
+msgstr "严重"
 
-msgid "Rights"
-msgstr "权限"
+msgid "Debug"
+msgstr "调试"
 
-msgid "File operations"
-msgstr "文件操作"
+msgid "Dismiss"
+msgstr "忽略"
 
-msgid "Renaming failed"
-msgstr "重命名失败"
+msgid "Download log"
+msgstr "下载日志"
 
-msgid "deleted failed"
-msgstr "删除失败"
+msgid "Edit"
+msgstr "编辑"
 
-msgid "Permissions modified successfully"
-msgstr "权限修改成功"
+msgid "Emergency"
+msgstr "紧急"
 
-msgid "Permission modification failed"
-msgstr "权限修改失败"
+msgid "Entries"
+msgstr "当前显示"
 
-msgid "Please enter new permissions for ${filename}"
-msgstr "请输入 ${filename} 新的权限"
+msgid "Error"
+msgstr "错误"
 
-msgid "Modify permissions"
-msgstr "修改权限"
+msgid "Facility"
+msgstr "设施"
 
-msgid "Select the required permissions"
-msgstr "选择需要的权限"
+msgid "Facilities"
+msgstr "设施"
 
-msgid "777 - All users have read, write and execute permissions"
-msgstr "777 - 所有用户都具有读取、写入和执行权限"
+msgid "Filter is regexp"
+msgstr "过滤器为正则表达式"
 
-msgid "755 - All users have read and execute permissions, but only the file owner has write permissions"
-msgstr "755 - 所有用户都具有读取和执行权限，但只有文件所有者具有写入权限"
+msgid "Filter settings"
+msgstr "过滤器设置"
 
-msgid "700 - Only the file owner has read, write, and execute permissions"
-msgstr "700 - 只有文件所有者具有读取、写入和执行权限"
+msgid "Get all entries"
+msgstr "获取所有条目"
 
-msgid "666 - All users have read and write permissions but no execute permissions"
-msgstr "666 - 所有用户都具有读取和写入权限，但没有执行权限"
+msgid "Get more entries"
+msgstr "获取更多条目"
 
-msgid "644 - All users have read permissions, but only the file owner has write permissions"
-msgstr "644 - 所有用户都具有读取权限，但只有文件所有者具有写入权限"
+msgid "Host"
+msgstr "主机"
 
-msgid "600 - Only the file owner has read and write permissions"
-msgstr "600 - 只有文件所有者具有读取和写入权限"
+msgid "Hosts"
+msgstr "主机"
 
-msgid "555 - All users have execute permissions, but only the file owner has read and write permissions"
-msgstr "555 - 所有用户都具有执行权限，但只有文件所有者具有读取权限和写入权限"
+msgid "Info"
+msgstr "信息"
 
-msgid "444 - All users have read permissions but no write and execute permissions"
-msgstr "444 - 所有用户都具有读取权限，但没有写入权限和执行权限"
+msgid "Invalid regular expression"
+msgstr "无效的正则表达式"
 
-msgid "There are currently ${regularFiles} files,"
-msgstr "当前有 ${regularFiles} 文件，"
+msgid "Kernel Log"
+msgstr "内核日志"
 
-msgid "directory."
-msgstr "个目录。"
+msgid "Last entries"
+msgstr "最近的记录"
 
-msgid "total file size"
-msgstr "文件总大小"
+msgid "Level"
+msgstr "级别"
 
-msgid "Go to root directory"
-msgstr "进入根目录"
+msgid "Log"
+msgstr "日志"
 
-msgid "Successful installation"
-msgstr "安装成功"
+msgid "Log Viewer"
+msgstr "日志查看器"
 
-msgid "installation failed"
-msgstr "安装失败"
+msgid "Logging levels"
+msgstr "日志记录级别"
 
-msgid "Confirm installation"
-msgstr "确定安装"
+msgid "Logread not found"
+msgstr "未找到Logread"
 
-msgid "Enter name"
-msgstr "输入名称"
+msgid "Message"
+msgstr "信息"
 
-msgid "For example: example.txt"
-msgstr "例如：example.txt"
+msgid "Message filter"
+msgstr "信息过滤器"
 
-msgid "Enter file content"
-msgstr "输入文件内容"
+msgid "No entries available..."
+msgstr "没有可用的记录..."
 
-msgid "Enter text here"
-msgstr "在这里输入文本"
+msgid "Notice"
+msgstr "通知"
 
-msgid "File created successfully!"
-msgstr "文件创建成功！"
+msgid "Refresh log"
+msgstr "刷新日志"
 
-msgid "File creation failed!"
-msgstr "文件创建失败！"
+msgid "Sorting entries"
+msgstr "排序条目"
 
-msgid "upload file"
-msgstr "上传文件"
+msgid "System Log"
+msgstr "系统日志"
 
-msgid "Create as directory"
-msgstr "创建为目录"
+msgid "Timestamp"
+msgstr "时间"
 
-msgid "You can enter a file name or directory name"
-msgstr "可以输入文件名或者目录名"
+msgid "Timestamp filter"
+msgstr "时间过滤器"
 
-msgid "download file"
-msgstr "下载文件"
+msgid "Type a search pattern..."
+msgstr "输入搜索模式..."
 
-msgid "Confirm download"
-msgstr "确定下载"
+msgid "Unable to load log data:"
+msgstr "无法加载日志数据："
 
-msgid "Do you want to create this directory?"
-msgstr "是否要创建该目录？"
+msgid "Unsupported log format"
+msgstr "不支持的日志格式"
 
-msgid "The directory does not exist"
-msgstr "的目录不存在"
+msgid "Warning"
+msgstr "警告"
 
-msgid "If the path is the root directory, add '&' at the first character"
-msgstr "如路径是根目录在首字符添加'&'"
+msgid "ascending"
+msgstr "升序"
 
-msgid "open file"
-msgstr "打开文件"
+msgid "descending"
+msgstr "降序"
 
-msgid "Confirm open"
-msgstr "确定打开"
-
-msgid "Download catalog"
-msgstr "下载目录"
-
-msgid "open Directory"
-msgstr "打开目录"
-
-msgid "Refresh Page"
-msgstr "刷新页面"
-
-msgid "It’s the current directory"
-msgstr "就是当前目录的"
-
-msgid "owner"
-msgstr "所有者"
-
-msgid "size"
-msgstr "大小"
