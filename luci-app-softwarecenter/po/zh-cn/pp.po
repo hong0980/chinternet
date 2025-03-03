@@ -4,3 +4,8 @@ msgstr "滚动到尾部"
 msgid "Scroll to head"
 msgstr "滚动到顶部"
 
+msgid "Max Retries"
+msgstr "最大重试次数"
+
+msgid "Specify maximum retries when using 'on-failure' restart policy"
+msgstr "当重启策略为'on-failure'时，指定最大重试次数"
