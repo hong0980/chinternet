@@ -1,0 +1,167 @@
+"Project-Id-Version: OpenWrt\n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid " Configuration File"
+msgstr " 配置文件"
+
+msgid "Command failed"
+msgstr "命令失败"
+
+msgid "Failed to execute \"/etc/init.d/%s %s\" action: %s"
+msgstr "无法执行 \"/etc/init.d/%s %s\" 操作: %s"
+
+msgid "Enabled"
+msgstr "已启用"
+
+msgid "Disabled"
+msgstr "已禁用"
+
+msgid "Textarea not found: %s"
+msgstr "未找到文本区域: %s"
+
+msgid "Contents of %s have been saved."
+msgstr "%s 内容已保存。"
+
+msgid "Service %s reloaded successfully."
+msgstr "%s 服务重载成功。"
+
+msgid "Service reload failed: %s"
+msgstr "服务重载失败: %s"
+
+msgid "Unable to save contents: %s"
+msgstr "无法保存内容: %s"
+
+msgid "Edit <code>%s</code> configuration file, changes take effect after saving and restarting."
+msgstr "编辑<code>%s</code>配置文件，保存后重启生效。"
+
+msgid "<b>Warning:</b> Modifying configuration files may cause the system to fail to start or connect to the network, proceed with caution!"
+msgstr "<b>警告:</b> 修改配置文件可能导致系统无法启动或联网，请谨慎操作！"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Wizard"
+msgstr "网络设置向导"
+
+msgid "Inital Router Setup"
+msgstr "网络设置"
+
+msgid "Wireless Settings"
+msgstr "无线设置"
+
+msgid "Lan Settings"
+msgstr "内网设置"
+
+msgid "Wan Settings"
+msgstr "上网模式"
+
+msgid "If you are using this router for the first time, please configure it here."
+msgstr "如果你首次使用这个路由器，请在这里简单设置。"
+
+msgid "Three different ways to access the Internet, please choose according to your own situation."
+msgstr "几种不同的上网方式，请您根据自身情况进行选择。"
+
+msgid "Set the router's wireless name and password. For more advanced settings, please go to the Network-Wireless page."
+msgstr "设置路由器的无线名字和密码，更多高级设置请进入 网络-无线 页面。"
+
+msgid "Siderouter"
+msgstr "旁路由模式"
+
+msgid "Enable IPv6"
+msgstr "启用IPv6"
+
+msgid "Enable/Disable IPv6"
+msgstr "一键开启/关闭 IPv6"
+
+msgid "Inital Router Setup"
+msgstr "初始路由器设置"
+
+msgid "If you are using this router for the first time, please configure it here."
+msgstr "如果您是第一次使用此路由器，请在此进行配置。"
+
+msgid "Wan Settings"
+msgstr "WAN 设置"
+
+msgid "Three different ways to access the Internet, please choose according to your own situation."
+msgstr "三种不同的上网方式，请根据您的情况选择。"
+
+msgid "IPv4 address"
+msgstr "IPv4 地址"
+
+msgid "IPv4 netmask"
+msgstr "IPv4 子网掩码"
+
+msgid "Protocol"
+msgstr "协议"
+
+msgid "DHCP client"
+msgstr "DHCP 客户端"
+
+msgid "PPPoE"
+msgstr "PPPoE"
+
+msgid "Static address"
+msgstr "静态地址"
+
+msgid "PAP/CHAP username"
+msgstr "PAP/CHAP 用户名"
+
+msgid "PAP/CHAP password"
+msgstr "PAP/CHAP 密码"
+
+msgid "Obtain IPv6 address"
+msgstr "获取 IPv6 地址"
+
+msgid "Enable IPv6 negotiation on the PPP link"
+msgstr "在 PPP 链接上启用 IPv6 协商"
+
+msgid "Automatic"
+msgstr "自动"
+
+msgid "Disabled"
+msgstr "禁用"
+
+msgid "Manual"
+msgstr "手动"
+
+msgid "IPv4 gateway"
+msgstr "IPv4 网关"
+
+msgid "Use custom DNS servers"
+msgstr "使用自定义 DNS 服务器"
+
+msgid "AliDNS: 223.5.5.5"
+msgstr "阿里DNS：223.5.5.5"
+
+msgid "AliDNS: 223.6.6.6"
+msgstr "阿里DNS：223.6.6.6"
+
+msgid "DNSPod: 101.226.4.6"
+msgstr "DNS派：101.226.4.6"
+
+msgid "DNSPod: 218.30.118.6"
+msgstr "DNS派：218.30.118.6"
+
+msgid "BaiduDNS: 180.76.76.76"
+msgstr "百度DNS：180.76.76.76"
+
+msgid "114DNS: 114.114.114.114"
+msgstr "114DNS：114.114.114.114"
+
+msgid "114DNS: 114.114.115.115"
+msgstr "114DNS：114.114.115.115"
+
+msgid "Wireless Settings"
+msgstr "无线设置"
+
+msgid "Set the router's wireless name and password. For more advanced settings, please go to the Network-Wireless page."
+msgstr "设置路由器的无线名称和密码。如需更高级的设置，请前往网络-无线页面。"
+
+msgid "<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
+msgstr "<abbr title=\"扩展服务集标识符\">ESSID</abbr>"
+
+msgid "Key"
+msgstr "密钥"

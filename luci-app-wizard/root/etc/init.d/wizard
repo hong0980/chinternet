@@ -23,54 +23,40 @@ reconfig() {
 
 boot() {
 	XBOOT=1 start
-	SSID=$(uci get wireless.@wifi-iface[0].ssid 2>/dev/null)
-	KEY=$(uci get wireless.@wifi-iface[0].key 2>/dev/null)
-	IPADDR=$(uci get network.lan.ipaddr 2>/dev/null)
-	NETMASK=$(uci get network.lan.netmask 2>/dev/null)
-	fakemesh=$(uci get fakemesh.default.enabled 2>/dev/null || echo 0)
-
-	if [ "$(uci get wizard.default.wifi_ssid 2>/dev/null)" = "$SSID" ] && [ "$(uci get wizard.default.lan_ipaddr 2>/dev/null)" = "$IPADDR" ]; then
-		:
-	else
-		uci set wizard.default=wizard
-		[ "$fakemesh" = "1" ] || {
-			uci set wizard.default.wifi_ssid="$SSID"
-			uci set wizard.default.wifi_key="$KEY"
-		}
-		uci set wizard.default.lan_ipaddr="$IPADDR"
-		uci set wizard.default.lan_netmask="$NETMASK"
-		uci commit wizard
-	fi
 }
 
 add_wizard() {
 	[ "x$XBOOT" = "x1" ] && return 0
 	local cfg="$1"
-	get_config wan_proto wan_ipaddr wan_netmask wan_gateway wan_dns wan_pppoe_user wan_pppoe_pass
-	get_config wifi_ssid wifi_key
-	get_config lan_ipaddr lan_netmask
+	get_config wan_proto wan_ipaddr wan_netmask wan_gateway wan_dns ipv6
+	get_config lan_ipaddr lan_netmask wifi_ssid wifi_key lan_ipaddr_old lan_netmask_old
 	local device ifname
 
 	device=$(uci get network.wan.device 2>/dev/null)
 	ifname=$(uci get network.wan.ifname 2>/dev/null)
 	case "${wan_proto}" in
 		pppoe)
-			uci delete network.wan
-			uci set network.wan=interface
-			uci set network.wan.proto='pppoe'
-			test -n "$device" && uci set network.wan.device="$device"
-			test -n "$ifname" && uci set network.wan.ifname="$ifname"
-			uci set network.wan.username="${wan_pppoe_user}"
-			uci set network.wan.password="${wan_pppoe_pass}"
-			uci set network.wan.ipv6='auto'
-			uci set network.wan.keepalive='5 5'
-			uci set network.wan.mtu='1492'
-			uci set network.wan.metric='40'
+			get_config wan_pppoe_user wan_pppoe_pass username_old password_old
+			if [ "$username_old" != "$wan_pppoe_user" -o "$password_old" != "$wan_pppoe_pass" ]; then
+				uci delete network.wan
+				uci set network.wan=interface
+				uci set network.wan.proto='pppoe'
+				test -n "$device" && uci set network.wan.device="$device"
+				test -n "$ifname" && uci set network.wan.ifname="$ifname"
+				uci set network.wan.username="${wan_pppoe_user}"
+				uci set network.wan.password="${wan_pppoe_pass}"
+				uci set network.wan.ipv6="${ipv6}"
+				uci set network.wan.keepalive='5 5'
+				uci set network.wan.mtu='1492'
+				uci set network.wan.metric='40'
 
-			test -n "${wan_dns}" && {
-				uci set network.wan.peerdns='0'
-				uci set network.wan.dns="${wan_dns}"
-			}
+				test -n "${wan_dns}" && {
+					uci set network.wan.peerdns='0'
+					uci set network.wan.dns="${wan_dns}"
+				}
+				uci -q set wizard.default.username_old="${wan_pppoe_user}"
+				uci -q set wizard.default.password_old="${wan_pppoe_pass}"
+			fi
 		;;
 		dhcp)
 			uci delete network.wan
@@ -106,9 +92,11 @@ add_wizard() {
 		;;
 	esac
 
-	test -n "${lan_ipaddr}" && test -n "${lan_netmask}" && {
+	[ "$lan_ipaddr" != "$lan_ipaddr_old" -o "$lan_netmask" != "$lan_netmask_old" ] && {
 		uci set network.lan.ipaddr="${lan_ipaddr}"
 		uci set network.lan.netmask="${lan_netmask}"
+		uci -q set wizard.default.lan_ipaddr_old="${lan_ipaddr}"
+		uci -q set wizard.default.lan_netmask_old="${lan_netmask}"
 	}
 
 	fakemesh=$(uci get fakemesh.default.enabled 2>/dev/null || echo 0)
@@ -136,6 +124,7 @@ add_wizard() {
 		}
 	fi
 
+	uci commit wizard
 	uci commit network
 	uci commit wireless
 	(sleep 5

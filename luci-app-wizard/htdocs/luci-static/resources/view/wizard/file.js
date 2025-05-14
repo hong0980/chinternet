@@ -15,11 +15,13 @@ var configFiles = [
 	'/etc/hosts',
 	'/etc/rc.local',
 	'/etc/crontabs/root'
-].map(path => ({
-	path,
-	data_tab: path.split('/').pop(),
-	title: _(path.split('/').pop().replace(/^./, c => c.toUpperCase()) + ' 配置文件')
-}));
+].map(function(path) {
+	return {
+		path: path,
+		data_tab: path.split('/').pop(),
+		title: path.split('/').pop().replace(/^./, function(c) { return c.toUpperCase(); }) +  _(' Configuration File')
+	};
+});
 
 return view.extend({
 	callRcList: rpc.declare({
@@ -36,10 +38,9 @@ return view.extend({
 
 	load: function() {
 		return Promise.all([
-			...configFiles.map(config =>
-				L.resolveDefault(fs.stat(config.path), null)
-					.then(stat => stat ? L.resolveDefault(fs.read(config.path), '') : null)
-			),
+			...configFiles.map(function(config) {
+				return L.resolveDefault(fs.read(config.path), null);
+			}),
 			this.callRcList()
 		]);
 	},
@@ -62,35 +63,6 @@ return view.extend({
 		}, this, name, !isEnabled, ev.currentTarget));
 	},
 
-	handleFileSave: function(path, textareaId) {
-		var value = (document.getElementById(textareaId)?.value || '').trim().replace(/\r\n/g, '\n') + '\n';
-		if (!document.getElementById(textareaId)) {
-			ui.addNotification(null, E('p', _('Textarea not found: %s').format(textareaId)), 'error');
-			return Promise.resolve();
-		}
-
-		return fs.write(path, value).then(() => {
-			document.getElementById(textareaId).value = value;
-			ui.addNotification(null, E('p', _('Contents have been saved.')), 'info');
-
-			var service = path === '/etc/crontabs/root' ? 'cron' :
-						   path.includes('network') ? 'network' :
-						   path.includes('firewall') ? 'firewall' :
-						   path.includes('dhcp') ? 'dnsmasq' :
-						   path.includes('dnsmasq') ? 'dnsmasq' :
-						   path.includes('uhttpd') ? 'uhttpd' : null;
-			if (service) {
-				return fs.exec_direct('/etc/init.d/' + service, ['reload']).then(() => {
-					ui.addNotification(null, E('p', _('Service reloaded successfully.')), 'info');
-				}).catch(err => {
-					ui.addNotification(null, E('p', _('Service reload failed: %s').format(err.message)), 'warning');
-				});
-			}
-		}).catch(err => {
-			ui.addNotification(null, E('p', _('Unable to save contents: %s').format(err.message)), 'error');
-		});
-	},
-
 	renderEnableDisable: function(init) {
 		return E('button', {
 			class: 'btn cbi-button-%s'.format(init.enabled ? 'positive' : 'negative'),
@@ -99,30 +71,60 @@ return view.extend({
 		}, init.enabled ? _('Enabled') : _('Disabled'));
 	},
 
+	handleFileSave: function(path, textareaId) {
+		var value = (document.getElementById(textareaId)?.value || '').trim().replace(/\r\n/g, '\n') + '\n';
+		if (!document.getElementById(textareaId)) {
+			ui.addNotification(null, E('p', _('Textarea not found: %s').format(textareaId)), 'error');
+			return Promise.resolve();
+		}
+
+		return fs.write(path, value).then(function() {
+			document.getElementById(textareaId).value = value;
+			ui.addNotification(null, E('p', _('Contents of %s have been saved.').format(path)), 'info');
+
+			var service = path === '/etc/crontabs/root' ? 'cron' :
+						 path.includes('network') ? 'network' :
+						 path.includes('firewall') ? 'firewall' :
+						 path.includes('dhcp') ? 'dnsmasq' :
+						 path.includes('dnsmasq') ? 'dnsmasq' :
+						 path.includes('uhttpd') ? 'uhttpd' : null;
+			if (service) {
+				var init = '/etc/init.d/' + service
+				return fs.exec_direct(init, ['reload']).then(function() {
+					ui.addNotification(null, E('p', _('Service %s reloaded successfully.').format(init)), 'info');
+				}).catch(function(err) {
+					ui.addNotification(null, E('p', _('Service reload failed: %s').format(err.message)), 'warning');
+				});
+			}
+		}).catch(function(err) {
+			ui.addNotification(null, E('p', _('Unable to save contents: %s').format(err.message)), 'error');
+		});
+	},
+
 	render: function(data) {
-		var tabContents = configFiles.map((config, index) => {
+		var self = this;
+		var tabContents = configFiles.map(function(config, index) {
 			var content = data[index];
 			return content ? E('div', { 'class': 'cbi-tab', 'data-tab': config.data_tab, 'data-tab-title': config.title }, [
-				E('p', {}, _('编辑<code>%s</code>配置文件，保存后重启生效。').format(config.path)),
+				E('p', {}, _('Edit <code>%s</code> configuration file, changes take effect after saving and restarting.').format(config.path)),
 				E('textarea', {
-					'id': `${config.data_tab}-textarea`,
 					'rows': 25,
-					'style': 'width:100%; background-color:#272626; color:#c5c5b2; border:1px solid #555; font-family:Consolas, monospace; font-size:14px;',
-					'disabled': isReadonlyView
+					'id': config.data_tab,
+					'disabled': isReadonlyView,
+					'style': 'width:100%; background-color:#272626; color:#c5c5b2; border:1px solid #555; font-family:Consolas, monospace; font-size:14px;'
 				}, [content]),
 				E('div', { 'class': 'cbi-page-actions' }, [
 					E('button', {
 						'class': 'btn cbi-button-save',
-						'id': `${config.data_tab}-button`,
 						'disabled': isReadonlyView,
-						'click': ui.createHandlerFn(this, 'handleFileSave', config.path, `${config.data_tab}-textarea`)
+						'click': ui.createHandlerFn(self, 'handleFileSave', config.path, config.data_tab)
 					}, _('Save'))
 				])
 			]) : null;
-		}).filter(Boolean);
+		}).filter(function(item) { return !!item; });
 
 		var view = E('div', {}, [
-			E('p', { 'style': 'color: red' }, _('<b>警告:</b> 修改配置文件可能导致系统无法启动或联网，请谨慎操作！')),
+			E('p', { 'style': 'color: red' }, _('<b>Warning:</b> Modifying configuration files may cause the system to fail to start or connect to the network, proceed with caution!')),
 			E('div', { 'class': 'cbi-tab-container' }, tabContents)
 		]);
 

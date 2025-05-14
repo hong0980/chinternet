@@ -29,11 +29,11 @@
 				"/etc/config/network": ["write"],
 				"/etc/config/firewall": ["write"],
 				"/etc/config/wireless": ["write"],
-				"/etc/init.d/network reload": ["exec"],
 				"/etc/init.d/cron reload": ["exec"],
-				"/etc/init.d/firewall reload": ["exec"],
+				"/etc/init.d/uhttpd reload": ["exec"],
+				"/etc/init.d/network reload": ["exec"],
 				"/etc/init.d/dnsmasq reload": ["exec"],
-				"/etc/init.d/uhttpd reload": ["exec"]
+				"/etc/init.d/firewall reload": ["exec"]
 			},
 			"ubus": {
 				"file": ["write"],

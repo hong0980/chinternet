@@ -1,0 +1,23 @@
+#!/bin/sh
+
+[ ! -f "/usr/share/ucitrack/luci-app-wizard.json" ] && {
+	cat > /usr/share/ucitrack/luci-app-wizard.json << EOF
+		{
+		    "config": "wizard",
+		    "init": "wizard"
+		}
+	EOF
+}
+
+touch /etc/config/wizard
+uci -q batch <<-EOF >/dev/null
+	delete ucitrack.@wizard[-1]
+	add ucitrack wizard
+	set ucitrack.@wizard[-1].init=wizard
+	commit ucitrack
+	set wizard.default=wizard
+	commit wizard
+EOF
+chmod +x /etc/init.d/wizard 2>/dev/null
+rm -f /tmp/luci-indexcache
+exit 0
