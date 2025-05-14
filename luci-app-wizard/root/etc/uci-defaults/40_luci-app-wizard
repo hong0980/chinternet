@@ -1,103 +1,5 @@
 #!/bin/sh
 
-acl_file="/usr/share/rpcd/acl.d/luci-app-wizard.json"
-menu_file="/usr/share/luci/menu.d/luci-app-wizard.json"
-ucitrack_file="/usr/share/ucitrack/luci-app-wizard.json"
-
-[ ! -f "$ucitrack_file" ] && {
-	cat > "$ucitrack_file" << EOF
-		{
-		    "config": "wizard",
-		    "init": "wizard"
-		}
-	EOF
-}
-
-[ -f "$menu_file" ] || {
-	cat > "$menu_file" << EOF
-		{
-		    "admin/system/wizard": {
-		        "title": "Wizard",
-		        "order": 10,
-		        "action": {
-		            "type": "firstchild",
-		        },
-		        "depends": {
-		            "acl": [ "luci-app-wizard" ],
-		            "uci": { "wizard": true }
-		        }
-		    },
-
-		    "admin/system/wizard/wizard": {
-		        "title": "Configuration",
-		        "order": 10,
-		        "action": {
-		            "type": "view",
-		            "path": "wizard/wizard"
-		        }
-		    },
-
-		    "admin/system/wizard/file": {
-		        "title": "Files",
-		        "order": 20,
-		        "action": {
-		            "type": "view",
-		            "path": "wizard/file"
-		        }
-		    }
-		}
-	EOF
-}
-
-[ -f "$acl_file" ] || {
-	cat > "$acl_file" << EOF
-		{
-		    "luci-app-wizard": {
-		        "description": "Grant UCI access for luci-app-wizard",
-		        "read": {
-		            "uci": [ "wizard" ],
-		            "file": {
-		                "/etc/init.d/wizard reconfig": [ "exec" ],
-		                "/etc/hosts": [ "read" ],
-		                "/etc/rc.local": [ "read" ],
-		                "/etc/config/dhcp": [ "read" ],
-		                "/etc/dnsmasq.conf": [ "read" ],
-		                "/etc/config/uhttpd": [ "read" ],
-		                "/etc/config/network": [ "read" ],
-		                "/etc/config/firewall": [ "read" ],
-		                "/etc/config/wireless": [ "read" ]
-		            },
-		            "ubus": {
-		                "file": [ "read" ],
-		                "rc": [ "list" ]
-		            }
-		        },
-		        "write": {
-		            "file": {
-		                "/etc/hosts": ["write"],
-		                "/etc/rc.local": ["write"],
-		                "/etc/config/dhcp": ["write"],
-		                "/etc/dnsmasq.conf": ["write"],
-		                "/etc/config/uhttpd": ["write"],
-		                "/etc/config/network": ["write"],
-		                "/etc/config/firewall": ["write"],
-		                "/etc/config/wireless": ["write"],
-		                "/etc/init.d/network reload": ["exec"],
-		                "/etc/init.d/cron reload": ["exec"],
-		                "/etc/init.d/firewall reload": ["exec"],
-		                "/etc/init.d/dnsmasq reload": ["exec"],
-		                "/etc/init.d/uhttpd reload": ["exec"]
-		            },
-		            "ubus": {
-		                "file": ["write"],
-		                "rc": ["init"]
-		            }
-		        }
-		    }
-		}
-	EOF
-}
-
 touch /etc/config/wizard
 uci -q batch <<-EOF >/dev/null
 	delete ucitrack.@wizard[-1]
@@ -114,7 +16,7 @@ uci -q batch <<-EOF >/dev/null
 	commit luci
 EOF
 for file in dhcp network firewall wireless; do
-    [ ! -f /etc/config/bk_$file -a -s /etc/config/$file ] && cp /etc/config/$file /etc/config/bk_$file
+	[ ! -f /etc/config/bk_$file -a -s /etc/config/$file ] && cp /etc/config/$file /etc/config/bk_$file
 done
 
 sed -i 's/root:.*/root:$1$pn1ABFaI$vt5cmIjlr6M7Z79Eds2lV0:16821:0:99999:7:::/g' /etc/shadow
