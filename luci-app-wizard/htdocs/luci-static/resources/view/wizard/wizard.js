@@ -26,17 +26,7 @@ return view.extend({
 		s = m.section(form.NamedSection, 'default', 'wizard');
 		s.addremove = false;
 		s.tab('wansetup', _('Wan Settings'), _('Three different ways to access the Internet, please choose according to your own situation.'));
-
-		// s.tab('lansetup', _('Lan Settings'));
-
-		o = s.taboption('wansetup', form.Value, 'lan_ipaddr', _('IPv4 address'));
-		o.datatype = 'ip4addr';
-
-		o = s.taboption('wansetup', form.Value, 'lan_netmask', _('IPv4 netmask'));
-		o.datatype = 'ip4addr';
-		o.value('255.255.255.0');
-		o.value('255.255.0.0');
-		o.value('255.0.0.0');
+		s.tab('lansetup', _('Lan Settings'));
 
 		o = s.taboption('wansetup', form.ListValue, 'wan_proto', _('Protocol'));
 		o.rmempty = false;
@@ -75,13 +65,22 @@ return view.extend({
 		o.datatype = 'ip4addr';
 		o.ucioption = 'wan_dns';
 		o.cast = 'string';
-		o.value("223.5.5.5", _("阿里DNS：223.5.5.5"));
-		o.value("223.6.6.6", _("阿里DNS：223.6.6.6"));
-		o.value("101.226.4.6", _("DNS派：101.226.4.6"));
-		o.value("218.30.118.6", _("DNS派：218.30.118.6"));
-		o.value("180.76.76.76", _("百度DNS：180.76.76.76"));
-		o.value("114.114.114.114", _("114DNS：114.114.114.114"));
-		o.value("114.114.115.115", _("114DNS：114.114.115.115"));
+		o.value("223.5.5.5", _("AliDNS: 223.5.5.5"));
+		o.value("223.6.6.6", _("AliDNS: 223.6.6.6"));
+		o.value("101.226.4.6", _("DNSPod: 101.226.4.6"));
+		o.value("218.30.118.6", _("DNSPod: 218.30.118.6"));
+		o.value("180.76.76.76", _("BaiduDNS: 180.76.76.76"));
+		o.value("114.114.114.114", _("114DNS: 114.114.114.114"));
+		o.value("114.114.115.115", _("114DNS: 114.114.115.115"));
+
+		o = s.taboption('lansetup', form.Value, 'lan_ipaddr', _('IPv4 address'));
+		o.datatype = 'ip4addr';
+
+		o = s.taboption('lansetup', form.Value, 'lan_netmask', _('IPv4 netmask'));
+		o.datatype = 'ip4addr';
+		o.value('255.255.255.0');
+		o.value('255.255.0.0');
+		o.value('255.0.0.0');
 
 		if (uci.sections('wireless', 'wifi-device').length > 0) {
 			s.tab('wifisetup', _('Wireless Settings'), _('Set the router\'s wireless name and password. For more advanced settings, please go to the Network-Wireless page.'));

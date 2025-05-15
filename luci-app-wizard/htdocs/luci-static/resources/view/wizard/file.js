@@ -81,16 +81,18 @@ return view.extend({
 			document.getElementById(textareaId).value = value;
 			ui.addNotification(null, E('p', _('Contents of %s have been saved.').format(path)), 'info');
 
-			var service = path === '/etc/crontabs/root' ? 'cron' :
+			var service = path.includes('crontabs') ? 'cron' :
 						 path.includes('network') ? 'network' :
 						 path.includes('firewall') ? 'firewall' :
 						 path.includes('dhcp') ? 'dnsmasq' :
 						 path.includes('dnsmasq') ? 'dnsmasq' :
-						 path.includes('uhttpd') ? 'uhttpd' : null;
+						 path.includes('uhttpd') ? 'uhttpd' :
+						 path.includes('wireless') ? 'wifi' : null;
 			if (service) {
-				var init = '/etc/init.d/' + service
-				return fs.exec_direct(init, ['reload']).then(function() {
-					ui.addNotification(null, E('p', _('Service %s reloaded successfully.').format(init)), 'info');
+				var cmd = service === 'wifi' ? '/sbin/wifi' : '/etc/init.d/' + service;
+				var args = service === 'wifi' ? ['reload'] : ['reload'];
+				return fs.exec_direct(cmd, args).then(function() {
+					ui.addNotification(null, E('p', _('Service %s reloaded successfully.').format(cmd)), 'info');
 				}).catch(function(err) {
 					ui.addNotification(null, E('p', _('Service reload failed: %s').format(err.message)), 'warning');
 				});
@@ -123,7 +125,11 @@ return view.extend({
 		}).filter(function(item) { return !!item; });
 
 		var view = E('div', {}, [
-			E('p', {}, _("<b><font color=\"red\">The configuration file is directly edited and saved! Unless you know what you are doing, please do not modify these configuration files. Incorrect configurations may cause issues such as failure to boot or network errors.</font><br><font color=\"green\">It is recommended to back up the file before making changes. Comments can be added by starting a line with #.</font></b>")),
+			E('b', {}, [
+				E('font', { 'color': 'red' }, _('The configuration file is directly edited and saved! Unless you know what you are doing, please do not modify these configuration files. Incorrect configurations may cause issues such as failure to boot or network errors.')),
+				E('br'),
+				E('font', { 'color': 'green' }, _('It is recommended to back up the file before making changes. Comments can be added by starting a line with #.'))
+			]),
 			E('div', { 'class': 'cbi-tab-container' }, tabContents)
 		]);
 

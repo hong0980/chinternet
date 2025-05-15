@@ -37,11 +37,11 @@ msgstr "无法保存内容: %s"
 msgid "This page contains the configuration file content for <code>%s</code>. After editing, click the <b><font color=\"red\">Save</font></b> button to apply changes immediately."
 msgstr "本页是<code>%s</code>的配置文件内容，编辑后点击<b><font color=\"red\"> 保存 </font></b>按钮后立即生效"
 
-msgid "<b><font color=\"red\">The configuration file is directly edited and saved! Unless you know what you are doing, please do not modify these configuration files. Incorrect configurations may cause issues such as failure to boot or network errors.</font><br><font color=\"green\">It is recommended to back up the file before making changes. Comments can be added by starting a line with #.</font></b>"
-msgstr "<b><font color=\"red\">配置文件是直接编辑保存的！除非你知道在干什么，否则请不要修改这些配置文件。配置不正确可能会导致不能开机，联网等错误。</font><br><font color=\"green\">修改前建议先备份行再修改，注释可以在行首添加 ＃。</font></b>"
+msgid "The configuration file is directly edited and saved! Unless you know what you are doing, please do not modify these configuration files. Incorrect configurations may cause issues such as failure to boot or network errors."
+msgstr "配置文件是直接编辑保存的！除非你知道在干什么，否则请不要修改这些配置文件。配置不正确可能会导致不能开机，联网等错误。"
 
-msgid "Save"
-msgstr "保存"
+msgid "It is recommended to back up the file before making changes. Comments can be added by starting a line with #."
+msgstr "修改前建议先备份行再修改，注释可以在行首添加 ＃。"
 
 msgid "Wizard"
 msgstr "网络设置向导"
@@ -112,44 +112,11 @@ msgstr "WAN 设置"
 msgid "Three different ways to access the Internet, please choose according to your own situation."
 msgstr "三种不同的上网方式，请根据您的情况选择。"
 
-msgid "IPv4 address"
-msgstr "IPv4 地址"
-
-msgid "IPv4 netmask"
-msgstr "IPv4 子网掩码"
-
-msgid "Protocol"
-msgstr "协议"
-
-msgid "DHCP client"
-msgstr "DHCP 客户端"
-
-msgid "PPPoE"
-msgstr "PPPoE"
-
-msgid "Static address"
-msgstr "静态地址"
-
-msgid "PAP/CHAP username"
-msgstr "PAP/CHAP 用户名"
-
-msgid "PAP/CHAP password"
-msgstr "PAP/CHAP 密码"
-
 msgid "Obtain IPv6 address"
 msgstr "获取 IPv6 地址"
 
 msgid "Enable IPv6 negotiation on the PPP link"
 msgstr "在 PPP 链接上启用 IPv6 协商"
-
-msgid "Automatic"
-msgstr "自动"
-
-msgid "Disabled"
-msgstr "禁用"
-
-msgid "Manual"
-msgstr "手动"
 
 msgid "IPv4 gateway"
 msgstr "IPv4 网关"
