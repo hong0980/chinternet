@@ -4,8 +4,8 @@
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid " Configuration File"
-msgstr " 配置文件"
+msgid "%s Configuration File"
+msgstr "%s 配置文件"
 
 msgid "Command failed"
 msgstr "命令失败"
