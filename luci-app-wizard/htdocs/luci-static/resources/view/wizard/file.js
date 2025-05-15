@@ -19,8 +19,7 @@ var configFiles = [
 	return {
 		path: path,
 		data_tab: path.split('/').pop(),
-		title: path.split('/').pop().replace(/^./, function(c) { return c.toUpperCase(); }) +  _(' Configuration File')
-	};
+		title: path.split('/').pop().replace(/^./, function(c) { return c.toUpperCase(); })	};
 });
 
 return view.extend({
@@ -105,8 +104,8 @@ return view.extend({
 		var self = this;
 		var tabContents = configFiles.map(function(config, index) {
 			var content = data[index];
-			return content ? E('div', { 'class': 'cbi-tab', 'data-tab': config.data_tab, 'data-tab-title': config.title }, [
-				E('p', {}, _('Edit <code>%s</code> configuration file, changes take effect after saving and restarting.').format(config.path)),
+			return content ? E('div', { 'class': 'cbi-tab', 'data-tab': config.data_tab, 'data-tab-title': _('%s Configuration File').format(config.title)}, [
+				E('p', {}, _("This page contains the configuration file content for <code>%s</code>. After editing, click the <b><font color=\"red\">Save</font></b> button to apply changes immediately.").format(config.path)),
 				E('textarea', {
 					'rows': 25,
 					'id': config.data_tab,
@@ -124,7 +123,7 @@ return view.extend({
 		}).filter(function(item) { return !!item; });
 
 		var view = E('div', {}, [
-			E('p', { 'style': 'color: red' }, _('<b>Warning:</b> Modifying configuration files may cause the system to fail to start or connect to the network, proceed with caution!')),
+			E('p', {}, _("<b><font color=\"red\">The configuration file is directly edited and saved! Unless you know what you are doing, please do not modify these configuration files. Incorrect configurations may cause issues such as failure to boot or network errors.</font><br><font color=\"green\">It is recommended to back up the file before making changes. Comments can be added by starting a line with #.</font></b>")),
 			E('div', { 'class': 'cbi-tab-container' }, tabContents)
 		]);
 

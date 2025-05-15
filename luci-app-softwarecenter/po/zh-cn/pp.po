@@ -1,2 +1,8 @@
 msgid "%s Configuration File"
 msgstr "%s 配置文件"
+
+msgid "This page contains the configuration file content for <code>%s</code>. After editing, click the <b><font color=\"red\">Save</font></b> button to apply changes immediately."
+msgstr "本页是<code>%s</code>的配置文件内容，编辑后点击<b><font color=\"red\"> 保存 </font></b>按钮后立即生效"
+
+msgid "<b><font color=\"red\">The configuration file is directly edited and saved! Unless you know what you are doing, please do not modify these configuration files. Incorrect configurations may cause issues such as failure to boot or network errors.</font><br><font color=\"green\">It is recommended to back up the file before making changes. Comments can be added by starting a line with #.</font></b>"
+msgstr "<b><font color=\"red\">配置文件是直接编辑保存的！除非你知道在干什么，否则请不要修改这些配置文件。配置不正确可能会导致不能开机，联网等错误。</font><br><font color=\"green">修改前建议先备份行再修改，注释可以在行首添加 ＃。</font></b>"
