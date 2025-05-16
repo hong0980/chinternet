@@ -23,71 +23,25 @@ var configFiles = [
 });
 
 return view.extend({
-	callRcList: rpc.declare({
-		object: 'rc',
-		method: 'list',
-		expect: { '': {} }
-	}),
-
-	callRcInit: rpc.declare({
-		object: 'rc',
-		method: 'init',
-		params: ['name', 'action']
-	}),
-
 	load: function() {
 		return Promise.all([
-			...configFiles.map(function(config) {
-				return L.resolveDefault(fs.read(config.path), null);
-			}),
-			this.callRcList()
+			...configFiles.map(function(config) { return L.resolveDefault(fs.read(config.path), null)})
 		]);
-	},
-
-	handleAction: function(name, action, ev) {
-		return this.callRcInit(name, action).then(function(ret) {
-			if (ret) throw _('Command failed');
-			return true;
-		}).catch(function(e) {
-			ui.addNotification(null, E('p', _('Failed to execute "/etc/init.d/%s %s" action: %s').format(name, action, e)));
-		});
-	},
-
-	handleEnableDisable: function(name, isEnabled, ev) {
-		return this.handleAction(name, isEnabled ? 'disable' : 'enable', ev).then(L.bind(function(name, isEnabled, btn) {
-			btn.parentNode.replaceChild(this.renderEnableDisable({
-				name: name,
-				enabled: isEnabled
-			}), btn);
-		}, this, name, !isEnabled, ev.currentTarget));
-	},
-
-	renderEnableDisable: function(init) {
-		return E('button', {
-			class: 'btn cbi-button-%s'.format(init.enabled ? 'positive' : 'negative'),
-			click: ui.createHandlerFn(this, 'handleEnableDisable', init.name, init.enabled),
-			disabled: isReadonlyView
-		}, init.enabled ? _('Enabled') : _('Disabled'));
 	},
 
 	handleFileSave: function(path, textareaId) {
 		var value = (document.getElementById(textareaId)?.value || '').trim().replace(/\r\n/g, '\n') + '\n';
-		if (!document.getElementById(textareaId)) {
-			ui.addNotification(null, E('p', _('Textarea not found: %s').format(textareaId)), 'error');
-			return Promise.resolve();
-		}
-
 		return fs.write(path, value).then(function() {
 			document.getElementById(textareaId).value = value;
 			ui.addNotification(null, E('p', _('Contents of %s have been saved.').format(path)), 'info');
 
 			var service = path.includes('crontabs') ? 'cron' :
-						 path.includes('network') ? 'network' :
-						 path.includes('firewall') ? 'firewall' :
 						 path.includes('dhcp') ? 'dnsmasq' :
-						 path.includes('dnsmasq') ? 'dnsmasq' :
+						 path.includes('wireless') ? 'wifi' :
 						 path.includes('uhttpd') ? 'uhttpd' :
-						 path.includes('wireless') ? 'wifi' : null;
+						 path.includes('network') ? 'network' :
+						 path.includes('dnsmasq') ? 'dnsmasq' :
+						 path.includes('firewall') ? 'firewall' : null;
 			if (service) {
 				var cmd = service === 'wifi' ? '/sbin/wifi' : '/etc/init.d/' + service;
 				var args = service === 'wifi' ? ['reload'] : ['reload'];
@@ -106,10 +60,11 @@ return view.extend({
 		var self = this;
 		var tabContents = configFiles.map(function(config, index) {
 			var content = data[index];
-			return content ? E('div', { 'class': 'cbi-tab', 'data-tab': config.data_tab, 'data-tab-title': _('%s Configuration File').format(config.title)}, [
+			return content ?
+			E('div', { 'class': 'cbi-tab', 'data-tab': config.data_tab, 'data-tab-title': _('%s Configuration File').format(config.title)}, [
 				E('p', {}, _("This page contains the configuration file content for <code>%s</code>. After editing, click the <b><font color=\"red\">Save</font></b> button to apply changes immediately.").format(config.path)),
 				E('textarea', {
-					'rows': 25,
+					'rows': 20,
 					'id': config.data_tab,
 					'disabled': isReadonlyView,
 					'style': 'width:100%; background-color:#272626; color:#c5c5b2; border:1px solid #555; font-family:Consolas, monospace; font-size:14px;'
