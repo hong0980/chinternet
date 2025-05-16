@@ -61,22 +61,22 @@ return view.extend({
 		var tabContents = configFiles.map(function(config, index) {
 			var content = data[index];
 			return content ?
-			E('div', { 'class': 'cbi-tab', 'data-tab': config.data_tab, 'data-tab-title': _('%s Configuration File').format(config.title)}, [
-				E('p', {}, _("This page contains the configuration file content for <code>%s</code>. After editing, click the <b><font color=\"red\">Save</font></b> button to apply changes immediately.").format(config.path)),
-				E('textarea', {
-					'rows': 20,
-					'id': config.data_tab,
-					'disabled': isReadonlyView,
-					'style': 'width:100%; background-color:#272626; color:#c5c5b2; border:1px solid #555; font-family:Consolas, monospace; font-size:14px;'
-				}, [content]),
-				E('div', { 'class': 'cbi-page-actions' }, [
-					E('button', {
-						'class': 'btn cbi-button-save',
+				E('div', { 'class': 'cbi-tab', 'data-tab': config.data_tab, 'data-tab-title': _('%s Configuration File').format(config.title)}, [
+					E('p', {}, _("This page contains the configuration file content for <code>%s</code>. After editing, click the <b><font color=\"red\">Save</font></b> button to apply changes immediately.").format(config.path)),
+					E('textarea', {
+						'rows': 20,
+						'id': config.data_tab,
 						'disabled': isReadonlyView,
-						'click': ui.createHandlerFn(self, 'handleFileSave', config.path, config.data_tab)
-					}, _('Save'))
-				])
-			]) : null;
+						'style': 'width:100%; background-color:#272626; color:#c5c5b2; border:1px solid #555; font-family:Consolas, monospace; font-size:14px;'
+					}, [content]),
+					E('div', { 'class': 'cbi-page-actions' }, [
+						E('button', {
+							'class': 'btn cbi-button-save',
+							'disabled': isReadonlyView,
+							'click': ui.createHandlerFn(self, 'handleFileSave', config.path, config.data_tab)
+						}, _('Save'))
+					])
+				]) : null;
 		}).filter(function(item) { return !!item; });
 
 		var view = E('div', {}, [
@@ -92,7 +92,7 @@ return view.extend({
 		return view;
 	},
 
-	handleSaveApply: null,
 	handleSave: null,
-	handleReset: null
+	handleReset: null,
+	handleSaveApply: null
 });
