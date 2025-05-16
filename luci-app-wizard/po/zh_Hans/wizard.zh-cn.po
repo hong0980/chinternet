@@ -44,61 +44,7 @@ msgid "It is recommended to back up the file before making changes. Comments can
 msgstr "修改前建议先备份行再修改，注释可以在行首添加 ＃。"
 
 msgid "Wizard"
-msgstr "网络设置向导"
-
-msgid "Inital Router Setup"
-msgstr "网络设置"
-
-msgid "Wireless Settings"
-msgstr "无线设置"
-
-msgid "Lan Settings"
-msgstr "内网设置"
-
-msgid "Wan Settings"
-msgstr "上网模式"
-
-msgid "If you are using this router for the first time, please configure it here."
-msgstr "如果你首次使用这个路由器，请在这里简单设置。"
-
-msgid "Three different ways to access the Internet, please choose according to your own situation."
-msgstr "几种不同的上网方式，请您根据自身情况进行选择。"
-
-msgid "Set the router's wireless name and password. For more advanced settings, please go to the Network-Wireless page."
-msgstr "设置路由器的无线名字和密码，更多高级设置请进入 网络-无线 页面。"
-
-msgid "Siderouter"
-msgstr "旁路由模式"
-
-msgid "Enable IPv6"
-msgstr "启用IPv6"
-
-msgid "Enable/Disable IPv6"
-msgstr "一键开启/关闭 IPv6"
-
-msgid "Wizard"
 msgstr "设置向导"
-
-msgid "Inital Router Setup"
-msgstr "路由器设置向导"
-
-msgid "Wan Settings"
-msgstr "上网设置"
-
-msgid "Wireless Settings"
-msgstr "无线设置"
-
-msgid "If you are using this router for the first time, please configure it here."
-msgstr "如果你首次使用这个路由器，请在这里简单设置。"
-
-msgid "Three different ways to access the Internet, please choose according to your own situation."
-msgstr "三种不同的上网方式，请您根据自身情况进行选择。"
-
-msgid "Set the router's wireless name and password. For more advanced settings, please go to the Network-Wireless page."
-msgstr "设置路由器的无线名字和密码，更多高级设置请进入 网络-无线 页面。"
-
-msgid "Lan Settings"
-msgstr "内网设置"
 
 msgid "Inital Router Setup"
 msgstr "初始路由器设置"
@@ -109,8 +55,26 @@ msgstr "如果您是第一次使用此路由器，请在此进行配置。"
 msgid "Wan Settings"
 msgstr "WAN 设置"
 
-msgid "Three different ways to access the Internet, please choose according to your own situation."
-msgstr "三种不同的上网方式，请根据您的情况选择。"
+msgid "There are several different ways to access the Internet, please choose according to your own situation."
+msgstr "几种不同的上网方式，请您根据自身情况进行选择。"
+
+msgid "Lan Settings"
+msgstr "内网设置"
+
+msgid "Wireless Settings"
+msgstr "无线设置"
+
+msgid "Set the router's wireless name and password. For more advanced settings, please go to the Network-Wireless page."
+msgstr "设置路由器的无线名称和密码。如需更高级的设置，请前往网络-无线页面。"
+
+msgid "Siderouter"
+msgstr "旁路由模式"
+
+msgid "Enable IPv6"
+msgstr "启用IPv6"
+
+msgid "Enable/Disable IPv6"
+msgstr "一键开启/关闭 IPv6"
 
 msgid "Obtain IPv6 address"
 msgstr "获取 IPv6 地址"
@@ -120,9 +84,6 @@ msgstr "在 PPP 链接上启用 IPv6 协商"
 
 msgid "IPv4 gateway"
 msgstr "IPv4 网关"
-
-msgid "Use custom DNS servers"
-msgstr "使用自定义 DNS 服务器"
 
 msgid "AliDNS: 223.5.5.5"
 msgstr "阿里DNS：223.5.5.5"
@@ -145,14 +106,77 @@ msgstr "114DNS：114.114.114.114"
 msgid "114DNS: 114.114.115.115"
 msgstr "114DNS：114.114.115.115"
 
-msgid "Wireless Settings"
-msgstr "无线设置"
-
-msgid "Set the router's wireless name and password. For more advanced settings, please go to the Network-Wireless page."
-msgstr "设置路由器的无线名称和密码。如需更高级的设置，请前往网络-无线页面。"
-
 msgid "<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr "<abbr title=\"扩展服务集标识符\">ESSID</abbr>"
 
 msgid "Key"
 msgstr "密钥"
+
+msgid "Select the network access protocol to determine how the router connects to the Internet."
+msgstr "选择网络接入协议，决定路由器如何连接到互联网。"
+
+msgid "Username for PPPoE dial-up."
+msgstr "PPPoE 拨号的用户名。"
+
+msgid "Password for PPPoE dial-up."
+msgstr "PPPoE 拨号的密码。"
+
+msgid "Subnet mask for static address mode."
+msgstr "静态地址模式的子网掩码。"
+
+msgid "Gateway address for static address mode."
+msgstr "静态地址模式的网关地址。"
+
+msgid "Static IP address assigned to the router in access point mode for connecting to the main network."
+msgstr "路由器在接入点模式下分配的静态 IP 地址，用于连接主网络。"
+
+msgid "Subnet mask for the router in access point mode, which should match the main network."
+msgstr "接入点模式下路由器的子网掩码，应与主网络一致。"
+
+msgid "Gateway address of the main network, typically the IP address of the main router."
+msgstr "主网络的网关地址，通常为主路由器的 IP 地址。"
+
+msgid "Disable DHCP to rely on the main router's DHCP server, or enable local DHCP service."
+msgstr "禁用 DHCP 以依赖主路由器的 DHCP 服务器，或启用本地 DHCP 服务。"
+
+msgid "Select the network interfaces (e.g., LAN or wireless interfaces) to participate in bridging to connect to the main network."
+msgstr "选择参与桥接的网络接口（如 LAN 或无线接口），以连接主网络。"
+
+msgid "IP address assigned to the side router in the main network, which should avoid conflicts with the main router's LAN subnet."
+msgstr "旁路路由器在主网络中分配的 IP 地址，应避免与主路由器 LAN 子网冲突。"
+
+msgid "Subnet mask for the side router, which should match the main network."
+msgstr "旁路路由器的子网掩码，应与主网络一致。"
+
+msgid "IP address of the main router to which the side router connects."
+msgstr "旁路路由器连接的主路由器的 IP 地址。"
+
+msgid "Default gateway address for the side router, typically the IP address of the main router."
+msgstr "旁路路由器的默认网关地址，通常为主路由器的 IP 地址。"
+
+msgid "Select the interfaces (e.g., WAN or LAN ports) for the side router to connect to the main network."
+msgstr "选择旁路路由器连接主网络的接口（如 WAN 或 LAN 端口）。"
+
+msgid "List of custom DNS servers for the WAN interface."
+msgstr "WAN 接口的自定义 DNS 服务器列表。"
+
+msgid "IPv4 address for the LAN interface."
+msgstr "LAN 接口的 IPv4 地址。"
+
+msgid "Subnet mask for the LAN interface."
+msgstr "LAN 接口的子网掩码。"
+
+msgid "List of custom DNS servers used by LAN clients (DHCP)."
+msgstr "LAN 客户端（DHCP）使用的自定义 DNS 服务器列表。"
+
+msgid "SSID of the wireless network, with a maximum length of 32 characters."
+msgstr "无线网络的 SSID，长度不超过 32 个字符。"
+
+msgid "Password for the wireless network, compliant with WPA key requirements."
+msgstr "无线网络的密码，符合 WPA 密钥要求。"
+
+msgid "Access Point (AP)"
+msgstr "交换机 (AP)"
+
+msgid "Side Router"
+msgstr "旁路由"

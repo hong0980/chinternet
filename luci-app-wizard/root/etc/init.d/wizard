@@ -32,6 +32,10 @@ reconfig() {
 	EOF
 }
 
+log_msg() {
+	logger -p daemon.info -t "wizard" "$*"
+}
+
 uci_changes() {
 	local changes
 	changes=$(uci -q changes "$1")
@@ -181,6 +185,11 @@ add_wizard() {
 			uci_set wizard default wifi_ssid_old "$wifi_ssid"
 		fi
 	}
+}
+
+start() {
+	config_load wizard
+	config_foreach add_wizard wizard
 
 	for config in network dhcp firewall wireless wizard; do
 		if uci_changes "$config"; then
@@ -194,11 +203,6 @@ add_wizard() {
 	done
 }
 
-start() {
-	config_load wizard
-	config_foreach add_wizard wizard
-}
-
 boot() {
-	XBOOT=1
+	XBOOT=1 start
 }
