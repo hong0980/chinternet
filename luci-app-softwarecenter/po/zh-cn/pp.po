@@ -180,3 +180,72 @@ msgstr "<abbr title=\"扩展服务集标识符\">ESSID</abbr>"
 
 msgid "Key"
 msgstr "密钥"
+
+msgid "Select the network access protocol to determine how the router connects to the Internet."
+msgstr "选择网络接入协议，决定路由器如何连接到互联网。"
+
+msgid "Username for PPPoE dial-up."
+msgstr "PPPoE 拨号的用户名。"
+
+msgid "Password for PPPoE dial-up."
+msgstr "PPPoE 拨号的密码。"
+
+msgid "Subnet mask for static address mode."
+msgstr "静态地址模式的子网掩码。"
+
+msgid "Gateway address for static address mode."
+msgstr "静态地址模式的网关地址。"
+
+msgid "Static IP address assigned to the router in access point mode for connecting to the main network."
+msgstr "路由器在接入点模式下分配的静态 IP 地址，用于连接主网络。"
+
+msgid "Subnet mask for the router in access point mode, which should match the main network."
+msgstr "接入点模式下路由器的子网掩码，应与主网络一致。"
+
+msgid "Gateway address of the main network, typically the IP address of the main router."
+msgstr "主网络的网关地址，通常为主路由器的 IP 地址。"
+
+msgid "Disable DHCP to rely on the main router's DHCP server, or enable local DHCP service."
+msgstr "禁用 DHCP 以依赖主路由器的 DHCP 服务器，或启用本地 DHCP 服务。"
+
+msgid "Select the network interfaces (e.g., LAN or wireless interfaces) to participate in bridging to connect to the main network."
+msgstr "选择参与桥接的网络接口（如 LAN 或无线接口），以连接主网络。"
+
+msgid "IP address assigned to the side router in the main network, which should avoid conflicts with the main router's LAN subnet."
+msgstr "旁路路由器在主网络中分配的 IP 地址，应避免与主路由器 LAN 子网冲突。"
+
+msgid "Subnet mask for the side router, which should match the main network."
+msgstr "旁路路由器的子网掩码，应与主网络一致。"
+
+msgid "IP address of the main router to which the side router connects."
+msgstr "旁路路由器连接的主路由器的 IP 地址。"
+
+msgid "Default gateway address for the side router, typically the IP address of the main router."
+msgstr "旁路路由器的默认网关地址，通常为主路由器的 IP 地址。"
+
+msgid "Select the interfaces (e.g., WAN or LAN ports) for the side router to connect to the main network."
+msgstr "选择旁路路由器连接主网络的接口（如 WAN 或 LAN 端口）。"
+
+msgid "List of custom DNS servers for the WAN interface."
+msgstr "WAN 接口的自定义 DNS 服务器列表。"
+
+msgid "IPv4 address for the LAN interface."
+msgstr "LAN 接口的 IPv4 地址。"
+
+msgid "Subnet mask for the LAN interface."
+msgstr "LAN 接口的子网掩码。"
+
+msgid "List of custom DNS servers used by LAN clients (DHCP)."
+msgstr "LAN 客户端（DHCP）使用的自定义 DNS 服务器列表。"
+
+msgid "SSID of the wireless network, with a maximum length of 32 characters."
+msgstr "无线网络的 SSID，长度不超过 32 个字符。"
+
+msgid "Password for the wireless network, compliant with WPA key requirements."
+msgstr "无线网络的密码，符合 WPA 密钥要求。"
+
+msgid "Access Point (AP)"
+msgstr "交换机 (AP)"
+
+msgid "Side Router"
+msgstr "旁路由"
