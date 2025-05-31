@@ -1,207 +1,472 @@
+#: ddnsto.lua:10
+msgid "DDNSTO Remote Control"
+msgstr "DDNSTO 远程控制"
+
+#: ddnsto.lua:43
+msgid "Enabled"
+msgstr "已启用"
+
+#: ddnsto.lua:43
+msgid "Disabled"
+msgstr "未启用"
+
+#: ddnsto.lua:44
+msgid "Running"
+msgstr "已启动"
+
+#: ddnsto.lua:44
+msgid "Not Running"
+msgstr "未运行"
+
+#: ddnsto.lua:44
+msgid "Service Status:"
+msgstr "服务状态："
+
+#: ddnsto.lua:45
+msgid "Plugin Version:"
+msgstr "插件版本："
+
+#: ddnsto.lua:46
+msgid "Device ID:"
+msgstr "设备ID："
+
+#: ddnsto.lua:47
+msgid "Console:"
+msgstr "控制台："
+
+#: ddnsto.lua:47
+msgid "Click to go to DDNSTO Console"
+msgstr "点击前往DDNSTO控制台"
+
+#: ddnsto.lua:48
+msgid "Extended Features:"
+msgstr "拓展功能："
+
+#: ddnsto.lua:52
+msgid "Extended Username:"
+msgstr "拓展用户名："
+
+#: ddnsto.lua:54
+msgid "WebDAV Service:"
+msgstr "webdav服务："
+
+#: ddnsto.lua:56
+msgid "WebDAV Address:"
+msgstr "webdav地址："
+
+#: ddnsto.lua:59
+msgid "Remote Boot Service:"
+msgstr "远程开机服务："
+
+#: ddnsto.lua:39
+msgid "Service Status"
+msgstr "服务状态"
+
+#: ddnsto.lua:65
+msgid "Basic Settings"
+msgstr "基础设置"
+
+#: ddnsto.lua:70
+msgid "Enable"
+msgstr "启用"
+
+#: ddnsto.lua:72
+msgid "Enable DDNSTO Remote Control"
+msgstr "启用DDNSTO 远程控制"
+
+#: ddnsto.lua:75
+msgid "User Token"
+msgstr "用户Token"
+
+#: ddnsto.lua:78
+msgid "How to obtain a token?"
+msgstr "如何获取令牌？"
+
+#: ddnsto.lua:83
+msgid "Device Number"
+msgstr "设备编号"
+
+#: ddnsto.lua:85
+msgid "If multiple devices have duplicate IDs, please modify this number"
+msgstr "如有多台设备id重复，请修改此编号"
+
+#: ddnsto.lua:90
+msgid "CPU Core Count"
+msgstr "CPU核心数"
+
+#: ddnsto.lua:93
+msgid "Auto Detect"
+msgstr "自动获取"
+
+#: ddnsto.lua:93
+msgid "1 Thread"
+msgstr "1 线程"
+
+#: ddnsto.lua:93
+msgid "2 Threads"
+msgstr "2 线程"
+
+#: ddnsto.lua:93
+msgid "4 Threads"
+msgstr "4 线程"
+
+#: ddnsto.lua:93
+msgid "8 Threads"
+msgstr "8 线程"
+
+#: ddnsto.lua:93
+msgid "16 Threads"
+msgstr "16 线程"
+
+#: ddnsto.lua:98
+msgid "Log"
+msgstr "日志"
+
+#: ddnsto.lua:100
+msgid "Log level, default is Warning"
+msgstr "日志级别，默认值是警告"
+
+#: ddnsto.lua:101
+msgid "Debug"
+msgstr "调试"
+
+#: ddnsto.lua:101
+msgid "Info"
+msgstr "信息"
+
+#: ddnsto.lua:101
+msgid "Warning"
+msgstr "警告"
+
+#: ddnsto.lua:101
+msgid "Error"
+msgstr "错误"
 
-msgid "%s Configuration File"
-msgstr "%s 配置文件"
+#: ddnsto.lua:122
+msgid "Extended Features"
+msgstr "拓展功能"
 
-msgid "Contents of %s have been saved."
-msgstr "%s 内容已保存。"
+#: ddnsto.lua:123
+msgid "When enabled, supports console 'File Management' and 'Remote Boot' features"
+msgstr "启用后可支持控制台的“文件管理”及“远程开机”功能"
 
-msgid "Service %s reloaded successfully."
-msgstr "%s 服务重载成功。"
+#: ddnsto.lua:123
+msgid "View Tutorial"
+msgstr "查看教程"
 
-msgid "Service reload failed: %s"
-msgstr "服务重载失败: %s"
+#: ddnsto.lua:130
+msgid "Port"
+msgstr "端口"
 
-msgid "Unable to save contents: %s"
-msgstr "无法保存内容: %s"
+#: ddnsto.lua:137
+msgid "Authorized Username"
+msgstr "授权用户名"
 
-msgid "This page contains the configuration file content for <code>%s</code>. After editing, click the <b><font color='red'>Save</font></b> button to apply changes immediately."
-msgstr "本页是<code>%s</code>的配置文件内容，编辑后点击<b><font color='red'> 保存 </font></b>按钮后立即生效"
+#: ddnsto.lua:144
+msgid "Authorized User Password"
+msgstr "授权用户密码"
 
-msgid "The configuration file is directly edited and saved! Unless you know what you are doing, please do not modify these configuration files. Incorrect configurations may cause issues such as failure to boot or network errors."
-msgstr "配置文件是直接编辑保存的！除非你知道在干什么，否则请不要修改这些配置文件。配置不正确可能会导致不能开机，联网等错误。"
+#: ddnsto.lua:151
+msgid "Shared Disk"
+msgstr "共享磁盘"
 
-msgid "It is recommended to back up the file before making changes. Comments can be added by starting a line with #."
-msgstr "修改前建议先备份行再修改，注释可以在行首添加 ＃。"
+#: ddnsto.lua:171
+msgid "DDNSTO Remote Control is a plugin developed by Koolcenter Xiaobao, supporting HTTP2 for remote penetration control.<br />It supports accessing intranet device backends via custom domains in a browser, remote RDP/VNC desktops, remote file management, and more.<br />For details, visit <a href='https://www.ddnsto.com/' target='_blank'>https://www.ddnsto.com</a>"
+msgstr "DDNSTO远程控制是Koolcenter小宝开发的，支持http2的远程穿透控制插件。<br />支持通过浏览器访问自定义域名访问内网设备后台、远程RDP/VNC桌面、远程文件管理等多种功能。<br />详情请查看 <a href='https://www.ddnsto.com/' target='_blank'>https://www.ddnsto.com</a>"
 
-msgid "Wizard"
-msgstr "设置向导"
+#: ddnsto.lua:174
+msgid "Save and Apply"
+msgstr "保存并应用"
 
-msgid "Inital Router Setup"
-msgstr "初始路由器设置"
+#: ddnsto.lua:195
+msgid "Invalid request"
+msgstr "无效的请求"
 
-msgid "If you are using this router for the first time, please configure it here."
-msgstr "如果您是第一次使用此路由器，请在此进行配置。"
+#: ddnsto.lua:197
+msgid "Please enter a valid User Token"
+msgstr "请填写正确用户Token（令牌）"
 
-msgid "Wan Settings"
-msgstr "WAN 设置"
+#: ddnsto.lua:203
+msgid "Please enter a valid Device Number"
+msgstr "请填写正确的设备编号"
 
-msgid "There are several different ways to access the Internet, please choose according to your own situation."
-msgstr "几种不同的上网方式，请您根据自身情况进行选择。"
+#: ddnsto.lua:208
+msgid "Please enter a valid port"
+msgstr "请填写正确的端口"
 
-msgid "Lan Settings"
-msgstr "内网设置"
+#: ddnsto.lua:208
+msgid "Please enter an authorized username"
+msgstr "请填写授权用户名"
 
-msgid "Wireless Settings"
-msgstr "无线设置"
+#: ddnsto.lua:208
+msgid "Please enter an authorized user password"
+msgstr "请填写授权用户密码"
 
-msgid "Set the router's wireless name and password. For more advanced settings, please go to the Network-Wireless page."
-msgstr "设置路由器的无线名称和密码。如需更高级的设置，请前往网络-无线页面。"
+#: ddnsto.lua:208
+msgid "Please enter a shared disk path"
+msgstr "请填写共享磁盘路径"
 
-msgid "DHCP client"
-msgstr "DHCP 客户端"
+#: ddnsto.lua:192
+msgid "Verifying parameters...\n"
+msgstr "正在验证参数...\n"
 
-msgid "PPPoE"
-msgstr "PPPoE"
+#: ddnsto.lua:46
+msgid "<b style='color:green;font-weight:bolder'>%s</b> (Device Number: %s)"
+msgstr "<b style='color:green;font-weight:bolder'>%s</b>（设备编号: %s）"
 
-msgid "Static address"
-msgstr "静态地址"
+#: ddnsto.lua:213
+msgid "%sSaving parameters...\nSaved successfully!\nPlease close the dialog\n"
+msgstr "%s正在保存参数...\n保存成功!\n请关闭对话框\n"
 
-msgid "Obtain IPv6 address"
-msgstr "获取 IPv6 地址"
+#: ddnsto.lua:217
+msgid "%sParameter error: %s\nSave failed!\nPlease close the dialog\n"
+msgstr "%s参数错误： %s\n保存失败！\n请关闭对话框\n"
 
-msgid "Enable IPv6 negotiation on the PPP link"
-msgstr "在 PPP 链接上启用 IPv6 协商"
+#: ddnsto.lua:199
+msgid "Token length must be 36 characters"
+msgstr "令牌长度必须是36个字符"
 
-msgid "IPv4 netmask"
-msgstr "IPv4 子网掩码"
+#: ddnsto.lua:201
+msgid "Token must not contain spaces"
+msgstr "令牌勿包含空格"
 
-msgid "IPv4 gateway"
-msgstr "IPv4 网关"
+#: ddnsto.lua:208
+msgid "Username must not contain spaces"
+msgstr "用户名请勿包含空格"
 
-msgid "Bridge IP address"
-msgstr "桥接 IP 地址"
+#: ddnsto.lua:208
+msgid "User password must not contain spaces"
+msgstr "用户密码请勿包含空格"
 
-msgid "Bridge netmask"
-msgstr "桥接子网掩码"
 
-msgid "Bridge gateway"
-msgstr "桥接网关"
+msgid "This page is the configuration file content of Deluge."
+msgstr "本页是Deluge的配置文件内容。"
 
-msgid "DHCP for AP mode"
-msgstr "接入点模式 DHCP"
+msgid "Last 30 lines of run log:"
+msgstr "运行日志的最新 30 行："
 
-msgid "Bridge interfaces"
-msgstr "桥接接口"
+msgid "The last 30 lines of the syslog:"
+msgstr "系统日志的最新 30 行："
 
-msgid "Local IP address"
-msgstr "本地 IP 地址"
+msgid "%s/download (size: %s) (used: %s/%s)"
+msgstr "%s/download (大小: %s) (已用: %s/%s)"
 
-msgid "Netmask for side router"
-msgstr "旁路路由器子网掩码"
+#: config.lua:10
+msgid "Deluge Downloader"
+msgstr "Deluge 下载器"
 
-msgid "Main router IP address"
-msgstr "主路由器 IP 地址"
+#: config.lua:11
+msgid "Deluge is a BitTorrent client with a graphical interface built using PyGTK<br>"
+msgstr "Deluge是一个通过PyGTK建立图形界面的BitTorrent客户端<br>"
 
-msgid "Gateway for side router"
-msgstr "旁路路由器网关"
+#: config.lua:14
+msgid "Basic Settings"
+msgstr "基本设置"
 
-msgid "DHCP for side router"
-msgstr "旁路路由器 DHCP"
+#: config.lua:15
+msgid "Download Settings"
+msgstr "下载设置"
 
-msgid "Connection interfaces"
-msgstr "连接接口"
+#: config.lua:16
+msgid "Other Settings"
+msgstr "其他设置"
 
-msgid "WAN DNS servers"
-msgstr "WAN DNS 服务器"
+#: config.lua:19
+msgid "Enabled"
+msgstr "启用"
 
-msgid "LAN DNS servers"
-msgstr "LAN DNS 服务器"
+#: config.lua:22
+msgid "Run daemon as user"
+msgstr "以此用户权限运行"
 
-msgid "AliDNS: 223.5.5.5"
-msgstr "阿里DNS：223.5.5.5"
+#: config.lua:26
+msgid "Root Path of the Profile"
+msgstr "配置保存路径"
 
-msgid "AliDNS: 223.6.6.6"
-msgstr "阿里DNS：223.6.6.6"
+#: config.lua:27
+msgid "Saved by default in /etc/deluge"
+msgstr "默认保存在/etc/deluge"
 
-msgid "DNSPod: 101.226.4.6"
-msgstr "DNS派：101.226.4.6"
+#: config.lua:30
+msgid "Download File Path"
+msgstr "下载文件路径"
 
-msgid "DNSPod: 218.30.118.6"
-msgstr "DNS派：218.30.118.6"
+#: config.lua:31
+msgid "The files are stored in the download directory automatically created under the selected mounted disk"
+msgstr "文件存放在所选已挂载磁盘下自动创建的download目录中"
 
-msgid "BaiduDNS: 180.76.76.76"
-msgstr "百度DNS：180.76.76.76"
+#: config.lua:39
+msgid "Locale Language"
+msgstr "语言"
 
-msgid "114DNS: 114.114.114.114"
-msgstr "114DNS：114.114.114.114"
+#: config.lua:40
+msgid "Simplified Chinese"
+msgstr "简体中文"
 
-msgid "114DNS: 114.114.115.115"
-msgstr "114DNS：114.114.115.115"
+#: config.lua:41
+msgid "English"
+msgstr "英语"
 
-msgid "The local IP address should not be in the same subnet as the main router IP (%s). Try a different subnet, e.g., 192.168.2.x."
-msgstr "本地 IP 地址不应与主路由器 IP（%s）在同一子网内。请尝试使用不同的子网，例如 192.168.2.x。"
+#: config.lua:45
+msgid "Listening Port"
+msgstr "监听端口"
 
-msgid "<abbr title='Extended Service Set Identifier'>ESSID</abbr>"
-msgstr "<abbr title='扩展服务集标识符'>ESSID</abbr>"
+#: config.lua:46
+msgid "Default port: 8112"
+msgstr "默认端口：8112"
 
-msgid "Key"
-msgstr "密钥"
+#: config.lua:49
+msgid "WebUI Password"
+msgstr "WebUI密码"
 
-msgid "Select the network access protocol to determine how the router connects to the Internet."
-msgstr "选择网络接入协议，决定路由器如何连接到互联网。"
+#: config.lua:50
+msgid "Default password: deluge"
+msgstr "默认密码：deluge"
 
-msgid "Username for PPPoE dial-up."
-msgstr "PPPoE 拨号的用户名。"
+#: config.lua:53
+msgid "WebUI uses HTTPS"
+msgstr "WebUI使用https"
 
-msgid "Password for PPPoE dial-up."
-msgstr "PPPoE 拨号的密码。"
+#: config.lua:54
+msgid "Not used by default"
+msgstr "默认不使用"
 
-msgid "Subnet mask for static address mode."
-msgstr "静态地址模式的子网掩码。"
+#: config.lua:56
+msgid "Not Used"
+msgstr "不使用"
 
-msgid "Gateway address for static address mode."
-msgstr "静态地址模式的网关地址。"
+#: config.lua:57
+msgid "Use"
+msgstr "使用"
 
-msgid "Static IP address assigned to the router in access point mode for connecting to the main network."
-msgstr "路由器在接入点模式下分配的静态 IP 地址，用于连接主网络。"
+#: config.lua:60
+msgid "Active Seeds"
+msgstr "活动种子"
 
-msgid "Subnet mask for the router in access point mode, which should match the main network."
-msgstr "接入点模式下路由器的子网掩码，应与主网络一致。"
+#: config.lua:61
+msgid "Total"
+msgstr "总数"
 
-msgid "Gateway address of the main network, typically the IP address of the main router."
-msgstr "主网络的网关地址，通常为主路由器的 IP 地址。"
+#: config.lua:64
+msgid "Downloading"
+msgstr "正在下载"
 
-msgid "Disable DHCP to rely on the main router's DHCP server, or enable local DHCP service."
-msgstr "禁用 DHCP 以依赖主路由器的 DHCP 服务器，或启用本地 DHCP 服务。"
+#: config.lua:67
+msgid "Seeding"
+msgstr "做种"
 
-msgid "Select the network interfaces (e.g., LAN or wireless interfaces) to participate in bridging to connect to the main network."
-msgstr "选择参与桥接的网络接口（如 LAN 或无线接口），以连接主网络。"
+#: config.lua:70
+msgid "Global Bandwidth Usage"
+msgstr "全局带宽使用"
 
-msgid "IP address assigned to the side router in the main network, which should avoid conflicts with the main router's LAN subnet."
-msgstr "旁路路由器在主网络中分配的 IP 地址，应避免与主路由器 LAN 子网冲突。"
+#: config.lua:71
+msgid "Maximum Connections"
+msgstr "最大连接数"
 
-msgid "Subnet mask for the side router, which should match the main network."
-msgstr "旁路路由器的子网掩码，应与主网络一致。"
+#: config.lua:74
+msgid "Maximum Download Speed (KiB/s)"
+msgstr "最大下载速度(KiB/s)"
 
-msgid "IP address of the main router to which the side router connects."
-msgstr "旁路路由器连接的主路由器的 IP 地址。"
+#: config.lua:77
+msgid "Maximum Upload Speed (KiB/s)"
+msgstr "最大上传速度(KiB/s)"
 
-msgid "Default gateway address for the side router, typically the IP address of the main router."
-msgstr "旁路路由器的默认网关地址，通常为主路由器的 IP 地址。"
+#: config.lua:80
+msgid "Maximum Upload Slots"
+msgstr "最大上传通道"
 
-msgid "Select the interfaces (e.g., WAN or LAN ports) for the side router to connect to the main network."
-msgstr "选择旁路路由器连接主网络的接口（如 WAN 或 LAN 端口）。"
+#: config.lua:83
+msgid "Per-Torrent Bandwidth Usage"
+msgstr "每个种子带宽使用"
 
-msgid "List of custom DNS servers for the WAN interface."
-msgstr "WAN 接口的自定义 DNS 服务器列表。"
+#: config.lua:84
+msgid "Maximum Connections"
+msgstr "最大连接数"
 
-msgid "IPv4 address for the LAN interface."
-msgstr "LAN 接口的 IPv4 地址。"
+#: config.lua:87
+msgid "Maximum Upload Slots"
+msgstr "最大上传通道"
 
-msgid "Subnet mask for the LAN interface."
-msgstr "LAN 接口的子网掩码。"
+#: config.lua:90
+msgid "Maximum Download Speed (KiB/s)"
+msgstr "最大下载速度(KiB/s)"
 
-msgid "List of custom DNS servers used by LAN clients (DHCP)."
-msgstr "LAN 客户端（DHCP）使用的自定义 DNS 服务器列表。"
+#: config.lua:94
+msgid "Maximum Upload Speed (KiB/s)"
+msgstr "最大上传速度(KiB/s)"
 
-msgid "SSID of the wireless network, with a maximum length of 32 characters."
-msgstr "无线网络的 SSID，长度不超过 32 个字符。"
+#: config.lua:98
+msgid "Sequential Download"
+msgstr "顺序下载"
 
-msgid "Password for the wireless network, compliant with WPA key requirements."
-msgstr "无线网络的密码，符合 WPA 密钥要求。"
+#: config.lua:101
+msgid "Prioritize First and Last Pieces"
+msgstr "任务首尾块优先"
 
-msgid "Access Point (AP)"
-msgstr "交换机 (AP)"
+#: config.lua:104
+msgid "Move Completed Tasks to"
+msgstr "将已完成的任务移动到"
 
-msgid "Side Router"
-msgstr "旁路由"
+#: config.lua:107
+msgid "Path"
+msgstr "路径"
+
+#: config.lua:110
+msgid "Copy Torrent File to"
+msgstr "将种子文件复制到"
+
+#: config.lua:113
+msgid "Path"
+msgstr "路径"
+
+#: config.lua:116
+msgid "Enable Log"
+msgstr "启用日志"
+
+#: config.lua:119
+msgid "Log Path"
+msgstr "日志路径"
+
+#: config.lua:120
+msgid "By default in the configuration directory"
+msgstr "默认在配置目录下"
+
+#: config.lua:123
+msgid "Log Level"
+msgstr "日志记录等级"
+
+#: config.lua:125
+msgid "none"
+msgstr "无"
+
+#: config.lua:126
+msgid "Error"
+msgstr "错误"
+
+#: config.lua:127
+msgid "Warning"
+msgstr "警告"
+
+#: config.lua:128
+msgid "Info"
+msgstr "信息"
+
+#: config.lua:129
+msgid "Debug"
+msgstr "调试"
+
+#: config.lua:132
+msgid "GeoIP Database Path"
+msgstr "GeoIP 数据库路径"
+
+#: config.lua:135
+msgid "Cache Size"
+msgstr "缓存大小"
+
+#: config.lua:136
+msgid "Unit: KiB"
+msgstr "单位：KiB"
+
+#: config.lua:16
+msgid "Speed and connection in download settings %s are %s"
+msgstr "下载设置中的速度和连接 %s 为 %s"
