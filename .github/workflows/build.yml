@@ -9,7 +9,7 @@ jobs:
     name: Upload Release Asset
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4.1.7
+    - uses: actions/checkout@v4.2.2
     - name: build
       run: |
         sudo -E apt-get -y install gcc make && \
