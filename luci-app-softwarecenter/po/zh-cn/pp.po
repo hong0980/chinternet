@@ -210,20 +210,20 @@ msgid "Please enter a shared disk path"
 msgstr "请填写共享磁盘路径"
 
 #: ddnsto.lua:192
-msgid "Verifying parameters...\n"
-msgstr "正在验证参数...\n"
+msgid "Verifying parameters...<br>"
+msgstr "正在验证参数...<br>"
 
 #: ddnsto.lua:46
 msgid "<b style='color:green;font-weight:bolder'>%s</b> (Device Number: %s)"
 msgstr "<b style='color:green;font-weight:bolder'>%s</b>（设备编号: %s）"
 
 #: ddnsto.lua:213
-msgid "%sSaving parameters...\\nSaved successfully!\\nPlease close the dialog\\n"
-msgstr "%s正在保存参数...\\n保存成功!\\n请关闭对话框\n"
+msgid "%sSaving parameters...<br>Saved successfully!<br>Please close the dialog<br>"
+msgstr "%s正在保存参数...<br>保存成功!<br>请关闭对话框<br>"
 
 #: ddnsto.lua:217
-msgid "%sParameter error: %s\nSave failed!\nPlease close the dialog\n"
-msgstr "%s参数错误： %s\n保存失败！\n请关闭对话框\n"
+msgid "%sParameter error: %s<br>Save failed!<br>Please close the dialog<br>"
+msgstr "%s参数错误： %s<br>保存失败！<br>请关闭对话框<br>"
 
 #: ddnsto.lua:199
 msgid "Token length must be 36 characters"
