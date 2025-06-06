@@ -13,9 +13,6 @@ msgid ""
 msgstr ""
 "<b>定时任务执行和开机任务执行。预置功能超过10种，包括重启、关机、网络重启、释放内存、系统清理、网络共享、关闭网络、自动检测网络断开并重连、MWAN3负载均衡重连检测、自定义脚本等</b><br/>"
 
-msgid "Script Settings"
-msgstr "脚本设置"
-
 msgid "Scheduled task"
 msgstr "定时执行任务"
 
@@ -45,6 +42,18 @@ msgstr "休息日"
 
 msgid "Workdays"
 msgstr "工作日"
+
+msgid "No such file %s"
+msgstr "没有这样的文件 %s"
+
+msgid "Edit %s"
+msgstr "编辑 %s"
+
+msgid "Note: Please use valid sh syntax. The script runs as root. Avoid destructive commands (e.g., \"rm -rf /\"). The script should not require user interaction."
+msgstr "注意：请使用正确的 sh 语法。脚本是以 root 权限执行，请勿使用破坏性命令（如 \"rm -rf /\"）。脚本是自动执行，不会用户交互。"
+
+msgid "Unable to read %s: %s"
+msgstr "无法打开 %s: %s"
 
 msgid "Log"
 msgstr "日志"
@@ -103,17 +112,11 @@ msgstr "关闭无线网络"
 msgid "Scheduled Wifiup"
 msgstr "启用无线网络"
 
-msgid "Edit Custom Script1"
-msgstr "【自定义脚本】编辑1"
+msgid "Custom Script 1"
+msgstr "自定义脚本 1"
 
-msgid "Edit Custom Script2"
-msgstr "【自定义脚本2】编辑"
-
-msgid "Scheduled Customscript1"
-msgstr "自定义脚本1"
-
-msgid "Scheduled Customscript2"
-msgstr "自定义脚本2"
+msgid "Custom Script 2"
+msgstr "自定义脚本 2"
 
 msgid "The execution content of the [Scheduled Customscript1] in the task name"
 msgstr "任务名称中【自定义脚本1】执行内容"
@@ -133,8 +136,11 @@ msgstr "周"
 msgid "Everyday"
 msgstr "每天"
 
-msgid "View example"
-msgstr "查看示例"
+msgid "Minute (0-59) Hour (0-23) Day (1-31) Month (1-12) Weekday (0-6, 0=Sunday, 6=Saturday)"
+msgstr "分(0-59) 时(0-23) 日(1-31) 月(1-12) 星期(0-6, 0=周日, 6=周六)"
+
+msgid "verify/example"
+msgstr "验证/示例"
 
 msgid "Executed immediately"
 msgstr "立即执行"
@@ -165,3 +171,15 @@ msgstr "取值范围超界，字段：%s"
 
 msgid "Value out of range for %s"
 msgstr "取值超界，字段：%s"
+
+msgid "Task Files"
+msgstr "任务文件"
+
+msgid "Schedule Task && Start Script"
+msgstr "计划任务 && 启动脚本"
+
+msgid "Last modified: %s, Size: %s bytes"
+msgstr "最后修改：%s，大小：%s字节"
+
+msgid "File not found"
+msgstr "找不到文件"
