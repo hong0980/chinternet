@@ -37,7 +37,7 @@ msgid "Edit %s"
 msgstr "编辑 %s"
 
 msgid "Note: Please use valid sh syntax. The script runs as root. Avoid destructive commands (e.g., \"rm -rf /\"). The script should not require user interaction."
-msgstr "注意：请使用正确的 sh 语法。脚本是以 root 权限执行，请勿使用破坏性命令（如 \"rm -rf /\"）。脚本是后台自动执行，不能用户交互。"
+msgstr "注意：请使用正确的 sh 语法。脚本是以 root 权限执行，请勿使用破坏性命令（如 \"rm -rf /\"）。脚本是后台自动执行，不会与用户交互。"
 
 msgid "Unable to read %s: %s"
 msgstr "无法打开 %s: %s"
@@ -82,7 +82,7 @@ msgid "Scheduled Clearmem"
 msgstr "释放内存"
 
 msgid "Scheduled Sysfree"
-msgstr "系统清理（会重启机器）"
+msgstr "系统清理(重启")
 
 msgid "Scheduled DisReconn"
 msgstr "检测断网重连"
@@ -91,7 +91,7 @@ msgid "Scheduled DisRereboot"
 msgstr "检测断网重启"
 
 msgid "Scheduled Restartmwan3"
-msgstr "检测MWAN3失联重启"
+msgstr "检测MWAN3(重启)"
 
 msgid "Scheduled Wifidown"
 msgstr "关闭无线网络"
@@ -113,6 +113,72 @@ msgstr "任务名称中【自定义脚本2】执行内容"
 
 msgid "Minute (0-59), Hour (0-23), Day of Month (1-31), Month (1-12), Day of Week (0-7, 0 or 7 = Sunday)"
 msgstr "分钟 (0-59)，小时 (0-23)，日期 (1-31)，月份 (1-12)，星期 (0-7，0或7=星期日)"
+
+msgid "The string of the CRON expression is composed of five fields separated by spaces and the execution command: "
+msgstr "CRON表达式字符串由五个以空格分隔的时间字段和一个命令字段组成："
+
+msgid "According to the definition of the position and the range of values: minute (0-59), hour (0-23), day (1-31), month (1-12), week (0-7, 0 or 7 = Sunday), [command] means the command to execute."
+msgstr "按照位置的定义以及取值范围分别表示：分(0-59)，时(0-23)，日(1-31)，月(1-12)，周(0-7，0或7为星期天)，[command]为需要执行的命令。"
+
+msgid "comma means "
+msgstr "逗号表示"
+
+msgid "list enumeration values"
+msgstr "列出枚举值"
+
+msgid ". In the minute field, 5,20 means triggering once at the 5th minute and 20th minute respectively."
+msgstr "。在分钟域中，5,20表示分别在第5分钟和第20分钟各触发一次。"
+
+msgid "A forward slash indicates "
+msgstr "正斜杠表示"
+
+msgid "an increment of the specified value"
+msgstr "指定数值的增量"
+
+msgid ". In the minute field, 3/20 means triggering from the 3rd minute, then every 20 minutes."
+msgstr "。在分钟域中，3/20表示从第3分钟开始，每隔20分钟触发一次。"
+
+msgid "hyphen indicates "
+msgstr "连字符表示"
+
+msgid "a range"
+msgstr "范围"
+
+msgid ". In the minute field, 5-20 means trigger every minute from 5 minutes to 20 minutes."
+msgstr "。在分钟域中，5-20表示从5分钟到20分钟之间每隔一分钟触发一次。"
+
+msgid "An asterisk indicates "
+msgstr "星号表示"
+
+msgid "all possible values"
+msgstr "所有可能的值"
+
+msgid ". In the month field, * means every month; in the week field, * means every day of the week."
+msgstr "。在月域中，*表示每个月；在星期域中，*表示每一天。"
+
+msgid "Minute (0-59), Hour (0-23), Day of Month (1-31), Month (1-12), Day of Week (0-7, 0 or 7 = Sunday)"
+msgstr "分钟(0-59)，小时(0-23)，日期(1-31)，月份(1-12)，星期(0-7，0或7为星期天)"
+
+msgid "Allowed values:"
+msgstr "可用值："
+
+msgid "Any value"
+msgstr "任意值"
+
+msgid "Every N units"
+msgstr "每N个单位"
+
+msgid "List (e.g. 1,3,5)"
+msgstr "列表（如1,3,5）"
+
+msgid "Range (e.g. 1-5)"
+msgstr "范围（如1-5）"
+
+msgid "Step values in range (e.g. 1-10/2)"
+msgstr "区间内步进值（如1-10/2）"
+
+msgid "Example: \"*/5 0-12 * * 1-5\" means every 5 minutes, from 0 to 12 o'clock, Monday to Friday."
+msgstr "示例：“*/5 0-12 * * 1-5”表示每周一到周五0点到12点间每5分钟执行一次。"
 
 msgid "verify/example"
 msgstr "验证/示例"
@@ -161,6 +227,24 @@ msgstr "月"
 
 msgid "Week"
 msgstr "周"
+
+msgid "minutes"
+msgstr "分钟"
+
+msgid "hours"
+msgstr "小时"
+
+msgid "days"
+msgstr "日期"
+
+msgid "months"
+msgstr "月份"
+
+msgid "weeks"
+msgstr "星期"
+
+msgid "Everyday"
+msgstr "每天"
 
 msgid "Unknown field type: %s"
 msgstr "未知字段类型: %s"
