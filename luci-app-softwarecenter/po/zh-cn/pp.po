@@ -1,7 +1,7 @@
 msgid ""
-"<b>The original [Timing Settings] includes scheduled task execution and startup task execution. Presets include over 10 functions, including restart, shutdown, network restart, memory release, system cleaning, network sharing, network shutdown, automatic detection of network disconnects and reconnection, MWAN3 load balancing detection of reconnection, and custom scripts</b></br>"
+"Timed task execution and startup task execution. More than 10 preset functions, including restart, shutdown, network restart, freeing memory, system cleaning, network sharing, shutting down the network, automatic detection of network disconnection and reconnection, MWAN3 load balancing reconnection detection, custom scripts, etc."
 msgstr ""
-"<b>定时任务执行和开机任务执行。预置功能超过10种，包括重启、关机、网络重启、释放内存、系统清理、网络共享、关闭网络、自动检测网络断开并重连、MWAN3负载均衡重连检测、自定义脚本等</b><br/>"
+"定时任务执行和开机任务执行。预置功能超过10种，包括重启、关机、网络重启、释放内存、系统清理、网络共享、关闭网络、自动检测网络断开并重连、MWAN3负载均衡重连检测、自定义脚本等"
 
 msgid "Scheduled task"
 msgstr "定时执行任务"
@@ -118,7 +118,7 @@ msgid "verify/example"
 msgstr "验证/示例"
 
 msgid "Executed"
-msgstr "立即执行"
+msgstr "执行"
 
 msgid "Task Files"
 msgstr "任务文件"
@@ -150,7 +150,7 @@ msgstr "0-7 (0/7=星期日), '*', '*/N', 范围或列表"
 msgid "Minute"
 msgstr "分"
 
-msgid "Hour"
+msgid "Hours"
 msgstr "时"
 
 msgid "Day"
@@ -167,6 +167,9 @@ msgstr "未知字段类型: %s"
 
 msgid "Invalid format for %s"
 msgstr "%s 格式无效"
+
+msgid "Invalid character in %s"
+msgstr "%s 中包含无效字符"
 
 msgid "Step value must be between 1 and %d"
 msgstr "步长值必须在 1 和 %d 之间"
@@ -188,4 +191,3 @@ msgstr "步长值 %d 超出范围 (1-%d)"
 
 msgid "Invalid syntax: %s. Step must be used with * or ranges"
 msgstr "无效语法: %s。步长必须与 * 或范围一起使用"
-
