@@ -205,7 +205,7 @@ msgid "Step value %d out of range (1-%d) in %s"
 msgstr "%s 的步长 %d 超出有效范围 (1-%d)"
 
 msgid "Invalid syntax: %s in %s. Step must be used with * or ranges"
-msgstr "$s 中的语法 $s 无效。步长只能用于 * 或区间"
+msgstr "%2$s 中的语法 %1$s 无效。步长只能用于 * 或区间"
 
 msgid "Invalid part: %s in %s"
-msgstr "$s 中的部分 $s 无效"
+msgstr "%2$s 中的部分 %1$s 无效"
