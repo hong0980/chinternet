@@ -132,21 +132,6 @@ msgstr "最后修改：%s，大小：%s字节"
 msgid "File not found"
 msgstr "找不到文件"
 
-msgid "0-59, '*', '*/N', ranges, or lists"
-msgstr "0-59, '*', '*/N', 范围或列表"
-
-msgid "0-23, '*', '*/N', ranges, or lists"
-msgstr "0-23, '*', '*/N', 范围或列表"
-
-msgid "1-31, '*', '*/N', ranges, or lists"
-msgstr "1-31, '*', '*/N', 范围或列表"
-
-msgid "1-12, '*', '*/N', ranges, or lists"
-msgstr "1-12, '*', '*/N', 范围或列表"
-
-msgid "0-7 (0/7=Sunday), '*', '*/N', ranges, or lists"
-msgstr "0-7 (0/7=星期日), '*', '*/N', 范围或列表"
-
 msgid "Minute"
 msgstr "分"
 
@@ -180,26 +165,38 @@ msgstr "星期"
 msgid "Everyday"
 msgstr "每天"
 
-msgid "Invalid character in %s"
-msgstr "%s 包含非法字符"
+msgid "1-31, '*', '*/N', ranges, or lists"
+msgstr "1-31，'*'，'*/N'，区间或列表"
 
-msgid "Incomplete format in %s"
-msgstr "%s 格式不完整"
+msgid "0-23, '*', '*/N', ranges, or lists"
+msgstr "0-23，'*'，'*/N'，区间或列表"
+
+msgid "1-12, '*', '*/N', ranges, or lists"
+msgstr "1-12，'*'，'*/N'，区间或列表"
+
+msgid "0-59, '*', '*/N', ranges, or lists"
+msgstr "0-59，'*'，'*/N'，区间或列表"
+
+msgid "0-7 (0/7=Sunday), '*', '*/N', ranges, or lists"
+msgstr "0-7（0/7=星期天），'*'，'*/N'，区间或列表"
+
+msgid "Invalid character in %s"
+msgstr "%s 中含有无效字符"
 
 msgid "Unknown field type: %s"
 msgstr "未知字段类型：%s"
 
 msgid "Invalid format for %s"
-msgstr "%s 格式无效"
+msgstr "%s 的格式无效"
 
-msgid "Step value must be between 1 and %d in %s"
-msgstr "%s 步长必须在 1 到 %d 之间"
+msgid "Step value in %s must be between 1 and %d"
+msgstr "%s 的步长只能在 1 到 %d 之间"
 
 msgid "%s value %s out of range (%d-%d)"
-msgstr "%s 的数值 %s 超出有效范围 (%d-%d)"
+msgstr "%s 的值 %s 超出范围 (%d-%d)"
 
 msgid "Invalid range or step value in %s (%s)"
-msgstr "%s 的范围或步长值无效 (%s)"
+msgstr "%s 中的区间或步长值无效（%s）"
 
 msgid "Range %d-%d out of bounds (%d-%d) in %s"
 msgstr "%s 的区间 %d-%d 超出有效范围 (%d-%d)"
@@ -208,7 +205,7 @@ msgid "Step value %d out of range (1-%d) in %s"
 msgstr "%s 的步长 %d 超出有效范围 (1-%d)"
 
 msgid "Invalid syntax: %s in %s. Step must be used with * or ranges"
-msgstr "%s 字段的语法 %s 无效。步长只能用于 * 或范围"
+msgstr "$s 中的语法 $s 无效。步长只能用于 * 或区间"
 
 msgid "Invalid part: %s in %s"
-msgstr "%s 字段的分段 %s 无效"
+msgstr "$s 中的部分 $s 无效"
