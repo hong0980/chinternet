@@ -180,9 +180,6 @@ msgstr "0-59，'*'，'*/N'，区间或列表"
 msgid "0-7 (0/7=Sunday), '*', '*/N', ranges, or lists"
 msgstr "0-7（0/7=星期天），'*'，'*/N'，区间或列表"
 
-msgid "Invalid character in %s"
-msgstr "%s 中含有无效字符"
-
 msgid "Unknown field type: %s"
 msgstr "未知字段类型：%s"
 
@@ -209,3 +206,6 @@ msgstr "%s 字段中的语法 (%s) 无效。步长只能用于 * 或区间"
 
 msgid "Invalid part: %s in (%s)"
 msgstr "%s 字段中的 (%s) 部分无效"
+
+msgid "Invalid format for %s. Example: (%s)"
+msgstr "%s 的格式无效，示例：(%s)"
