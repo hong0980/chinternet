@@ -180,32 +180,35 @@ msgstr "星期"
 msgid "Everyday"
 msgstr "每天"
 
+msgid "Invalid character in %s"
+msgstr "%s 包含非法字符"
+
+msgid "Incomplete format in %s"
+msgstr "%s 格式不完整"
+
 msgid "Unknown field type: %s"
-msgstr "未知字段类型: %s"
+msgstr "未知字段类型：%s"
 
 msgid "Invalid format for %s"
 msgstr "%s 格式无效"
 
-msgid "Invalid character in %s"
-msgstr "%s 中包含无效字符"
+msgid "Step value must be between 1 and %d in %s"
+msgstr "%s 步长必须在 1 到 %d 之间"
 
-msgid "Step value must be between 1 and %d"
-msgstr "步长值必须在 1 和 %d 之间"
+msgid "%s value %s out of range (%d-%d)"
+msgstr "%s 的数值 %s 超出有效范围 (%d-%d)"
 
-msgid "Value %d out of range (%d-%d)"
-msgstr "值 %d 超出范围 (%d-%d)"
+msgid "Invalid range or step value in %s (%s)"
+msgstr "%s 的范围或步长值无效 (%s)"
 
-msgid "Invalid range or step value in %s"
-msgstr "无效的范围或步长值：%s"
+msgid "Range %d-%d out of bounds (%d-%d) in %s"
+msgstr "%s 的区间 %d-%d 超出有效范围 (%d-%d)"
 
-msgid "Range %d-%d out of bounds (%d-%d)"
-msgstr "范围 %d-%d 超出边界 (%d-%d)"
+msgid "Step value %d out of range (1-%d) in %s"
+msgstr "%s 的步长 %d 超出有效范围 (1-%d)"
 
-msgid "Invalid range %d-%d (start > end)"
-msgstr "无效范围 %d-%d (起始值大于结束值)"
+msgid "Invalid syntax: %s in %s. Step must be used with * or ranges"
+msgstr "%s 字段的语法 %s 无效。步长只能用于 * 或范围"
 
-msgid "Step value %d out of range (1-%d)"
-msgstr "步长值 %d 超出范围 (1-%d)"
-
-msgid "Invalid syntax: %s. Step must be used with * or ranges"
-msgstr "无效语法: %s。步长必须与 * 或范围一起使用"
+msgid "Invalid part: %s in %s"
+msgstr "%s 字段的分段 %s 无效"
