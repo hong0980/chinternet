@@ -165,20 +165,20 @@ msgstr "星期"
 msgid "Everyday"
 msgstr "每天"
 
-msgid "1-31, '*', '*/N', ranges, or lists"
-msgstr "1-31，'*'，'*/N'，区间或列表"
+msgid "1-31, \"*\", \"*/N\", ranges, or lists. E.g.: 1,5,10 or 5-10,*/2"
+msgstr "1-31，\"*\"，\"*/N\"，区间或列表。例如：1,5,10 或 5-10,*/2"
 
-msgid "0-23, '*', '*/N', ranges, or lists"
-msgstr "0-23，'*'，'*/N'，区间或列表"
+msgid "0-23, \"*\", \"*/N\", ranges, or lists. E.g.: 0,12,18 or 8-17"
+msgstr "0-23，\"*\"，\"*/N\"，区间或列表。例如：0,12,18 或 8-17"
 
-msgid "1-12, '*', '*/N', ranges, or lists"
-msgstr "1-12，'*'，'*/N'，区间或列表"
+msgid "1-12, \"*\", \"*/N\", ranges, or lists. E.g.: 1,6,12 or 3-8,*/2"
+msgstr "1-12，\"*\"，\"*/N\"，区间或列表。例如：1,6,12 或 3-8,*/2"
 
-msgid "0-59, '*', '*/N', ranges, or lists"
-msgstr "0-59，'*'，'*/N'，区间或列表"
+msgid "0-59, \"*\", \"*/N\", ranges, or lists. E.g.: 0,15,30,45 or 10-50,*/5"
+msgstr "0-59，\"*\"，\"*/N\"，区间或列表。例如：0,15,30,45 或 10-50,*/5"
 
-msgid "0-7 (0/7=Sunday), '*', '*/N', ranges, or lists"
-msgstr "0-7（0/7=星期天），'*'，'*/N'，区间或列表"
+msgid "0-7 (0/7=Sunday), \"*\", \"*/N\", ranges, or lists. E.g.: 0,1,5 or 1-5,*/2"
+msgstr "0-7（0/7=星期日），\"*\"，\"*/N\"，区间或列表。例如：0,1,5 或 1-5,*/2"
 
 msgid "Unknown field type: %s"
 msgstr "未知字段类型：%s"
