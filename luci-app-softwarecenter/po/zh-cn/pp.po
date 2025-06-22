@@ -1,72 +1,257 @@
+msgid "This page is the configuration file content of Deluge."
+msgstr "本页是Deluge的配置文件内容。"
 
-msgid "Eqosplus"
-msgstr "定时限速"
+msgid "%s/download (size: %s) (used: %s/%s)"
+msgstr "%s/download (大小: %s) (已用: %s/%s)"
 
-msgid "Network speed limit"
-msgstr "定时网速限制"
+msgid "Deluge Downloader"
+msgstr "Deluge 下载器"
 
-msgid "Running state"
-msgstr "运行状态"
+msgid "Deluge is a BitTorrent client with a graphical interface built using PyGTK"
+msgstr "Deluge是一个通过PyGTK建立图形界面的BitTorrent客户端"
 
-msgid "Not running"
-msgstr "未运行"
+msgid "Basic Settings"
+msgstr "基本设置"
 
-msgid "Running"
-msgstr "已运行"
+msgid "Download Settings"
+msgstr "下载设置"
 
-msgid "Users can limit the network speed for uploading/downloading through MAC, IP.The speed unit is MB/second."
-msgstr "可以通过MAC，IP限制用户上传/下载的网速。速度单位为<font color=\"red\"><b> MB/秒 </b></font>。"
+msgid "Other Settings"
+msgstr "其他设置"
 
-msgid "MAC/IP"
-msgstr "MAC/IP"
+msgid "Enabled"
+msgstr "启用"
 
-msgid "Downloads"
-msgstr "下载速度"
+msgid "Run daemon as user"
+msgstr "以此用户权限运行"
 
-msgid "Uploads"
-msgstr "上传速度"
+msgid "Root Path of the Profile"
+msgstr "配置保存路径"
 
-msgid "Comment"
-msgstr "备注"
+msgid "Saved by default in /etc/deluge"
+msgstr "默认保存在/etc/deluge"
 
-msgid "Upload bandwidth(Mbit/s)"
-msgstr "上传总带宽(Mbit/s)"
+msgid "Download File Path"
+msgstr "下载文件路径"
 
-msgid "Download bandwidth(Mbit/s)"
-msgstr "下载总带宽(Mbit/s)"
+msgid "The files are stored in the download directory automatically created under the selected mounted disk"
+msgstr "文件存放在所选已挂载磁盘下自动创建的download目录中"
 
-msgid "Start control time"
-msgstr "起控时间"
+msgid "Locale Language"
+msgstr "语言"
 
-msgid "Stop control time"
-msgstr "停控时间"
+msgid "Simplified Chinese"
+msgstr "简体中文"
 
-msgid "Week Day(1~7)"
-msgstr "星期(1~7)"
+msgid "English"
+msgstr "英语"
 
-msgid "Suggested feedback:"
-msgstr "建议反馈:"
+msgid "Listening Port"
+msgstr "监听端口"
 
-msgid "Set the interface used for restriction, use pppoe-wan for dialing, use WAN hardware interface for DHCP mode (such as eth1), and use br-lan for bypass mode"
-msgstr "设定用来限制网络速度的接口,拨号使用pppoe-wan,DHCP模式使用WAN口的硬件接口(如:eth1),通用使用br-lan接口"
+msgid "Default port: 8112"
+msgstr "默认端口：8112"
 
-msgid "Rest Day"
-msgstr "休息日"
+msgid "WebUI Password"
+msgstr "WebUI密码"
 
-msgid "Workday"
-msgstr "工作日"
+msgid "Default password: deluge"
+msgstr "默认密码：deluge"
 
-msgid "Automatic settings"
-msgstr "自动设置"
+msgid "WebUI uses HTTPS"
+msgstr "WebUI使用https"
 
-msgid "Invalid time format. Use HH:MM."
-msgstr "无效的时间格式。使用 HH：mm。"
+msgid "Not used by default"
+msgstr "默认不使用"
 
-msgid "Inspection Interval"
-msgstr "巡查间隔"
+msgid "Not Used"
+msgstr "不使用"
 
-msgid "Set the frequency for checking device status and applying rules. Shorter intervals provide quicker response but consume more system resources."
-msgstr "设置检查设备状态和应用规则的频率。较短的间隔响应更快但消耗更多系统资源。"
+msgid "Use"
+msgstr "使用"
 
-msgid "%d minute(s)"
-msgstr "%d 分钟"
+msgid "Enable Log"
+msgstr "启用日志"
+
+msgid "Log Path"
+msgstr "日志路径"
+
+msgid "By default in the configuration directory"
+msgstr "默认在配置目录下"
+
+msgid "Log Level"
+msgstr "日志记录等级"
+
+msgid "none"
+msgstr "无"
+
+msgid "Error"
+msgstr "错误"
+
+msgid "Warning"
+msgstr "警告"
+
+msgid "Info"
+msgstr "信息"
+
+msgid "Debug"
+msgstr "调试"
+
+msgid "GeoIP Database Path"
+msgstr "GeoIP 数据库路径"
+
+msgid "Speed and connection in download settings %s are %s"
+msgstr "下载设置中的速度和连接 %s 为 %s"
+
+msgid "Unlimited"
+msgstr "无限制"
+
+msgid "Deluge - Files"
+msgstr "Deluge - 配置查看"
+
+msgid "Deluge - Logs"
+msgstr "Deluge - 日志查看"
+
+msgid "Lines:"
+msgstr "显示行数："
+
+msgid "▽ Show Oldest First"
+msgstr "▽ 正序显示(旧在前)"
+
+msgid "△ Show Newest First"
+msgstr "△ 倒序显示(新在前)"
+
+msgid "⟳ Refresh Now"
+msgstr "⟳ 立即刷新"
+
+msgid "Last %s lines of syslog (%s):"
+msgstr "系统日志 (最近%s行, %s):"
+
+msgid "Last %s lines of run log (%s):"
+msgstr "运行日志 (最近%s行, %s):"
+
+msgid "newest first"
+msgstr "新在前"
+
+msgid "oldest first"
+msgstr "旧在前"
+
+msgid "No log data."
+msgstr "没有日志数据"
+
+msgid "No log data available"
+msgstr "无可用日志数据"
+
+msgid "System log: (no data available)"
+msgstr "系统日志：(无数据)"
+
+msgid "Deluge run log: (no data available)"
+msgstr "Deluge运行日志：(无数据)"
+
+msgid "Sequential Download"
+msgstr "顺序下载"
+
+msgid "Prioritize First and Last Pieces"
+msgstr "任务首尾块优先"
+
+msgid "Move Completed Tasks to"
+msgstr "将已完成的任务移动到"
+
+msgid "Copy Torrent File to"
+msgstr "将种子文件复制到"
+
+msgid "Path"
+msgstr "路径"
+
+msgid "Enable Bandwidth Control"
+msgstr "启用带宽控制"
+
+msgid "Settings rules:"
+msgstr "设置规则："
+
+msgid "-1 = No limit"
+msgstr "-1 = 无限制"
+
+msgid "0 = Disable"
+msgstr "0 = 禁用"
+
+msgid "≥1 = Specific limit"
+msgstr "≥1 = 限制值"
+
+msgid "Max Connections"
+msgstr "最大连接数"
+
+msgid "Total connections for all torrents"
+msgstr "所有种子的总连接数"
+
+msgid "Max Download (KiB/s)"
+msgstr "最大下载 (KiB/s)"
+
+msgid "Total download speed limit"
+msgstr "总下载速度限制"
+
+msgid "Max Upload (KiB/s)"
+msgstr "最大上传 (KiB/s)"
+
+msgid "Total upload speed limit"
+msgstr "总上传速度限制"
+
+msgid "Max Upload Slots"
+msgstr "同时上传数"
+
+msgid "Simultaneous upload peers"
+msgstr "同时上传的对等节点数"
+
+msgid "Active Torrents"
+msgstr "活动种子数"
+
+msgid "Total downloading + seeding"
+msgstr "下载和做种任务总数"
+
+msgid "Downloading Torrents"
+msgstr "下载任务数"
+
+msgid "Max simultaneous downloads"
+msgstr "最大同时下载数"
+
+msgid "Seeding Torrents"
+msgstr "做种任务数"
+
+msgid "Max simultaneous seeds"
+msgstr "最大同时做种数"
+
+msgid "Please enter a valid number"
+msgstr "请输入有效的数字"
+
+msgid "Value must be -1 (no limit) or ≥0"
+msgstr "值必须为 -1（无限制）或 ≥0"
+
+msgid "Add torrents in Paused state"
+msgstr "添加种子时暂停"
+
+msgid "Pre-allocate disk space"
+msgstr "预分配磁盘空间"
+
+msgid "Cache Size"
+msgstr "缓存大小"
+
+msgid "Disk cache size in 16 KiB blocks (e.g. 16384 = 256 MiB)"
+msgstr "磁盘缓存大小（16 KiB块为单位，示例：16384 = 256 MiB）"
+
+msgid "Minimum: 1024 (16 MiB)"
+msgstr "最小值：1024（16 MiB）"
+
+msgid "Maximum: 65536 (1 GiB)"
+msgstr "最大值：65536（1 GiB）"
+
+msgid "Must be multiple of 1024 (16 MiB)"
+msgstr "必须是1024的倍数（16 MiB）"
+
+msgid "Cache Expiry (seconds)"
+msgstr "缓存过期时间(秒)"
+
+msgid "Show session speed in titlebar"
+msgstr "在标题栏显示速度"
+
+msgid "Session Timeout"
+msgstr "会话超时"
