@@ -1,257 +1,238 @@
-msgid "This page is the configuration file content of Deluge."
-msgstr "本页是Deluge的配置文件内容。"
+msgid "Task Plan Plus+"
+msgstr "计划任务 Plus+"
 
-msgid "%s/download (size: %s) (used: %s/%s)"
-msgstr "%s/download (大小: %s) (已用: %s/%s)"
+msgid ""
+"Timed task execution and startup task execution. More than 10 preset functions, including restart, shutdown, network restart, freeing memory, system cleaning, network sharing, shutting down the network, automatic detection of network disconnection and reconnection, MWAN3 load balancing reconnection detection, custom scripts, etc."
+msgstr ""
+"定时任务执行和开机任务执行。预置功能超过10种，包括重启、关机、网络重启、释放内存、系统清理、网络共享、关闭网络、自动检测网络断开并重连、MWAN3负载均衡重连检测、自定义脚本等"
 
-msgid "Deluge Downloader"
-msgstr "Deluge 下载器"
+msgid "Scheduled task"
+msgstr "定时任务"
 
-msgid "Deluge is a BitTorrent client with a graphical interface built using PyGTK"
-msgstr "Deluge是一个通过PyGTK建立图形界面的BitTorrent客户端"
+msgid "Startup task"
+msgstr "开机任务"
 
-msgid "Basic Settings"
-msgstr "基本设置"
+msgid "The task to be executed upon startup, with a startup delay time unit of seconds."
+msgstr "开机启动执行的任务，启动延时时间单位为秒。"
 
-msgid "Download Settings"
-msgstr "下载设置"
+msgid "Control"
+msgstr "管控"
 
-msgid "Other Settings"
-msgstr "其他设置"
+msgid "Task Plan"
+msgstr "任务设置"
 
-msgid "Enabled"
-msgstr "启用"
+msgid "Scheduled Type"
+msgstr "任务类型"
 
-msgid "Run daemon as user"
-msgstr "以此用户权限运行"
+msgid "Delayed Start(seconds)"
+msgstr "开机任务延时(秒)"
 
-msgid "Root Path of the Profile"
-msgstr "配置保存路径"
+msgid "Weekend"
+msgstr "休息日"
 
-msgid "Saved by default in /etc/deluge"
-msgstr "默认保存在/etc/deluge"
+msgid "Workdays"
+msgstr "工作日"
 
-msgid "Download File Path"
-msgstr "下载文件路径"
+msgid "No such file %s"
+msgstr "没有这样的文件 %s"
 
-msgid "The files are stored in the download directory automatically created under the selected mounted disk"
-msgstr "文件存放在所选已挂载磁盘下自动创建的download目录中"
+msgid "Edit %s"
+msgstr "编辑 %s"
 
-msgid "Locale Language"
-msgstr "语言"
+msgid "Note: Please use valid sh syntax. The script runs as root. Avoid destructive commands (e.g., \"rm -rf /\"). The script should not require user interaction."
+msgstr "注意：请使用正确的 sh 语法。脚本是以 root 权限执行，请勿使用破坏性命令（如 \"rm -rf /\"）。脚本是后台自动执行，不会与用户交互。"
 
-msgid "Simplified Chinese"
-msgstr "简体中文"
+msgid "File saved to %s"
+msgstr "文件已保存至 %s"
 
-msgid "English"
-msgstr "英语"
+msgid "Click to upload the script to %s"
+msgstr "点击可以上传脚本到 %s"
 
-msgid "Listening Port"
-msgstr "监听端口"
+msgid "Unable to read %s: %s"
+msgstr "无法打开 %s: %s"
 
-msgid "Default port: 8112"
-msgstr "默认端口：8112"
+msgid "Log"
+msgstr "日志"
 
-msgid "WebUI Password"
-msgstr "WebUI密码"
+msgid "Log cleared"
+msgstr "日志已清空"
 
-msgid "Default password: deluge"
-msgstr "默认密码：deluge"
+msgid "Failed to clear the log: %s"
+msgstr "清空日志失败: %s"
 
-msgid "WebUI uses HTTPS"
-msgstr "WebUI使用https"
+msgid "Clear Log"
+msgstr "清空日志"
 
-msgid "Not used by default"
-msgstr "默认不使用"
+msgid "Display logs in reverse order"
+msgstr "倒序显示日志"
 
-msgid "Not Used"
-msgstr "不使用"
+msgid "Scheduled Reboot"
+msgstr "重启机器"
 
-msgid "Use"
-msgstr "使用"
+msgid "Scheduled Poweroff"
+msgstr "关闭机器"
 
-msgid "Enable Log"
-msgstr "启用日志"
+msgid "Scheduled ReNetwork"
+msgstr "重启网络"
 
-msgid "Log Path"
-msgstr "日志路径"
+msgid "Scheduled RestartSamba"
+msgstr "重启网络共享"
 
-msgid "By default in the configuration directory"
-msgstr "默认在配置目录下"
+msgid "Scheduled Restartlan"
+msgstr "重启LAN"
 
-msgid "Log Level"
-msgstr "日志记录等级"
+msgid "Scheduled Restartwan"
+msgstr "重启WAN"
 
-msgid "none"
-msgstr "无"
+msgid "Scheduled Closewan"
+msgstr "关闭网络"
 
-msgid "Error"
-msgstr "错误"
+msgid "Scheduled Clearmem"
+msgstr "释放内存"
 
-msgid "Warning"
-msgstr "警告"
+msgid "Scheduled Sysfree"
+msgstr "系统清理(重启)"
 
-msgid "Info"
-msgstr "信息"
+msgid "Scheduled DisReconn"
+msgstr "检测断网重连"
 
-msgid "Debug"
-msgstr "调试"
+msgid "Scheduled DisRereboot"
+msgstr "检测断网重启"
 
-msgid "GeoIP Database Path"
-msgstr "GeoIP 数据库路径"
+msgid "Scheduled Restartmwan3"
+msgstr "检测MWAN3(重启)"
 
-msgid "Speed and connection in download settings %s are %s"
-msgstr "下载设置中的速度和连接 %s 为 %s"
+msgid "Scheduled Wifidown"
+msgstr "关闭无线网络"
 
-msgid "Unlimited"
-msgstr "无限制"
+msgid "Scheduled Wifiup"
+msgstr "启用无线网络"
 
-msgid "Deluge - Files"
-msgstr "Deluge - 配置查看"
+msgid "Custom Script 1"
+msgstr "自定义脚本 1"
 
-msgid "Deluge - Logs"
-msgstr "Deluge - 日志查看"
+msgid "Custom Script 2"
+msgstr "自定义脚本 2"
 
-msgid "Lines:"
-msgstr "显示行数："
+msgid "The execution content of the [Scheduled Customscript1] in the task name"
+msgstr "任务名称中【自定义脚本1】执行内容"
 
-msgid "▽ Show Oldest First"
-msgstr "▽ 正序显示(旧在前)"
+msgid "The execution content of the [Scheduled Customscript2] in the task name"
+msgstr "任务名称中【自定义脚本2】执行内容"
 
-msgid "△ Show Newest First"
-msgstr "△ 倒序显示(新在前)"
+msgid "Minute (0-59), Hour (0-23), Day of Month (1-31), Month (1-12), Day of Week (0-6, 0 and 6 = Sunday)"
+msgstr "分钟 (0-59)，小时 (0-23)，日期 (1-31)，月份 (1-12)，星期 (0-6，0和6=星期日)"
 
-msgid "⟳ Refresh Now"
-msgstr "⟳ 立即刷新"
+msgid "\"*\" any value, \",\" value list separator, \"-\" range of values, \"/\" step values"
+msgstr "\"*\" 任何值，\",\" 值列表分隔符，\"-\" 值范围，\"/\" 步长值"
 
-msgid "Last %s lines of syslog (%s):"
-msgstr "系统日志 (最近%s行, %s):"
+msgid "Examples: Range 2-5 (means 2 to 5), List 1,3,5 (means 1 and 3 and 5), Step */5 (means every 5 units)"
+msgstr "示例：区间 2-5（表示2到5），列表 1,3,5（表示1和3和5），步进 */5（表示每5单位一次）"
 
-msgid "Last %s lines of run log (%s):"
-msgstr "运行日志 (最近%s行, %s):"
+msgid "Click Verify after selecting"
+msgstr "选择后点击验证"
 
-msgid "newest first"
-msgstr "新在前"
+msgid "verify"
+msgstr "验证"
 
-msgid "oldest first"
-msgstr "旧在前"
+msgid "Click to crontab\.guru Verification %s"
+msgstr "点击到 crontab\.guru 验证 "
 
-msgid "No log data."
-msgstr "没有日志数据"
+msgid "Executed"
+msgstr "执行"
 
-msgid "No log data available"
-msgstr "无可用日志数据"
+msgid "Task Files"
+msgstr "任务文件"
 
-msgid "System log: (no data available)"
-msgstr "系统日志：(无数据)"
+msgid "This page can be edited and saved directly. Changes will take effect immediately after saving."
+msgstr "本页面可直接编辑保存，保存后立即生效。"
 
-msgid "Deluge run log: (no data available)"
-msgstr "Deluge运行日志：(无数据)"
+msgid "Please ensure the syntax is correct, as incorrect syntax may cause the system to malfunction."
+msgstr "请务必检查语法正确性，错误的语法可能导致系统无法正常运行。"
 
-msgid "Sequential Download"
-msgstr "顺序下载"
+msgid "Last modified: %s, Size: %s bytes"
+msgstr "最后修改：%s，大小：%s字节"
 
-msgid "Prioritize First and Last Pieces"
-msgstr "任务首尾块优先"
+msgid "File not found %s"
+msgstr "%s 文件不存在"
 
-msgid "Move Completed Tasks to"
-msgstr "将已完成的任务移动到"
+msgid "Minute"
+msgstr "分"
 
-msgid "Copy Torrent File to"
-msgstr "将种子文件复制到"
+msgid "Hours"
+msgstr "时"
 
-msgid "Path"
-msgstr "路径"
+msgid "Day"
+msgstr "日"
 
-msgid "Enable Bandwidth Control"
-msgstr "启用带宽控制"
+msgid "Month"
+msgstr "月"
 
-msgid "Settings rules:"
-msgstr "设置规则："
+msgid "Week"
+msgstr "周"
 
-msgid "-1 = No limit"
-msgstr "-1 = 无限制"
+msgid "minutes"
+msgstr "分钟"
 
-msgid "0 = Disable"
-msgstr "0 = 禁用"
+msgid "hours"
+msgstr "小时"
 
-msgid "≥1 = Specific limit"
-msgstr "≥1 = 限制值"
+msgid "dayss"
+msgstr "日期"
 
-msgid "Max Connections"
-msgstr "最大连接数"
+msgid "months"
+msgstr "月份"
 
-msgid "Total connections for all torrents"
-msgstr "所有种子的总连接数"
+msgid "weeks"
+msgstr "星期"
 
-msgid "Max Download (KiB/s)"
-msgstr "最大下载 (KiB/s)"
+msgid "Everyday"
+msgstr "每天"
 
-msgid "Total download speed limit"
-msgstr "总下载速度限制"
+msgid "1-31, \"*\", \"*/N\", ranges, or lists. E.g.: 1,5,10 or 5-10,*/2"
+msgstr "1-31，\"*\"，\"*/N\"，区间或列表。例如：1,5,10 或 5-10,*/2"
 
-msgid "Max Upload (KiB/s)"
-msgstr "最大上传 (KiB/s)"
+msgid "0-23, \"*\", \"*/N\", ranges, or lists. E.g.: 0,12,18 or 8-17"
+msgstr "0-23，\"*\"，\"*/N\"，区间或列表。例如：0,12,18 或 8-17"
 
-msgid "Total upload speed limit"
-msgstr "总上传速度限制"
+msgid "1-12, \"*\", \"*/N\", ranges, or lists. E.g.: 1,6,12 or 3-8,*/2"
+msgstr "1-12，\"*\"，\"*/N\"，区间或列表。例如：1,6,12 或 3-8,*/2"
 
-msgid "Max Upload Slots"
-msgstr "同时上传数"
+msgid "0-59, \"*\", \"*/N\", ranges, or lists. E.g.: 0,15,30,45 or 10-50,*/5"
+msgstr "0-59，\"*\"，\"*/N\"，区间或列表。例如：0,15,30,45 或 10-50,*/5"
 
-msgid "Simultaneous upload peers"
-msgstr "同时上传的对等节点数"
+msgid "0-7 (0/7=Sunday), \"*\", \"*/N\", ranges, or lists. E.g.: 0,1,5 or 1-5,*/2"
+msgstr "0-7（0/7=星期日），\"*\"，\"*/N\"，区间或列表。例如：0,1,5 或 1-5,*/2"
 
-msgid "Active Torrents"
-msgstr "活动种子数"
+msgid "Note: Actual days may be limited by specific months"
+msgstr "注意：实际天数可能受具体月份限制"
 
-msgid "Total downloading + seeding"
-msgstr "下载和做种任务总数"
+msgid "Unknown field type: %s"
+msgstr "未知字段类型：%s"
 
-msgid "Downloading Torrents"
-msgstr "下载任务数"
+msgid "Invalid format for %s"
+msgstr "%s 的格式无效"
 
-msgid "Max simultaneous downloads"
-msgstr "最大同时下载数"
+msgid "Step value in %s must be between 1 and %d"
+msgstr "%s 的步长只能在 1 到 %d 之间"
 
-msgid "Seeding Torrents"
-msgstr "做种任务数"
+msgid "%s value %s out of range (%d-%d)"
+msgstr "%s %s 的值超出范围 (%d-%d)"
 
-msgid "Max simultaneous seeds"
-msgstr "最大同时做种数"
+msgid "Invalid range or step value in %s (%s)"
+msgstr "%s 中的区间或步长值无效（%s）"
 
-msgid "Please enter a valid number"
-msgstr "请输入有效的数字"
+msgid "Range %d-%d out of bounds (%d-%d) in %s"
+msgstr "%s 的区间 %d-%d 超出有效范围 (%d-%d)"
 
-msgid "Value must be -1 (no limit) or ≥0"
-msgstr "值必须为 -1（无限制）或 ≥0"
+msgid "Step value %d out of range (1-%d) in %s"
+msgstr "%s 的步长 %d 超出有效范围 (1-%d)"
 
-msgid "Add torrents in Paused state"
-msgstr "添加种子时暂停"
+msgid "Invalid syntax: %s in (%s). Step must be used with * or ranges"
+msgstr "%s 字段中的语法 (%s) 无效。步长只能用于 * 或区间"
 
-msgid "Pre-allocate disk space"
-msgstr "预分配磁盘空间"
+msgid "Invalid part: %s in (%s)"
+msgstr "%s 字段中的 (%s) 部分无效"
 
-msgid "Cache Size"
-msgstr "缓存大小"
-
-msgid "Disk cache size in 16 KiB blocks (e.g. 16384 = 256 MiB)"
-msgstr "磁盘缓存大小（16 KiB块为单位，示例：16384 = 256 MiB）"
-
-msgid "Minimum: 1024 (16 MiB)"
-msgstr "最小值：1024（16 MiB）"
-
-msgid "Maximum: 65536 (1 GiB)"
-msgstr "最大值：65536（1 GiB）"
-
-msgid "Must be multiple of 1024 (16 MiB)"
-msgstr "必须是1024的倍数（16 MiB）"
-
-msgid "Cache Expiry (seconds)"
-msgstr "缓存过期时间(秒)"
-
-msgid "Show session speed in titlebar"
-msgstr "在标题栏显示速度"
-
-msgid "Session Timeout"
-msgstr "会话超时"
+msgid "Invalid format for %s. Example: (%s)"
+msgstr "%s 的格式无效，示例：(%s)"
