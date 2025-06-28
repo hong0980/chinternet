@@ -135,8 +135,8 @@ msgstr "选择后点击验证"
 msgid "verify"
 msgstr "验证"
 
-msgid "Click to crontab\.guru Verification %s"
-msgstr "点击到 crontab\.guru 验证 "
+msgid "Click to verify on crontab.guru: %s "
+msgstr "点击在 crontab.guru 验证：%s "
 
 msgid "Executed"
 msgstr "执行"
