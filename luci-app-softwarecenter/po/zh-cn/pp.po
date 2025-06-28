@@ -1,13 +1,13 @@
 
 
-msgid "Click to verify on crontab.guru: %h "
-msgstr "点击在 crontab.guru 验证：%h "
+msgid "Click to verify on crontab.guru: %h"
+msgstr "点击在 crontab.guru 验证：%h"
 
-msgid "Click to verify on crontab\.guru: %h "
-msgstr "点击在 crontab\.guru 验证：%h "
+msgid "Click to verify on crontab\.guru: %h"
+msgstr "点击在 crontab\.guru 验证：%h"
 
-msgid "Click to verify on crontab\.guru: %s "
-msgstr "点击在 crontab\.guru 验证：%s "
+msgid "Click to verify on crontab\.guru: %s"
+msgstr "点击在 crontab\.guru 验证：%s"
 
-msgid "Click to verify on crontab.guru: %s "
-msgstr "点击在 crontab.guru 验证：%s "
+msgid "Click to verify on crontab.guru: %s"
+msgstr "点击在 crontab.guru 验证：%s"
