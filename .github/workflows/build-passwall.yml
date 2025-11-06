@@ -1,0 +1,39 @@
+name: Build Passwall
+
+on:
+  workflow_dispatch:      # 手动触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - name: x86_64
+            sdk: https://downloads.openwrt.org/releases/23.05.3/targets/x86/64/openwrt-sdk-23.05.3-x86-64_gcc-12.3.0_musl.Linux-x86_64.tar.xz
+          # 可加更多架构，例如 mt7621：
+          # - name: mt7621
+          #   sdk: https://downloads.openwrt.org/releases/23.05.3/targets/ramips/mt7621/openwrt-sdk-23.05.3-ramips-mt7621_gcc-12.3.0_musl.Linux-x86_64.tar.xz
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Prepare OpenWrt SDK
+      uses: openwrt/gh-action-sdk@main
+      with:
+        sdk: ${{ matrix.sdk }}
+        feeds: |
+          src-git luci https://github.com/openwrt/luci
+          src-git passwall https://github.com/xiaorouji/openwrt-passwall
+          src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages
+        packages: |
+          luci-app-passwall
+
+    - name: Upload to current repository Release
+      uses: softprops/action-gh-release@v2.4.1
+      with:
+        tag_name: Cache-${{ matrix.name }}
+        name: Passwall Cache (${matrix.name})
+        files: bin/packages/**/*.ipk
+        token: ${{ secrets.GITHUB_TOKEN }}
