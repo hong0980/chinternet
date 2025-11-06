@@ -22,7 +22,7 @@ jobs:
         cd /tmp
         
     - name: 上传 lmo
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         path: /tmp/pp.zh-cn.lmo
         name: lmo
