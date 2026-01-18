@@ -238,17 +238,17 @@ msgstr "目录权限"
 msgid "Rules:"
 msgstr "规则："
 
-msgid " - End with '/' -> create directory"
-msgstr " - 以'/'结尾：创建目录"
+msgid "End with '/' -> create directory"
+msgstr "以'/'结尾：创建目录"
 
-msgid " - No '/' at end -> create file"
-msgstr " - 不以'/'结尾：创建文件"
+msgid "No '/' at end -> create file"
+msgstr "不以'/'结尾：创建文件"
 
-msgid " - Start with '/' -> absolute path"
-msgstr " - 以'/'开头：是绝对路径"
+msgid "Start with '/' -> absolute path"
+msgstr "以'/'开头：是绝对路径"
 
-msgid " - '..' is not allowed"
-msgstr " - 不允许使用'..'"
+msgid "'..' is not allowed"
+msgstr "不允许使用'..'"
 
 msgid "e.g. file.txt or folder/"
 msgstr "示例 file.txt 或 folder/"
