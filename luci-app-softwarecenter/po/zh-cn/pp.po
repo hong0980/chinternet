@@ -1,859 +1,465 @@
-msgid ""
-msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-04-21 02:03+0000\n"
-"Last-Translator: muink <hukk1996@gmail.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"openwrt/luciapplicationsdiskman/zh_Hans/>\n"
-"Language: zh_Hans\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.12.1-dev\n"
-
-#: applications/luci-app-diskman/luasrc/view/diskman/cbi/xsimpleform.htm:5
-msgid "-- Please choose --"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/view/diskman/cbi/xsimpleform.htm:6
-msgid "-- custom --"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:95
-msgid "Active"
-msgstr "活动"
-
-#: applications/luci-app-diskman/luasrc/view/diskman/smart_detail.htm:61
-msgid "Attrbute"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/view/diskman/cbi/xsimpleform.htm:58
-msgid "Back to Overview"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:19
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:104
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:244
-msgid "Btrfs"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:27
-msgid "Btrfs Info"
-msgstr "Btrfs 信息"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:314
-msgid "Btrfs Label"
-msgstr "Btrfs 卷标"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:327
-msgid "Btrfs Member"
-msgstr "Btrfs 阵列成员"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:318
-msgid "Btrfs Raid Level"
-msgstr "Btrfs Raid 级别"
-
-#: applications/luci-app-diskman/luasrc/view/diskman/cbi/xsimpleform.htm:62
-#: applications/luci-app-diskman/luasrc/view/diskman/partition_info.htm:132
-msgid "Cancel"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/view/diskman/smart_detail.htm:72
-msgid "Collecting data..."
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:110
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:129
-msgid "Create"
-msgstr "创建"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:344
-msgid "Create Btrfs"
-msgstr "创建 Btrfs"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:295
-msgid "Create Raid"
-msgstr "创建 RAID"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:241
-msgid "Creation"
-msgstr "创建"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:30
-msgid "Data"
-msgstr "数据"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:121
-msgid "Default 2048 sector alignment, support +size{b,k,m,g,t} in End Sector"
-msgstr ""
-"默认2048扇区对齐，【中止扇区】支持 +容量{b,k,m,g,t} 格式，例：+500m +10g +1t"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:114
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:118
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:127
-msgid "Delete"
-msgstr "删除"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:184
-msgid "Destination Path (optional)"
-msgstr "目标目录（可选）"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:120
-msgid "Device"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:28
-msgid "Device Info"
-msgstr "设备信息"
-
-#: applications/luci-app-diskman/luasrc/controller/diskman.lua:24
-msgid "Disk Man"
-msgstr "磁盘管理"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:11
-msgid "DiskMan"
-msgstr "DiskMan 磁盘管理"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:34
-msgid "Disks"
-msgstr "磁盘"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:52
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:91
-msgid "Eject"
-msgstr "弹出"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:136
-msgid "End Sector"
-msgstr "中止扇区"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:139
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:184
-msgid "File System"
-msgstr "文件系统"
-
-#: applications/luci-app-diskman/luasrc/view/diskman/smart_detail.htm:62
-msgid "Flag"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:199
-#: applications/luci-app-diskman/luasrc/view/diskman/partition_info.htm:132
-msgid "Format"
-msgstr "格式化"
-
-#: applications/luci-app-diskman/luasrc/view/diskman/partition_info.htm:132
-msgid "Format partation:"
-msgstr "格式化分区："
-
-#: applications/luci-app-diskman/luasrc/view/diskman/partition_info.htm:106
-msgid "Formatting.."
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:34
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:160
-msgid "Free Space"
-msgstr "空闲空间"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:46
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:59
-msgid "Health"
-msgstr "健康"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:53
-#: applications/luci-app-diskman/luasrc/view/diskman/smart_detail.htm:60
-msgid "ID"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:320
-msgid "Invalid End Sector!"
-msgstr "无效的终止扇区！"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:301
-msgid "Invalid Start Sector!"
-msgstr "无效的起始扇区！"
-
-#: applications/luci-app-diskman/luasrc/view/diskman/smart_detail.htm:57
-msgid "KEY"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:36
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:106
-msgid "Label"
-msgstr "卷标"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:51
-msgid "Level"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:19
-msgid "Manage Btrfs"
-msgstr "Btrfs 管理"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:11
-msgid "Manage Disks over LuCI."
-msgstr "通过 LuCI 管理磁盘"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:29
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:94
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:107
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:52
-msgid "Members"
-msgstr "成员"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:31
-msgid "Metadata"
-msgstr "元数据"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:38
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:32
-msgid "Model"
-msgstr "型号"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:210
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:214
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:224
-msgid "Mount"
-msgstr "挂载"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:155
-msgid "Mount Options"
-msgstr "挂载选项"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:119
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:184
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:162
-msgid "Mount Point"
-msgstr "挂载点"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:244
-msgid "Multiple Devices Btrfs Creation"
-msgstr "Btrfs 阵列创建"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:124
-msgid "Name"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:279
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:285
-msgid "New"
-msgstr "新建"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:166
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:192
-msgid "New Snapshot"
-msgstr "新建快照"
-
-#: applications/luci-app-diskman/luasrc/view/diskman/smart_detail.htm:43
-msgid "No Attrbute to display."
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/view/diskman/cbi/xnullsection.htm:17
-msgid "One or more fields contain invalid values!"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/view/diskman/cbi/xnullsection.htm:19
-msgid "One or more required fields have no value!"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:56
-msgid "Otime"
-msgstr "创建时间"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:17
-msgid "Partition Disk over LuCI."
-msgstr "通过LuCI分区磁盘。"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:17
-msgid "Partition Management"
-msgstr "分区管理"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:43
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:92
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:36
-msgid "Partition Table"
-msgstr "分区表"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:352
-msgid "Partition not exists!"
-msgstr "分区不存在！"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:121
-msgid "Partitions Info"
-msgstr "分区信息"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:58
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:37
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:89
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:31
-msgid "Path"
-msgstr "路径"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:206
-msgid "Please input Source Path of snapshot, Source Path must start with '/'"
-msgstr "请输入快照源路径，源路径必须以'/'开头"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:133
-msgid "Please input Subvolume Path, Subvolume must start with '/'"
-msgstr "请输入子卷路径，子卷路径必须以'/'开头"
-
-#: applications/luci-app-diskman/luasrc/view/diskman/partition_info.htm:103
-msgid "Please select file system!"
-msgstr "请选择文件系统！"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:243
-msgid "RAID"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:243
-msgid "RAID Creation"
-msgstr "RAID 创建"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:87
-msgid "RAID Devices"
-msgstr "RAID 设备"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:90
-msgid "RAID mode"
-msgstr "RAID 模式"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:255
-msgid "Raid Level"
-msgstr "RAID 级别"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:278
-msgid "Raid Member"
-msgstr "磁盘阵列成员"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:250
-msgid "Raid Name"
-msgstr "RAID 名称"
-
-#: applications/luci-app-diskman/luasrc/view/diskman/smart_detail.htm:68
-msgid "Raw"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:175
-msgid "Readonly"
-msgstr "只读"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:89
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:276
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:348
-msgid "Remove"
-msgstr "移除"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:20
-msgid "Rescan Disks"
-msgstr "重新扫描磁盘"
-
-#: applications/luci-app-diskman/luasrc/view/diskman/cbi/xsimpleform.htm:76
-msgid "Reset"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:56
-msgid "Rotation Rate"
-msgstr "转速"
-
-#: applications/luci-app-diskman/luasrc/view/diskman/smart_detail.htm:53
-msgid "S.M.A.R.T Attrbutes"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:44
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:55
-msgid "SATA Version"
-msgstr "SATA 版本"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:35
-msgid "Sector Size"
-msgstr "扇区/物理扇区大小"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:39
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:33
-msgid "Serial Number"
-msgstr "序列号"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:75
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:82
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:86
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:93
-msgid "Set Default"
-msgstr "默认子卷"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:32
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:40
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:91
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:34
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:155
-msgid "Size"
-msgstr "容量"
-
-#: applications/luci-app-diskman/luasrc/view/diskman/cbi/xsimpleform.htm:67
-msgid "Skip"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:57
-msgid "Snapshots"
-msgstr "快照"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:168
-msgid "Source Path"
-msgstr "源目录"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:125
-msgid "Start Sector"
-msgstr "起始扇区"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:46
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:93
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:58
-msgid "Status"
-msgstr "状态"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:52
-msgid "SubVolumes"
-msgstr "子卷"
-
-#: applications/luci-app-diskman/luasrc/view/diskman/cbi/xsimpleform.htm:71
-msgid "Submit"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:41
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:54
-msgid "Temp"
-msgstr "温度"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:175
-msgid "The path where you want to store the snapshot"
-msgstr "存放快照数据目录"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:168
-msgid "The source path for create the snapshot"
-msgstr "创建快照的源数据目录"
-
-#: applications/luci-app-diskman/luasrc/view/diskman/smart_detail.htm:65
-msgid "Thresh"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:54
-msgid "Top Level"
-msgstr "父ID"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:157
-#: applications/luci-app-diskman/luasrc/view/diskman/smart_detail.htm:66
-msgid "Type"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:28
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:55
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:105
-msgid "UUID"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:217
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:228
-msgid "Umount"
-msgstr "卸载"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:58
-msgid "Unsupported raid reject!"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:42
-msgid "Update"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/view/diskman/smart_detail.htm:67
-msgid "Updated"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:35
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:110
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:161
-msgid "Usage"
-msgstr "用量"
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/btrfs.lua:33
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:159
-msgid "Used"
-msgstr "已使用"
-
-#: applications/luci-app-diskman/luasrc/view/diskman/smart_detail.htm:58
-msgid "VALUE"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/view/diskman/smart_detail.htm:63
-msgid "Value"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/view/diskman/partition_info.htm:74
-msgid ""
-"Warnning !! \\nTHIS WILL OVERWRITE EXISTING PARTITIONS!! \\nModify the "
-"partition table?"
-msgstr ""
-"警告！！\n"
-"此操作会覆盖现有分区\n"
-"确定修改分区表？"
-
-#: applications/luci-app-diskman/luasrc/view/diskman/smart_detail.htm:64
-msgid "Worst"
-msgstr ""
-
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/disks.lua:63
-#: applications/luci-app-diskman/luasrc/model/cbi/diskman/partition.lua:99
-msgid "is in use! please unmount it first!"
-msgstr "正在被使用！请先卸载！"
-
-msgid "Partition NOT found!"
-msgstr "分区未找到！"
-
-msgid "Filesystem NOT support!"
-msgstr "文件系统不支持！"
-
-msgid "Invalid Start Sector!"
-msgstr "无效的起始扇区！"
-
-msgid "Invalid End Sector"
-msgstr "无效的终止扇区！"
-
-msgid "Partition not exists!"
-msgstr "分区不存在！"
-
-msgid "Creation"
-msgstr "创建"
-
-msgid "Please select file system!"
-msgstr "请选择文件系统！"
-
-msgid "Format partation:"
-msgstr "格式化分区："
-
-msgid "Warnning !! \nTHIS WILL OVERWRITE EXISTING PARTITIONS!! \nModify the partition table?"
-msgstr "警告！！\n此操作会覆盖现有分区\n确定修改分区表？"
-
-msgid "Formatting.."
-msgstr "格式化中..."
-
-msgid "OK"
-msgstr "成功"
-
-msgid "Hours"
-msgstr "运行时间"
-
-msgid "Cycles"
-msgstr "通电次数"
+msgid "File management"
+msgstr "文件管理"
 
-msgid "Mounts:"
-msgstr "挂载点："
+msgid "confirm deletion"
+msgstr "确定删除"
 
-msgid "Filesystem: %s"
-msgstr "文件系统：%s"
+msgid "create new file"
+msgstr "创建新文件"
 
-msgid "Size: %s"
-msgstr "大小：%s"
+msgid "Rename"
+msgstr "重命名"
 
-msgid "unnamed partition"
-msgstr "未命名分区"
+msgid "Confirm"
+msgstr "确认"
 
-msgid "Disk %s has been safely ejected"
-msgstr "磁盘 %s 已安全弹出"
+msgid "Delete file (directory)"
+msgstr "删除文件（目录）"
 
-msgid "Disk %s failed to eject, %s"
-msgstr "磁盘 %s 弹出失败，%s"
+msgid "Create file (directory)"
+msgstr "创建文件（目录）"
 
-msgid "Unsupported device type: %s"
-msgstr "不支持的设备类型：%s"
+msgid "successfully deleted!"
+msgstr "删除成功！"
 
-msgid "Device %s is still occupied and cannot be ejected"
-msgstr "设备 %s 仍被占用，无法弹出"
+msgid "Renaming successful!"
+msgstr "重命名成功！"
 
-msgid "SMART error"
-msgstr "SMART错误"
+msgid "File has been uploaded to"
+msgstr "文件已上传到"
 
-msgid "Not enough space"
-msgstr "空间不足"
+msgid "name"
+msgstr "名称"
 
-msgid "MBR up to 4 primary partitions"
-msgstr "MBR最多4个主分区"
+msgid "owner"
+msgstr "所有者"
 
-msgid "Start sector exceeds capacity"
-msgstr "起始扇区超出容量"
+msgid "size"
+msgstr "大小"
 
-msgid "Partition overlap"
-msgstr "分区重叠"
+msgid "Change the time"
+msgstr "修改时间"
 
-msgid "⚠️ Warning: This operation will erase all data on the disk!"
-msgstr "⚠️ 警告：此操作将擦除磁盘所有数据！"
+msgid "Rights"
+msgstr "权限"
 
-msgid "Invalid disk device"
-msgstr "无效的磁盘设备"
+msgid "File operations"
+msgstr "文件操作"
 
-msgid "No valid partition number specified"
-msgstr "未指定有效分区号"
+msgid "Renaming failed"
+msgstr "重命名失败"
 
-msgid "Partition deleted successfully"
-msgstr "分区删除成功"
+msgid "deleted failed"
+msgstr "删除失败"
 
-msgid "Operation failed:"
-msgstr "操作失败："
+msgid "Permissions modified successfully"
+msgstr "权限修改成功"
 
-msgid "Modify mount %s"
-msgstr "修改挂载 %s"
+msgid "Permission modification failed"
+msgstr "权限修改失败"
 
-msgid "Format %s"
-msgstr "格式化 %s"
+msgid "Modify permissions"
+msgstr "修改权限"
 
-msgid "Modify %s file system"
-msgstr "修改 %s 文件系统"
+msgid "Select the required permissions"
+msgstr "选择需要的权限"
 
-msgid "Are you sure you want to format %s? All data will be cleared!"
-msgstr "确定要格式化 %s 吗？所有数据将被清除！"
+msgid "777 - Full access for owner, group, and others (read, write, execute)"
+msgstr "777 - 所有者、组用户和其他用户均拥有完全权限（读、写、执行）"
 
-msgid "File system:"
-msgstr "文件系统："
+msgid "755 - Full access for owner; read and execute for group and others"
+msgstr "755 - 所有者拥有完全权限；组用户和其他用户具有读和执行权限"
 
-msgid "Partition label (optional):"
-msgstr "分区标签（可选）："
+msgid "700 - Full access for owner only"
+msgstr "700 - 仅所有者拥有完全权限"
 
-msgid "Partition label format is illegal"
-msgstr "分区标签格式非法"
+msgid "666 - Read and write for owner, group, and others (no execute)"
+msgstr "666 - 所有者、组用户和其他用户具有读和写权限（无执行权限）"
 
-msgid "Formatting..."
-msgstr "正在格式化..."
+msgid "644 - Read and write for owner; read-only for group and others"
+msgstr "644 - 所有者具有读和写权限；组用户和其他用户仅有读权限"
 
-msgid "Formatting completed"
-msgstr "格式化完成"
+msgid "600 - Read and write for owner only"
+msgstr "600 - 仅所有者具有读和写权限"
 
-msgid "Format failed: %s"
-msgstr "格式化失败： %s"
+msgid "555 - Read and execute for owner, group, and others (no write)"
+msgstr "555 - 所有者、组用户和其他用户具有读和执行权限（无写权限）"
 
-msgid "mount"
-msgstr "挂载"
+msgid "444 - Read-only for owner, group, and others"
+msgstr "444 - 所有者、组用户和其他用户仅有读权限"
 
-msgid "delete partition"
-msgstr "删除分区"
+msgid "total file size"
+msgstr "文件总大小"
 
-msgid "Delete %s partition"
-msgstr "删除 %s 分区"
+msgid "Successful installation"
+msgstr "安装成功"
 
-msgid "Are you sure you want to delete partition %s? This operation will result in permanent data loss!"
-msgstr "确定要删除分区 %s 吗？此操作将永久丢失数据！"
+msgid "installation failed"
+msgstr "安装失败"
 
-msgid "Remove"
-msgstr "移除"
+msgid "Confirm installation"
+msgstr "确定安装"
 
-msgid "Select batch delete"
-msgstr "选中批量删除"
+msgid "Enter name"
+msgstr "输入名称"
 
-msgid "device"
-msgstr "设备"
+msgid "Enter file content"
+msgstr "输入文件内容"
 
-msgid "start sector"
-msgstr "起始扇区"
+msgid "Enter text here"
+msgstr "在这里输入文本"
 
-msgid "end sector"
-msgstr "结束扇区"
+msgid "File created successfully!"
+msgstr "文件创建成功！"
 
-msgid "type"
-msgstr "类型"
+msgid "File creation failed!"
+msgstr "文件创建失败！"
 
-msgid "Used/Idle (usage)"
-msgstr "已用/空闲(用量)"
+msgid "open file"
+msgstr "打开文件"
 
-msgid "Delete %s in batches"
-msgstr "批量删除 %s"
+msgid "upload file"
+msgstr "上传文件"
 
-msgid "%s partition management"
-msgstr "%s 分区管理"
+msgid "download file"
+msgstr "下载文件"
 
-msgid "Device information"
-msgstr "设备信息"
+msgid "Reload page"
+msgstr "重加载页面"
 
-msgid "Partition information"
-msgstr "分区信息"
+msgid "owner"
+msgstr "所有者"
 
-msgid "Mount %s"
-msgstr "挂载 %s"
+msgid "size"
+msgstr "大小"
 
-msgid "Mount point:"
-msgstr "挂载点："
+msgid "Download folder"
+msgstr "下载目录"
 
-msgid "Mounted at %s by default"
-msgstr "默认挂载在 %s"
+msgid "View Files"
+msgstr "查看文件"
 
-msgid "Mount options:"
-msgstr "挂载选项："
+msgid "Create link"
+msgstr "创建链接"
 
-msgid "Leave blank to automatically mount"
-msgstr "留空自动挂载"
+msgid "Enter ${targetPathcolor} target link path"
+msgstr "输入 ${targetPathcolor} 的链接目标路径"
 
-msgid "Please enter the mount point"
-msgstr "请输入挂载点"
+msgid "Link created successfully"
+msgstr "链接创建成功"
 
-msgid "%s is mounted to %s"
-msgstr "%s 已挂载到 %s"
+msgid "Link creation failed"
+msgstr "链接创建失败"
 
-msgid "Mount failed: %s"
-msgstr "挂载失败：%s"
+msgid "Edit file"
+msgstr "编辑文件"
 
-msgid "%s uninstalled successfully"
-msgstr "%s 卸载成功"
+msgid "Failed to load document"
+msgstr "加载文档失败"
 
-msgid "Uninstall failed: %s"
-msgstr "卸载失败：%s"
+msgid "Failed to read file: %s"
+msgstr "读取文件失败：%s"
 
-msgid "Available/used (usage rate)"
-msgstr "可用/已用(使用率)"
+msgid "Document saved successfully"
+msgstr "文档保存成功"
 
-msgid "total size"
-msgstr "总大小"
+msgid "Failed to save document"
+msgstr "保存文档失败"
 
-msgid "This operation will overwrite the existing partition. Are you sure you want to modify the %s partition table to %s?"
-msgstr "此操作会覆盖现有分区，确定修改 %s 分区表为 %s？"
+msgid "An error occurred while saving the document"
+msgstr "保存文档时出错"
 
-msgid "warning"
-msgstr "警告"
+msgid "Confirm Save"
+msgstr "确认保存"
 
-msgid "normal"
-msgstr "正常"
+msgid "Are you sure you want to save the changes?"
+msgstr "您确定要保存更改吗？"
 
-msgid "warn! !"
-msgstr "警告！！"
+msgid "%s file does not exist"
+msgstr "%s 文件不存在"
 
-msgid "Partition table modified successfully"
-msgstr "分区表修改成功"
+msgid "Unable to read file: %s"
+msgstr "无法读取文件: %s"
 
-msgid "Operation failed:"
-msgstr "操作失败："
+msgid "Unable to open file: %s"
+msgstr "无法打开文件： %s"
 
-msgid "define"
-msgstr "确定"
+msgid "Theme"
+msgstr "主题"
 
-msgid "model"
-msgstr "型号"
+msgid "You can modify the names and downloads of files and directories, permissions, add directories and files, and edit scripts."
+msgstr "您可以修改文件和目录的名称和下载、权限、添加目录和文件以及编辑脚本。"
 
-msgid "serial number"
-msgstr "序号"
+msgid "Right click"
+msgstr "右键点击"
 
-msgid "sector size"
-msgstr "扇区大小"
+msgid "wrap"
+msgstr "换行"
 
-msgid "temperature"
-msgstr "温度"
+msgid "NAS"
+msgstr "网络存储"
 
-msgid "Speed"
-msgstr "转速"
+msgid "Scroll to tail"
+msgstr "滚动到尾部"
 
-msgid "status"
-msgstr "状态"
+msgid "Scroll to head"
+msgstr "滚动到顶部"
 
-msgid "Creating partition..."
-msgstr "正在创建分区..."
+msgid "Reverse Log Order"
+msgstr "反转日志顺序"
 
-msgid "Operation successful!"
-msgstr "操作成功！"
+msgid "Path contains unsupported characters"
+msgstr "路径包含不支持的字符"
 
-msgid "Operation failed:"
-msgstr "操作失败："
+msgid "Path contains illegal segment (..)"
+msgstr "路径包含非法段(..)"
 
-msgid "Add partition"
-msgstr "添加分区"
+msgid "Invalid path format"
+msgstr "无效的路径格式"
 
-msgid "Please add partition"
-msgstr "请添加分区"
+msgid "Created successfully: %s"
+msgstr "创建成功: %s"
 
-msgid "Partition overlap"
-msgstr "分区重叠"
+msgid "Create failed: %s"
+msgstr "创建失败：%s"
 
-msgid "Disk capacity exceeded"
-msgstr "超出磁盘容量"
+msgid "Directory %s created successfully"
+msgstr "目录 %s 创建成功"
 
-msgid "MBR up to 4 primary partitions"
-msgstr "MBR最多4个主分区"
+msgid "Directory %s creation failed: %s"
+msgstr "目录 %s 创建失败: %s"
 
-msgid "Add partition <span style="color:red">Remaining: %s</span>"
-msgstr "添加分区 <span style="color:red">剩余: %s</span>"
+msgid "Create files simultaneously"
+msgstr "同时创建文件"
 
-msgid "Starting position: %s"
-msgstr "起始位置: %s"
-
-msgid "Size: %s"
-msgstr "大小: %s"
-
-msgid "Format not supported (should be e.g. +5M, 10G, 100s or just a number)"
-msgstr "格式不支持（应为例如 +5M、10G、100s 或纯数字）"
-
-msgid "existing partition"
-msgstr "现有分区"
-
-msgid "Partition table type:"
-msgstr "分区表类型："
-
-msgid "%s disk partition"
-msgstr "%s 磁盘分区"
-
-msgid "operate"
-msgstr "操作"
+msgid "Directory permissions"
+msgstr "目录权限"
 
 msgid ""
+"Rules:\n"
+"- End with \"/\" -> create directory\n"
+"- No \"/\" at end -> create file\n"
+"- Start with \"/\" -> absolute path\n"
+"- \"..\" is not allowed"
 msgstr ""
+"规则说明：\n"
+"- 以“/”结尾：创建目录\n"
+"- 不以“/”结尾：创建文件\n"
+"- 以“/”开头：绝对路径\n"
+"- 不允许使用“..”"
 
-msgid ""
-msgstr ""
+msgid "e.g. file.txt   or   folder/"
+msgstr "示例 file.txt 或 folder/"
 
-msgid ""
-msgstr ""
+msgid "This will create a directory"
+msgstr "将创建一个目录"
 
-msgid ""
-msgstr ""
+msgid "This will create a file"
+msgstr "将创建一个文件"
 
-msgid ""
-msgstr ""
+msgid "File will not be created (option disabled)"
+msgstr "未勾选选项，不会创建文件"
 
-msgid ""
-msgstr ""
+msgid "Please enter a file or directory name"
+msgstr "请输入文件或目录名称"
 
-msgid ""
-msgstr ""
+msgid "file permissions"
+msgstr "文件权限"
 
-msgid ""
-msgstr ""
+msgid "Lines: %d"
+msgstr "行：%d"
 
-msgid ""
-msgstr ""
+msgid "Path: %s"
+msgstr "路径：%s"
 
-msgid ""
-msgstr ""
+msgid "Ace Editor version: %s"
+msgstr "Ace 版本：%s"
 
-msgid ""
-msgstr ""
+msgid "View"
+msgstr "浏览"
 
-msgid ""
-msgstr ""
+msgid "Failed to read file: %s"
+msgstr "读取文件失败：%s"
 
-msgid ""
-msgstr ""
+msgid "Loading file..."
+msgstr "正在加载文件..."
 
-msgid ""
-msgstr ""
+msgid "Loading file for editing..."
+msgstr "正在加载文件进行编辑..."
 
-msgid ""
-msgstr ""
+msgid "Loading file content..."
+msgstr "正在加载文件内容..."
 
-msgid ""
-msgstr ""
+msgid "The file is empty."
+msgstr "文件为空。"
 
-msgid ""
-msgstr ""
+msgid "Unknown file type"
+msgstr "未知的文件类型"
 
-msgid ""
-msgstr ""
+msgid "Exit full screen"
+msgstr "退出全屏"
 
-msgid ""
-msgstr ""
+msgid "full screen"
+msgstr "全屏"
 
-msgid ""
-msgstr ""
+msgid "cannot be edited"
+msgstr "无法编辑"
+
+msgid "cannot be displayed"
+msgstr "无法查看"
+
+msgid "File too large (%s), %s. Maximum allowed size is %s."
+msgstr "文件过大（%s），%s。最大允许大小为 %s。"
+
+msgid "This is a binary file and %s"
+msgstr "这是一个二进制文件，%s"
+
+msgid "Edit file"
+msgstr "编辑文件"
+
+msgid "Batch delete"
+msgstr "批量删除"
+
+msgid "Batch download"
+msgstr "批量下载"
+
+msgid "Deselect"
+msgstr "取消选择"
+
+msgid "The file content has not changed"
+msgstr "文件内容没有变动"
+
+msgid "%s File saved successfully!"
+msgstr "%s 文件保存成功！"
+
+msgid "Please enter a new name"
+msgstr "请输入新的名称"
+
+msgid "You have unsaved changes. Discard them?"
+msgstr "您有未保存的更改。是否丢弃？"
+
+msgid "Rename failed: %s"
+msgstr "重命名失败：%s"
+
+msgid "Renamed: %s to %s"
+msgstr "已重命名：%s 为 %s"
+
+msgid "Change permissions %s"
+msgstr "更改权限 %s"
+
+msgid "请选择新的值"
+msgstr "请选择新的值"
+
+msgid "Permission change failed: %s"
+msgstr "权限更改失败：%s"
+
+msgid "Permissions updated: %s"
+msgstr "权限已更新：%s"
+
+msgid "Confirm %s"
+msgstr "确删除认 %s"
+
+msgid "Confirm %d files?"
+msgstr "确删除认 %d 个文件?"
+
+msgid "Delete failed: %s"
+msgstr "删除失败: %s"
+
+msgid "Deleted: %s"
+msgstr "已删除：%s"
+
+msgid "Deleted %d files"
+msgstr "已删除 %d 个文件"
+
+msgid "%s Create link"
+msgstr "%s 创建链接"
+
+msgid "Create hard link"
+msgstr "创建硬链接"
+
+msgid "Please enter link path"
+msgstr "请输入链接路径"
+
+msgid "Link creation failed: %s"
+msgstr "链接创建失败：%s"
+
+msgid "%s Link created successfully: %s"
+msgstr "%s 链接创建成功：%s"
+
+msgid "Download failed: %s"
+msgstr "下载失败: %s"
+
+msgid "Download catalog"
+msgstr "下载目录"
+
+msgid "Number of files: %d"
+msgstr "文件数量: %d"
+
+msgid "Directory: %s"
+msgstr "目录: %s"
+
+msgid "Compressed package file name"
+msgstr "压缩包文件名"
+
+msgid "file name"
+msgstr "文件名"
+
+msgid "suffix"
+msgstr "后缀"
+
+msgid "Package download"
+msgstr "打包下载"
+
+msgid "Packaging failed: %s"
+msgstr "打包失败: %s"
+
+msgid "Upload failed: %s"
+msgstr "上传失败：%s"
+
+msgid "Uploaded: %s"
+msgstr "已上传：%s"
+
+msgid "Error Uploaded: %s"
+msgstr "上传错误：%s"
+
+msgid "Copied to clipboard!"
+msgstr "已复制到剪贴板！"
+
+msgid "Copy failed!"
+msgstr "复制失败！"
+
+msgid "Syntax"
+msgstr "语法"
+
+msgid "Font"
+msgstr "字体"
+
+msgid "%d items • Total %s"
+msgstr "%d 项 • 总计 %s"
+
+msgid "Please select a new value"
+msgstr "请选择新的值"
+
+msgid "%d files selected"
+msgstr "已选择 %d 个文件"
+
+msgid "The document has been modified, click to undo all"
+msgstr "文档已修改，点击全部撤销"
+
+msgid "newname"
+msgstr "新名称"
+
+msgid "Permission"
+msgstr "权限"
+
+msgid "Change permissions %s"
+msgstr "更改权限 %s"
+
+msgid "Rename %s"
+msgstr "重命名 %s"
+
+msgid "Delete file"
+msgstr "删除文件"
 
 msgid ""
 msgstr ""
