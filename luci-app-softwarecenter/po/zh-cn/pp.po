@@ -5,6 +5,18 @@ msgstr ""
 
 # ── overview.js: 入口说明面板 ─────────────────────────────────────────
 
+msgid "Overview & Config"
+msgstr "概览与配置"
+
+msgid "Nodes"
+msgstr "节点状态"
+
+msgid "Log"
+msgstr "运行日志"
+
+msgid "Add New Node"
+msgstr "添加新节点"
+
 msgid "EasyMesh Configuration"
 msgstr "EasyMesh 配置"
 
@@ -460,23 +472,14 @@ msgstr "agent_prepare: br-lan IP 已更新为 %s"
 msgid "agent_prepare: IP=%s (not .1), skipping IP change"
 msgstr "agent_prepare: IP=%s（非 .1），跳过 IP 更改"
 
-msgid "agent_prepare: generated unique MAC=%s"
-msgstr "agent_prepare: 已生成唯一 MAC=%s"
-
-msgid "agent_prepare: using saved MAC=%s"
-msgstr "agent_prepare: 使用已保存的 MAC=%s"
-
-msgid "agent_prepare: MAC persisted via %s.macaddr"
-msgstr "agent_prepare: MAC 已通过 %s.macaddr 持久化"
-
 msgid "agent_prepare: br-lan MAC %s -> %s"
 msgstr "agent_prepare: br-lan MAC %s → %s"
 
 msgid "agent_prepare: ip link set failed, trying via bridge"
 msgstr "agent_prepare: ip link set 失败，尝试通过 bridge 设置"
 
-msgid "agent_prepare: done. IP=%s MAC=%s"
-msgstr "agent_prepare: 完成。IP=%s MAC=%s"
+msgid "agent_prepare: done. IP=%s"
+msgstr "agent_prepare: 完成。IP=%s"
 
 msgid "apply_mesh_config: role=%s backhaul=%s radio=%s"
 msgstr "apply_mesh_config: 角色=%s 回程=%s 无线电=%s"
@@ -855,3 +858,99 @@ msgstr "角色切换: %s → %s"
 msgid "DBG main_loop iter=%s: master not found yet, will retry"
 msgstr "主循环第 %s 次: 主节点尚未找到，继续重试"
 
+
+
+msgid "Agent configuration is managed by the Master"
+msgstr "Agent 的配置由 Master 统一管理"
+
+msgid "Broadcast a temporary open SSID so new nodes can join without a cable."
+msgstr "广播一个临时的开放 SSID，让新节点无需网线即可加入。"
+
+msgid "Fixed channel for dedicated backhaul radio. 149/153/157/161 recommended."
+msgstr "专用回程 radio 的固定信道，推荐使用 149/153/157/161（无 DFS，80 MHz 干净）。"
+
+msgid "Include radar-protected 5 GHz DFS channels in ACS scan."
+msgstr "在 ACS 自动选频时包含受雷达保护的 5 GHz DFS 信道（52–140）。"
+
+msgid "Live topology map. Link color = signal quality: green ≥70%, yellow ≥40%, red <40%. Hover nodes for details."
+msgstr "实时拓扑图。链路颜色表示信号质量：绿色 ≥70%，黄色 ≥40%，红色 <40%。悬停节点可查看详情。"
+
+msgid "Must be identical on all nodes. Leave empty to disable encryption."
+msgstr "所有节点必须相同。留空则禁用加密（不推荐）。"
+
+msgid "No topology data yet. Waiting for mesh to form..."
+msgstr "暂无拓扑数据，等待 Mesh 网络形成……"
+
+msgid "Pre-negotiate keys over wired backbone for faster transition."
+msgstr "通过有线骨干网预协商密钥，实现更快的漫游切换。禁用可解决兼容性问题。"
+
+msgid "Pushed to all agent nodes automatically."
+msgstr "批准后自动推送到所有 Agent 节点。"
+
+msgid "Real-time batman-adv originator table. TQ: 255 = best. Refreshes every 5 seconds."
+msgstr "实时 batman-adv 邻居表。TQ：255 为最佳。每 5 秒自动刷新。"
+
+msgid "Reserve the second 5 GHz radio exclusively for node-to-node backhaul."
+msgstr "将第二块 5 GHz radio 专用于节点间回程通信，客户端不连接此 radio，保障回程带宽。"
+
+msgid "WPA2/WPA3. Leave empty for open network. Will be pushed to all agents."
+msgstr "WPA2/WPA3 加密。留空则为开放网络。批准后自动推送到所有 Agent。"
+
+msgid "bat0 interface is not running. Check batman-adv installation (kmod-batman-adv)."
+msgstr "bat0 接口未运行。请检查 batman-adv 是否已安装（kmod-batman-adv）。"
+
+msgid "wired"
+msgstr "有线"
+
+msgid "Applied on all radios (2.4 GHz + 5 GHz). Pushed to all agent nodes automatically."
+msgstr "应用于所有频段（2.4 GHz + 5 GHz）。批准后自动推送到所有 Agent 节点。"
+
+
+msgid "Multi-node mesh using batman-adv routing over wired Ethernet or 802.11s wireless backhaul."
+msgstr "多节点 Mesh 网络，通过有线以太网或 802.11s 无线回程运行 batman-adv 路由。"
+
+msgid "Wired uses LAN cable between nodes (batman-adv over Ethernet). Wireless uses a dedicated 802.11s link (batman-adv over 802.11s)."
+msgstr "有线模式通过 LAN 网线连接节点（batman-adv over Ethernet）；无线模式使用专用 802.11s 链路（batman-adv over 802.11s）。"
+
+msgid "Wireless (802.11s)"
+msgstr "无线（802.11s）"
+
+msgid "Client WiFi Name (SSID)"
+msgstr "客户端 WiFi 名称（SSID）"
+
+msgid "Name of the WiFi network that phones and computers connect to. Applied on all radios (2.4 GHz + 5 GHz). Pushed to all agent nodes."
+msgstr "手机和电脑连接的 WiFi 网络名称。应用于所有频段（2.4 GHz + 5 GHz），并自动推送到所有 Agent 节点。"
+
+msgid "Client WiFi Password"
+msgstr "客户端 WiFi 密码"
+
+msgid "802.11s Mesh ID"
+msgstr "802.11s Mesh 网络标识"
+
+msgid "Network name used by the wireless mesh backhaul (802.11s). Must be identical on all nodes. Not the same as the client WiFi SSID."
+msgstr "无线 Mesh 回程（802.11s）使用的网络标识，所有节点必须相同。与客户端连接的 WiFi 名称不同。"
+
+msgid "802.11s Mesh Password (SAE)"
+msgstr "802.11s Mesh 密码（SAE）"
+
+msgid "Encryption key for the wireless mesh backhaul. Must match on all nodes. Leave empty to disable mesh encryption (not recommended on wireless backhaul)."
+msgstr "无线 Mesh 回程的加密密钥，所有节点必须相同。留空则禁用 Mesh 加密（无线回程不推荐）。"
+
+msgid "802.11s Backhaul Band"
+msgstr "802.11s 回程频段"
+
+msgid "Radio band used for the 802.11s mesh backhaul link between nodes."
+msgstr "节点间 802.11s Mesh 回程链路使用的无线频段。"
+
+msgid "Wired backhaul active"
+msgstr "有线回程已启用"
+
+msgid "batman-adv routes mesh traffic over the LAN cable between nodes. No 802.11s configuration is needed — the wireless radio is fully available for client traffic."
+msgstr "batman-adv 通过节点间 LAN 网线转发 Mesh 流量。无需配置 802.11s，无线频段完全用于客户端接入。"
+
+msgid "Enable 802.11s path selection in addition to batman-adv. Normally disabled."
+msgstr "在 batman-adv 之外启用 802.11s 自身的路径选择。通常禁用，由 batman-adv 统一管理路由。"
+
+
+msgid "All Wi-Fi settings (SSID, password, channel, roaming, etc.) are automatically applied according to the master node's configuration once the agent is approved. No manual configuration required."
+msgstr "所有 Wi-Fi 设置（SSID、密码、信道、漫游等）在 Agent 被批准后，将自动按照主节点的配置应用，无需手动配置。"
