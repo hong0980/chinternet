@@ -221,23 +221,28 @@ msgstr "等待 Mesh 接口就绪的超时时间（秒）。超时后放弃本轮
 msgid "Mesh Path Cost"
 msgstr "Mesh 路径成本"
 
-msgid "STP cost assigned to the mesh network.  Range: 0–65534. Set to 0 to disable STP."
+msgid "STP cost assigned to the mesh network. Range: 0–65534. Set to 0 to disable STP."
 msgstr "分配给 Mesh 网络的 STP 路径成本。范围 0–65534，设为 0 禁用 STP。"
 
 msgid "Auto Configuration"
 msgstr "自动配置"
 
-msgid "Enables autonomous dynamic mesh configuration."
-msgstr "启用自主动态 Mesh 配置。"
+msgid ""
+"Enables autonomous dynamic mesh configuration.<br>"
+"If an existing mesh configuration is found, it will be honoured even if it is incorrect.<br>"
+"Manually configuring a mesh can soft brick the router if incorrectly done.<br>"
+"Auto config can be tested using the command line function 'mesh11sd auto_config test'"
+msgstr ""
+"启用自主动态 Mesh 配置。<br>"
+"如果发现现有的 Mesh 配置，即使不正确也会被使用。<br>"
+"手动配置 Mesh 如果操作不当，可能导致路由器软砖。<br>"
+"可以使用命令行功能 'mesh11sd auto_config test' 来测试自动配置。"
 
 msgid "Disabled"
 msgstr "禁用"
 
 msgid "Enabled"
 msgstr "启用"
-
-msgid "Enabled and Locked"
-msgstr "启用并锁定"
 
 msgid "Portal Detection Mode"
 msgstr "门户节点检测模式"
@@ -263,14 +268,17 @@ msgstr "桥接 VXLAN 主干 Peer（TPN）"
 msgid "Portal Channel (2.4 GHz)"
 msgstr "门户信道（2.4 GHz）"
 
-msgid "Forced portal channel for the 2.4 GHz band. All peer nodes will autonomously track this channel. Values: \"auto\" (auto-select), \"default\" (use wireless config), or a valid channel number 1–13."
-msgstr "强制指定门户使用的 2.4 GHz 信道，所有 Peer 节点会自动跟踪此信道。可选值：\"auto\"（自动选择）、\"default\"（使用无线配置中的信道）或有效信道编号 1–13。"
+msgid "Forced portal channel for the 2.4 GHz band. All peer nodes will autonomously track this channel. or a valid channel number 1–13."
+msgstr "强制指定门户使用的 2.4 GHz 信道，所有 Peer 节点会自动跟踪此信道。可选有效信道编号 1–13。"
+
+msgid "Auto-select"
+msgstr "自动选择"
 
 msgid "Use Default IPv4"
 msgstr "使用默认 IPv4"
 
 msgid "Only effective when this node is a portal. When enabled, the IPv4 address from /etc/config/network is used as the portal address. When disabled, an address is auto-calculated from the label MAC address."
-msgstr "仅当本节点为门户时有效。启用后使用 network 中的 IPv4 地址作为门户地址；禁用时根据标签 MAC 地址自动计算地址。"
+msgstr "仅当本节点为门户时有效。启用后使用 network 中的 IPv4 地址作为门户地址；禁用时基于标签 MAC 地址计算一个 IP 子网地址。"
 
 msgid "Portal Detect Threshold"
 msgstr "门户检测看门狗阈值"
@@ -282,7 +290,7 @@ msgid "Channel Tracking Checkinterval (seconds)"
 msgstr "信道跟踪间隔（秒）"
 
 msgid "Minimum interval after which peer nodes begin tracking the portal channel. Values smaller than Check Interval are ignored."
-msgstr "Peer 节点开始跟踪门户信道前的最小等待时间（秒）。小于巡检间隔的值将被忽略。"
+msgstr "对等节点开始信道跟踪的最小间隔（秒）。小于巡检间隔的值将被忽略。"
 
 msgid "Auto Mesh ID"
 msgstr "自动 Mesh ID"
