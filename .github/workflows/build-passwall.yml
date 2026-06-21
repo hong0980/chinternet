@@ -1,19 +1,16 @@
 name: Build Passwall
 
 on:
-  workflow_dispatch:      # 手动触发
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        include:
+        target:
           - name: x86_64
-            sdk: https://downloads.openwrt.org/releases/23.05.3/targets/x86/64/openwrt-sdk-23.05.3-x86-64_gcc-12.3.0_musl.Linux-x86_64.tar.xz
-          # 可加更多架构，例如 mt7621：
-          # - name: mt7621
-          #   sdk: https://downloads.openwrt.org/releases/23.05.3/targets/ramips/mt7621/openwrt-sdk-23.05.3-ramips-mt7621_gcc-12.3.0_musl.Linux-x86_64.tar.xz
+            sdk: https://downloads.openwrt.org/releases/25.12.4/targets/x86/64/openwrt-sdk-25.12.4-x86-64_gcc-13.3.0_musl.Linux-x86_64.tar.xz
 
     steps:
     - name: Checkout repository
@@ -22,18 +19,23 @@ jobs:
     - name: Prepare OpenWrt SDK
       uses: openwrt/gh-action-sdk@main
       with:
-        sdk: ${{ matrix.sdk }}
+        sdk: ${{ matrix.target.sdk }}
         feeds: |
           src-git luci https://github.com/openwrt/luci
-          src-git passwall https://github.com/xiaorouji/openwrt-passwall
-          src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages
+          src-git passwall https://github.com/Openwrt-Passwall/openwrt-passwall
+          src-git passwall_packages https://github.com/Openwrt-Passwall/openwrt-passwall-packages
         packages: |
           luci-app-passwall
 
-    - name: Upload to current repository Release
-      uses: softprops/action-gh-release@v3.0.0
+    - name: Build packages
+      run: |
+        make defconfig
+        make package/luci-app-passwall/compile V=sc
+
+    - name: Upload to Release
+      uses: softprops/action-gh-release@v1
       with:
-        tag_name: Cache-${{ matrix.name }}
-        name: Passwall Cache (${matrix.name})
+        tag_name: passwall-${{ matrix.target.name }}-${{ github.run_number }}
+        name: Passwall (${{ matrix.target.name }})
         files: bin/packages/**/*.ipk
         token: ${{ secrets.GITHUB_TOKEN }}
