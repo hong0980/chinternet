@@ -90,7 +90,7 @@ jobs:
           - { type: meta,  repo: MetaCubeX/mihomo, src: metacubex_src, version_prefix: alpha-g,       artifact: meta-core,  goversion: '1.26' }
           - { type: smart, repo: vernesong/mihomo,  src: vernesong_src, version_prefix: alpha-smart-g, artifact: smart-core, goversion: '1.26' }
         jobs:
-          - { goos: linux, goarch: '386',      output: '386',                   upxflag: '--lzma --best' }
+          - { goos: linux, goarch: '386',      output: '386',                    upxflag: '--lzma --best' }
           - { goos: linux, goarch: amd64, goamd64: v1, output: amd64-compatible, upxflag: '--lzma --best' }
           - { goos: linux, goarch: amd64, goamd64: v3, output: amd64,            upxflag: '--lzma --best' }
           - { goos: linux, goarch: amd64, goamd64: v1, output: amd64-v1,         upxflag: '--lzma --best' }
@@ -141,7 +141,7 @@ jobs:
 
       - name: Setup Go
         if: ${{ steps.check_skip.outputs.skip != 'true' && !(matrix.jobs.goarch == 'loong64' && matrix.jobs.abi == '1') }}
-        uses: actions/setup-go@v6
+        uses: actions/setup-go@v7
         with:
           go-version: ${{ matrix.core.goversion }}
           check-latest: true
@@ -150,7 +150,7 @@ jobs:
       - name: Cache Go loongarch abi1 tarball
         id: cache_go_abi1
         if: ${{ steps.check_skip.outputs.skip != 'true' && matrix.jobs.goarch == 'loong64' && matrix.jobs.abi == '1' }}
-        uses: actions/cache@v4
+        uses: actions/cache@v6.1.0
         with:
           path: ${{ runner.temp }}/go-archives/go1.26.0.linux-amd64-abi1.tar.gz
           key: go-loongarch-abi1-1.26.0
@@ -231,7 +231,7 @@ jobs:
 
       - name: Upload Core Artifact (${{ matrix.core.type }}-${{ matrix.jobs.output }})
         if: ${{ steps.check_skip.outputs.skip != 'true' }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ matrix.core.artifact }}-${{ matrix.jobs.output }}
           path: build_output/clash-linux-${{ matrix.jobs.output }}.tar.gz
@@ -247,7 +247,7 @@ jobs:
           ref: master
 
       - name: Download All Artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8.0.1
         with:
           path: ./downloaded-artifacts
 
