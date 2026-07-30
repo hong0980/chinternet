@@ -1,10 +1,14 @@
 name: Compile The New Clash Core
 
+# 确保 workflow 有写权限以便推送
+permissions:
+  contents: write
+
 on:
   # schedule:
   #   - cron: "0 20 * * 1,3,5,6"
   workflow_dispatch:
-  
+
 jobs:
   Get-Commit-id:
     runs-on: ubuntu-latest
@@ -21,11 +25,11 @@ jobs:
           sudo apt-get update
           sudo apt-get -y install git
 
-      - name: Clone OpenClash Repository
-        uses: actions/checkout@v6
+      - name: Checkout current repository (for commits)
+        uses: actions/checkout@v7
         with:
-          ref: core
-      
+          ref: master
+
       - name: Get Current Version
         id: current_id
         run: |
@@ -36,21 +40,45 @@ jobs:
           current_smart_ver=$(sed -n '2p' ./dev/core_version 2>/dev/null || echo "null")
           echo "current_smart_id=$current_smart_ver" >> $GITHUB_OUTPUT
           echo "current_smart_id: $current_smart_ver"
-      
-      - name: Get Upstream Version
+
+      - name: Get Upstream Version (clone to subdirs)
         id: upstream_id
         run: |
-          # MetaCubeX/mihomo
-          git clone --depth=1 --branch=Alpha https://github.com/MetaCubeX/mihomo.git metacubex_mihomo
-          cd metacubex_mihomo
-          echo "upstream_id=alpha-g$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-          echo "upstream_id: alpha-g$(git rev-parse --short HEAD)"
-          cd ..
-          # vernesong/mihomo
-          git clone --depth=1 --branch=Alpha https://github.com/vernesong/mihomo.git vernesong_mihomo
-          cd vernesong_mihomo
-          echo "upstream_smart_id=alpha-smart-g$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-          echo "upstream_smart_id: alpha-smart-g$(git rev-parse --short HEAD)"
+          set -e
+          # MetaCubeX/mihomo (Alpha branch if exists)
+          UP_DIR=upstream_metacubex
+          rm -rf "$UP_DIR"
+          if git ls-remote --heads https://github.com/MetaCubeX/mihomo.git Alpha | grep -q Alpha; then
+            git clone --depth=1 --branch=Alpha https://github.com/MetaCubeX/mihomo.git "$UP_DIR"
+            cd "$UP_DIR"
+            echo "upstream_id=alpha-g$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+            echo "upstream_id: alpha-g$(git rev-parse --short HEAD)"
+            cd ..
+          else
+            # fallback to default branch
+            git clone --depth=1 https://github.com/MetaCubeX/mihomo.git "$UP_DIR"
+            cd "$UP_DIR"
+            echo "upstream_id=default-g$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+            echo "upstream_id: default-g$(git rev-parse --short HEAD)"
+            cd ..
+          fi
+
+          # vernesong/mihomo (Alpha branch if exists)
+          UP2_DIR=upstream_vernesong
+          rm -rf "$UP2_DIR"
+          if git ls-remote --heads https://github.com/vernesong/mihomo.git Alpha | grep -q Alpha; then
+            git clone --depth=1 --branch=Alpha https://github.com/vernesong/mihomo.git "$UP2_DIR"
+            cd "$UP2_DIR"
+            echo "upstream_smart_id=alpha-smart-g$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+            echo "upstream_smart_id: alpha-smart-g$(git rev-parse --short HEAD)"
+            cd ..
+          else
+            git clone --depth=1 https://github.com/vernesong/mihomo.git "$UP2_DIR"
+            cd "$UP2_DIR"
+            echo "upstream_smart_id=default-smart-g$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+            echo "upstream_smart_id: default-smart-g$(git rev-parse --short HEAD)"
+            cd ..
+          fi
 
   Compile_Core:
     runs-on: ubuntu-latest
@@ -146,7 +174,7 @@ jobs:
 
       - name: Clone source (${{ matrix.core.type }})
         if: ${{ steps.check_skip.outputs.skip != 'true' }}
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: ${{ matrix.core.repo }}
           ref: Alpha
@@ -185,8 +213,16 @@ jobs:
           VERSION="${{ matrix.core.version_prefix }}$(git rev-parse --short HEAD)"
           BUILDTIME="$(date -u)"
           mkdir -p ./bin
+
+          # 动态设置 ldflags 的包路径，避免包路径不匹配
+          if [ "${{ matrix.core.type }}" = "meta" ]; then
+            LD_PATH="github.com/metacubex/mihomo/constant"
+          else
+            LD_PATH="github.com/vernesong/mihomo/constant"
+          fi
+
           go build -tags with_gvisor -trimpath \
-            -ldflags "-X 'github.com/metacubex/mihomo/constant.Version=${VERSION}' -X 'github.com/metacubex/mihomo/constant.BuildTime=${BUILDTIME}' -w -s -buildid=" \
+            -ldflags "-X '${LD_PATH}.Version=${VERSION}' -X '${LD_PATH}.BuildTime=${BUILDTIME}' -w -s -buildid=" \
             -o ./bin/clash
           chmod +x ./bin/clash
           ${upx} ${{ matrix.jobs.upxflag }} ./bin/clash || true
@@ -205,10 +241,10 @@ jobs:
     needs: [Get-Commit-id, Compile_Core]
     if: always() && (needs.Get-Commit-id.outputs.current_id != needs.Get-Commit-id.outputs.upstream_id || needs.Get-Commit-id.outputs.current_smart_id != needs.Get-Commit-id.outputs.upstream_smart_id)
     steps:
-      - name: Checkout OpenClash Repository
-        uses: actions/checkout@v6
+      - name: Checkout current repository (for commits)
+        uses: actions/checkout@v7
         with:
-          ref: core
+          ref: master
 
       - name: Download All Artifacts
         uses: actions/download-artifact@v4
@@ -226,46 +262,40 @@ jobs:
           mkdir -p ./dev/meta
           mkdir -p ./dev/smart
 
+          # 不再依赖 needs.Compile_Core.result；直接检查下载到的 artifact 目录
           if [ "${{ needs.Get-Commit-id.outputs.current_id }}" != "${{ needs.Get-Commit-id.outputs.upstream_id }}" ]; then
             echo "Organizing MetaCubeX compiled files..."
-            if [ "${{ needs.Compile_Core.result }}" == "success" ]; then
-              rm -rf ./dev/meta/*
-              for artifact_dir in ./downloaded-artifacts/meta-core-*/; do
-                if [ -d "$artifact_dir" ] && [ -n "$(ls -A "$artifact_dir")" ]; then
-                  echo "Copying $artifact_dir files..."
-                  cp -rf "$artifact_dir". ./dev/meta/
-                  changes_made_to_dev_meta=true
-                fi
-              done
-              if [ "$changes_made_to_dev_meta" = true ]; then
-                git add ./dev/meta
-                commit_description="Meta to ${{ needs.Get-Commit-id.outputs.upstream_id }}"
+            # copy any found meta-core-* artifacts
+            for artifact_dir in ./downloaded-artifacts/meta-core-*/; do
+              if [ -d "$artifact_dir" ] && [ -n "$(ls -A "$artifact_dir")" ]; then
+                echo "Copying $artifact_dir files..."
+                rm -rf ./dev/meta/*
+                cp -rf "$artifact_dir". ./dev/meta/
+                changes_made_to_dev_meta=true
               fi
-            else
-              echo "Compile_Core job failed, skipping meta..."
+            done
+            if [ "$changes_made_to_dev_meta" = true ]; then
+              git add ./dev/meta
+              commit_description="Meta to ${{ needs.Get-Commit-id.outputs.upstream_id }}"
             fi
           fi
 
           if [ "${{ needs.Get-Commit-id.outputs.current_smart_id }}" != "${{ needs.Get-Commit-id.outputs.upstream_smart_id }}" ]; then
             echo "Organizing vernesong compiled files..."
-            if [ "${{ needs.Compile_Core.result }}" == "success" ]; then
-              rm -rf ./dev/smart/*
-              for artifact_dir in ./downloaded-artifacts/smart-core-*/; do
-                if [ -d "$artifact_dir" ] && [ -n "$(ls -A "$artifact_dir")" ]; then
-                  echo "Copying $artifact_dir files..."
-                  cp -rf "$artifact_dir". ./dev/smart/
-                  changes_made_to_dev_smart=true
-                fi
-              done
-              if [ "$changes_made_to_dev_smart" = true ]; then
-                git add ./dev/smart
-                if [ -n "$commit_description" ]; then
-                  commit_description="$commit_description, "
-                fi
-                commit_description="${commit_description}Smart to ${{ needs.Get-Commit-id.outputs.upstream_smart_id }}"
+            for artifact_dir in ./downloaded-artifacts/smart-core-*/; do
+              if [ -d "$artifact_dir" ] && [ -n "$(ls -A "$artifact_dir")" ]; then
+                echo "Copying $artifact_dir files..."
+                rm -rf ./dev/smart/*
+                cp -rf "$artifact_dir". ./dev/smart/
+                changes_made_to_dev_smart=true
               fi
-            else
-              echo "Compile_Core job failed, skipping smart..."
+            done
+            if [ "$changes_made_to_dev_smart" = true ]; then
+              git add ./dev/smart
+              if [ -n "$commit_description" ]; then
+                commit_description="$commit_description, "
+              fi
+              commit_description="${commit_description}Smart to ${{ needs.Get-Commit-id.outputs.upstream_smart_id }}"
             fi
           fi
 
@@ -278,7 +308,7 @@ jobs:
           if [ "${{ needs.Get-Commit-id.outputs.current_smart_id }}" != "${{ needs.Get-Commit-id.outputs.upstream_smart_id }}" ] && [ "$changes_made_to_dev_smart" = true ]; then
             final_smart_id="${{ needs.Get-Commit-id.outputs.upstream_smart_id }}"
           fi
-          
+
           echo "Updating ./dev/core_version with:"
           echo "Meta: $final_meta_id"
           echo "Smart: $final_smart_id"
@@ -313,7 +343,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          
+
           echo "Commit description from output: $COMMIT_DESCRIPTION"
           echo "Overall changes exist from output: $OVERALL_CHANGES_EXIST"
 
@@ -324,7 +354,7 @@ jobs:
             elif [ "$OVERALL_CHANGES_EXIST" = "true" ]; then
               final_commit_message="$final_commit_message: Update core versions"
             fi
-            
+
             echo "Committing with message: $final_commit_message"
             git commit -m "$final_commit_message"
             git push
